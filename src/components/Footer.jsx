@@ -34,7 +34,7 @@ const Footer = () => {
       <div className="flex px-24  py-8 justify-between items-center bg-[#FFD230] ">
         <div className="text-xl">Cookie Policy</div>
         <div>
-          <img src={logo} alt="lightup" className="h-[97px]" />
+          <img src={lightup} alt="lightup" className="h-[97px]" />
         </div>
         <div>
           <p>Privacy Policy</p>

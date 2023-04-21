@@ -1,58 +1,70 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
-function Slider() {
-  const [curr, setCurr] = useState(0);
+const Slider = () => {
   const slides = [
-    "https://i.ibb.co/ncrXc2V/1.png",
-
-    "https://i.ibb.co/B3s7v4h/2.png",
-    "https://i.ibb.co/XXR8kzF/3.png",
-    "https://i.ibb.co/yg7BSdM/4.png",
+    {
+      image:
+        "https://images.unsplash.com/photo-1535224206242-487f7090b5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1469362102473-8622cfb973cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2419&q=80",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1594717527389-a590b56e8d0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1545917992-dea2d782ef46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2489&q=80",
+    },
   ];
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
-  const prev = () =>
-    setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
-  const next = () =>
-    setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const previuosSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
 
   return (
-    <div className="overflow-hidden relative">
-      <div
-        className="flex transition-transform ease-out duration-500"
-        style={{ transform: `translateX(-${curr * 100}%)` }}
-      >
-        {slides}
-      </div>
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button
-          onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          <FaArrowAltCircleLeft size={40} />
-        </button>
-        <button
-          onClick={next}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-        >
-          <FaArrowAltCircleRight size={40} />
-        </button>
-      </div>
-
-      <div className="absolute bottom-4 right-0 left-0">
-        <div className="flex items-center justify-center gap-2">
-          {slides.map((_, i) => (
-            <div
-              className={`
-              transition-all w-3 h-3 bg-white rounded-full
-              ${curr === i ? "p-2" : "bg-opacity-50"}
-            `}
+    <div>
+      <div className="relative flex justify-center ">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={index === current ? "opacity-[1]" : "opacity-0 "}
+          >
+            <FaArrowAltCircleLeft
+              className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none  z-[2]"
+              onClick={previuosSlide}
+              size={30}
             />
-          ))}
-        </div>
+            {index === current && (
+              <img src={slide.image} objectFit="cover" alt="travel " />
+            )}
+
+            <FaArrowAltCircleRight
+              className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none  z-[2]"
+              onClick={nextSlide}
+              size={30}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default Slider;

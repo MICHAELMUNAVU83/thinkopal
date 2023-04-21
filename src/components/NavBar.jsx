@@ -44,7 +44,7 @@ const NavBar = () => {
             Our Blog
           </p>
           <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
-            Cient Portfolio
+            Client Portfolio
           </p>
           <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
             Contact US

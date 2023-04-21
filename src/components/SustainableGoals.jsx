@@ -4,7 +4,7 @@ import sdg2 from "./images/sdg2.png";
 import sdg3 from "./images/sdg3.png";
 import sdgpic1 from "./images/sdgpic1.jpg";
 import sdgpic2 from "./images/sdgpic2.jpg";
-
+import sdgpic3 from "./images/sdgpic3.jpg";
 const SustainableGoals = () => {
   return (
     <div className="flex  justify-between p-12 ">
@@ -56,7 +56,7 @@ const SustainableGoals = () => {
           >
             <img
               className="h-[600px] object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
-              src={sdgpic2}
+              src={sdgpic3}
               alt=""
             />
             <div className=" absolute inset-0 absolute inset-0 bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">

@@ -9,7 +9,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col gap-4">
+    <div className=" flex py-24 flex-col gap-4">
       <div className="flex  px-24 justify-between items-center ">
         <div className="text-7xl">Our Partners</div>
         <div>

@@ -53,11 +53,11 @@ const Contact = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col  text-end gap-4 justify-center ">
-        <h1 className="text-7xl">Get An</h1>
+      <div className="flex flex-col font-bold  text-end gap-4 justify-center ">
+        <h1 className="text-7xl ">Get An</h1>
         <h1 className="text-7xl">Inquiry</h1>
-        <p>Learn more about our services</p>
-        <p>We'd love to help!</p>
+        <p className="font-normal ">Learn more about our services</p>
+        <p className="font-normal ">We'd love to help!</p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import whypic from "./images/whypic.png";
+import whypic from "../images/whypic.png";
 const Why = () => {
   return (
     <div className="py-4 bg-[#FFD230] flex justify-between px-56">

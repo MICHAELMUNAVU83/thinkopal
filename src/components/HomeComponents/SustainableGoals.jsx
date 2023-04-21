@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import sdg1 from "./images/sdg1.png";
-import sdg2 from "./images/sdg2.png";
-import sdg3 from "./images/sdg3.png";
-import sdgpic1 from "./images/sdgpic1.jpg";
-import sdgpic2 from "./images/sdgpic2.jpg";
-import sdgpic3 from "./images/sdgpic3.jpg";
+import sdg1 from "../images/sdg1.png";
+import sdg2 from "../images/sdg2.png";
+import sdg3 from "../images/sdg3.png";
+import sdgpic1 from "../images/sdgpic1.jpg";
+import sdgpic2 from "../images/sdgpic2.jpg";
+import sdgpic3 from "../images/sdgpic3.jpg";
 const SustainableGoals = () => {
   return (
     <div className="flex  justify-between p-12 ">

@@ -1,5 +1,5 @@
 import React from "react";
-import whopic from "./images/whopic.png";
+import whopic from "../images/whopic.png";
 
 const Who = () => {
   return (

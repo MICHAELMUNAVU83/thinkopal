@@ -1,5 +1,5 @@
 import React from "react";
-import whatpic from "./images/whatpic.png";
+import whatpic from "../images/whatpic.png";
 
 const What = () => {
   return (

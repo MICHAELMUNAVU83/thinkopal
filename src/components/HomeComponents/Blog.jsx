@@ -1,6 +1,6 @@
 import React from "react";
-import blogbg from "./images/blog-bg.png";
-import blogimage from "./images/blog-image.png";
+import blogbg from "../images/blog-bg.png";
+import blogimage from "../images/blog-image.png";
 const Blog = () => {
   return (
     <div

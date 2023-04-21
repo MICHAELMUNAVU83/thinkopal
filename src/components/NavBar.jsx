@@ -31,9 +31,12 @@ const NavBar = () => {
           <img src={logo} alt="logo" className=" h-[80px]" />
         </div>
         <div className="flex gap-16 justify-center uppercase   ">
-          <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+            to="/purpose"
+          >
             Our Purpose
-          </p>
+          </Link>
           <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
             Our mission
           </p>

@@ -1,7 +1,7 @@
 import React from "react";
 import Blog from "../components/HomeComponents/Blog";
 import Contact from "../components/HomeComponents/Contact";
-import Slider from "../components/HomeComponents/Slider";
+import HomeHero from "../components/HomeComponents/HomeHero";
 import SustainableGoals from "../components/HomeComponents/SustainableGoals";
 import What from "../components/HomeComponents/What";
 import Why from "../components/HomeComponents/Why";
@@ -9,7 +9,7 @@ import Who from "../components/HomeComponents/Who";
 const Home = () => {
   return (
     <div>
-      <Slider />
+      <HomeHero />
       <Who />
       <What />
       <Why />

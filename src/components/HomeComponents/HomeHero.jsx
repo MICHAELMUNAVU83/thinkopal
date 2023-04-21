@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import background1 from "../images/background1.png";
 
-const Slider = () => {
+const HomeHero = () => {
   return (
     <div
       style={{
@@ -12,4 +12,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default HomeHero;

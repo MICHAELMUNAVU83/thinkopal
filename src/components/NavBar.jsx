@@ -5,7 +5,7 @@ import logo from "./images/logo.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("black");
+  const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
 
   useEffect(() => {
@@ -27,9 +27,9 @@ const NavBar = () => {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       <div className="flex bg-transparent py-2 mx-8 justify-between items-center">
-        <div>
+        <Link to="/" className="cursor-pointer">
           <img src={logo} alt="logo" className=" h-[80px]" />
-        </div>
+        </Link>
         <div className="flex gap-16 justify-center uppercase   ">
           <Link
             className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
@@ -37,12 +37,18 @@ const NavBar = () => {
           >
             Our Purpose
           </Link>
-          <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+            to="/mission"
+          >
             Our mission
-          </p>
-          <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
+          </Link>
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+            to="/products"
+          >
             Our Products
-          </p>
+          </Link>
           <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
             Our Blog
           </p>

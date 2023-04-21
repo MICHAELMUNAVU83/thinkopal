@@ -27,7 +27,7 @@ const Blog = () => {
             Kenya
           </span>
         </p>
-        <button className="bg-white mr-24  text-black uppercase text-center p-2 justify-start w-[200px]">
+        <button className="bg-white mr-24  text-black uppercase text-center py-4 px-2 justify-start w-[200px] shadow-gray-400 shadow-2xl">
           View In bLog
         </button>
       </div>

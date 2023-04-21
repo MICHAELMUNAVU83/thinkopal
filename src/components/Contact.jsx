@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       className="
-    bg-[#FFD230]  flex justify-around p-12"
+    bg-[#FFD230]  flex justify-between p-24"
     >
       <div className="flex flex-col gap-4">
         <div className="flex gap-[30px]">

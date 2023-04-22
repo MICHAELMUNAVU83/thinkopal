@@ -124,10 +124,25 @@ const Carousel = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
+        fadeEffect={{ crossFade: true }}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+
+            translate: [0, 0, -400],
+
+            rotate: [0, 0, -90],
+          },
+          next: {
+            translate: [0, 0, 400],
+
+            rotate: [0, 0, 90],
+          },
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 300,
+          depth: 250,
           modifier: 4,
           slideShadows: true,
         }}

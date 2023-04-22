@@ -6,6 +6,7 @@ import SustainableGoals from "../components/HomeComponents/SustainableGoals";
 import What from "../components/HomeComponents/What";
 import Why from "../components/HomeComponents/Why";
 import Who from "../components/HomeComponents/Who";
+import Carousel from "../components/HomeComponents/Carousel/Carousel";
 const Home = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Home = () => {
       <Blog />
       <SustainableGoals />
       <Contact />
+      <Carousel />
     </div>
   );
 };

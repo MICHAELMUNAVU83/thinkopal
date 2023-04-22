@@ -7,6 +7,7 @@ import What from "../components/HomeComponents/What";
 import Why from "../components/HomeComponents/Why";
 import Who from "../components/HomeComponents/Who";
 import Carousel from "../components/HomeComponents/Carousel/Carousel";
+import SemiCircle from "../components/HomeComponents/SemiCircle";
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
       <SustainableGoals />
       <Contact />
       <Carousel />
+    
     </div>
   );
 };

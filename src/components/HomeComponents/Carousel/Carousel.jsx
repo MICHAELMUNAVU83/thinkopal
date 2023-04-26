@@ -4,7 +4,6 @@ import { Pagination, EffectCoverflow, Autoplay } from "swiper";
 
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-
 import "./Carousel.css";
 
 const slider = [

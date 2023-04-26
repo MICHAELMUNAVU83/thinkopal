@@ -49,12 +49,12 @@ const NavBar = () => {
           >
             Our Products
           </Link>
-          <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
+          <Link to="/blog" className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
             Our Blog
-          </p>
-          <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
-            Client Portfolio
-          </p>
+          </Link>
+          <Link to="/clients" className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
+           Our Clients
+          </Link>
           <p className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer">
             Contact US
           </p>

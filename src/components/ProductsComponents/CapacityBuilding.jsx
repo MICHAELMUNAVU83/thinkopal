@@ -6,7 +6,7 @@ import capacity3 from "../images/capacity3.png";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-
+import "../splide.min.css";
 const CapacityBuilding = () => {
   return (
     <div className="bg-[#FFD230] py-8 ">

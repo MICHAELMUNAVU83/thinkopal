@@ -3,7 +3,7 @@ import coachingpic from "../images/coaching.png";
 import coaching1 from "../images/coaching1.png";
 import coaching2 from "../images/coaching2.png";
 import coaching3 from "../images/coaching3.png";
-
+import "../splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 

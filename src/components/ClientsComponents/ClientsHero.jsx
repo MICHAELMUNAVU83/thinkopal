@@ -8,7 +8,7 @@ import cdmsbg from "../images/cdms-bg.png";
 import cdmslogo from "../images/cdms-logo.png";
 import cdmsround from "../images/cdms-round.png";
 
-import "./splide.min.css";
+import "../splide.min.css";
 
 const ClientsHero = () => {
   const clients = [
@@ -28,8 +28,15 @@ const ClientsHero = () => {
     },
   ];
   return (
-    <div className=" bg-[#FFD230]  ">
-      <div className="py-32 flex flex-col  w-[80%] mx-auto gap-4 ">
+    <div className=" bg-[#FFD230] py-32   ">
+        <div className="w-[80%] mb-8 gap-4 mx-auto flex items-center">
+            <h1 className="text-5xl w-[20%] alstoria">
+                Our Clients
+            </h1>
+            <p className="border-b-2 border-white h-[10px] w-[70%]" />
+
+        </div>
+      <div className="flex flex-col  w-[80%] mx-auto gap-4 ">
         <Splide
           className="px-16"
           options={{

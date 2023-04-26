@@ -3,7 +3,8 @@ import whopic from "../images/whopic.png";
 
 const Who = () => {
   return (
-    <div  className="py-4 bg-[#FFD230] flex justify-between px-56">
+    <div className="bg-[#FFD230] py-8 ">
+    <div  className="  flex justify-between w-[80%] mx-auto">
       <div className="flex flex-col  text-xl gap-1 justify-center text-start">
         <p>We are a Entrepreneurship Support</p>
         <p>Organization that supports Social</p>
@@ -24,6 +25,7 @@ const Who = () => {
         </div>
           </div>
          
+    </div>
     </div>
   );
 };

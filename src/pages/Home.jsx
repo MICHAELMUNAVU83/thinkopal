@@ -5,7 +5,7 @@ import What from "../components/HomeComponents/What";
 import Why from "../components/HomeComponents/Why";
 import Who from "../components/HomeComponents/Who";
 import Carousel from "../components/HomeComponents/Carousel/Carousel";
-import Contact from "../components/Contact";
+import Inquiry from "../components/Inquiry";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       <Why />
       <Blog />
       <Carousel />
-      <Contact />
+      <Inquiry />
     </div>
   );
 };

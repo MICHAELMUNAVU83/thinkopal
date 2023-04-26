@@ -19,7 +19,7 @@ const TargetSectors = () => {
         </div>
         <div className="relative">
           <img src={targetpic} alt="whatpic" className="h-[500px] w-[500px]" />
-          <div className="absolute top-2/3 left-[25%] text-center  text-7xl font-bold flex flex-col ">
+          <div className="absolute top-2/3 left-[29%] alstoria text-center  text-7xl font-bold flex flex-col ">
             <p className="text-5xl">Target</p>
             <p>Sectors</p>
           </div>

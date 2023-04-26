@@ -18,7 +18,7 @@ const MissionHero = () => {
       <div className="w-10/12 flex flex-col   justify-end items-end ">
         <div className="relative">
           <div className="absolute top-1/2 left-20 w-[28%] ">
-            <p className="text-5xl font-bold">Our Mission</p>
+            <p className="text-6xl font-bold alstoria">Our Mission</p>
             <p>To contribute towards the growth of sustainable & Impactful</p>
             <p>Enterprises to Reduce Inequalities, & contribute towards the</p>
             <p>growth of sustainable communities and cities in East Africa.</p>

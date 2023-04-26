@@ -8,7 +8,7 @@ import cdmsbg from "../images/cdms-bg.png";
 import cdmslogo from "../images/cdms-logo.png";
 import cdmsround from "../images/cdms-round.png";
 
-import "@splidejs/react-splide/css";
+import "./splide.min.css";
 
 const ClientsHero = () => {
   const clients = [

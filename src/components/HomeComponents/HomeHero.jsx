@@ -17,7 +17,7 @@ const HomeHero = () => {
       </Link>
       <div className="w-10/12 flex flex-col   justify-end items-end ">
         <div className="relative">
-          <div className="absolute top-1/2 left-24 text-4xl">
+          <div className="absolute   top-1/2 left-24 text-4xl">
             <p>We helped a health</p>
             <p>start-up deliver</p>
             <p>quality affordable</p>

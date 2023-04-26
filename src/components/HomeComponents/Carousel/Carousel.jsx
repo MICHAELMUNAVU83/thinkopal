@@ -93,9 +93,9 @@ const Carousel = () => {
   return (
     <div className="carousel">
       <div>
-        <div className="carousel-content">
+        <div className="carousel-content p-4">
           <div className="flex flex-col gap-1">
-            <h1 className="text-5xl font-bold">Our Clients</h1>
+            <h1 className="text-7xl alstoria font-bold">Our Clients</h1>
             <p>Over the years, we've had the pleasure of working </p>
             <p>with some amazing people and organizations,</p>
             <p>

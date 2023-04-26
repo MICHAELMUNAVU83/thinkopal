@@ -16,7 +16,7 @@ const Mbinu = () => {
         </div>
         <div className="relative">
           <img src={mbinupic} alt="whatpic" className="h-[500px] w-[500px]" />
-          <div className="absolute top-[50%] left-[25%] text-center  text-6xl font-bold flex flex-col ">
+          <div className="absolute top-[50%] left-[25%] alstoria text-center  text-6xl font-bold flex flex-col ">
             <p>Mbinu</p>
             <p>Enterprise</p>
             <p>Program</p>

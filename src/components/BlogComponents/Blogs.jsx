@@ -16,11 +16,11 @@ const Blogs = () => {
             obstacles and achieve their academic goals. Find out more about its
             impact in Mombasa.
           </p>
-          <button className="bg-white  px-4 py-2 mt-4">View In Blog</button>
+          <button className="bg-white rounded-lg font-normal  px-4 py-2 mt-4">View In Blog</button>
         </div>
         <div className="w-[50%] flex flex-col items-center justify-center text-center">
           <img src={youth} alt="youth" className="h-[400px]" />
-          <p className="text-4xl font-bold mt-4">
+          <p className="text-4xl font-bold alstoria w-[80%] mt-4">
             Youth Led Organization in Mombasa Paves the way for Educational
             empowerment
           </p>
@@ -37,11 +37,11 @@ const Blogs = () => {
             obstacles and achieve their academic goals. Find out more about its
             impact in Mombasa.
           </p>
-          <button className="bg-white  px-4 py-2 mt-4">View In Blog</button>
+          <button className="bg-white rounded-lg font-normal  px-4 py-2 mt-4">View In Blog</button>
         </div>
         <div className="w-[50%] flex flex-col items-center justify-center text-center">
           <img src={youth} alt="youth" className="h-[400px]" />
-          <p className="text-4xl font-bold mt-4">
+          <p className="text-4xl font-bold mt-4 alstoria w-[80%]">
             Youth Led Organization in Mombasa Paves the way for Educational
             empowerment
           </p>
@@ -58,11 +58,11 @@ const Blogs = () => {
             obstacles and achieve their academic goals. Find out more about its
             impact in Mombasa.
           </p>
-          <button className="bg-white  px-4 py-2 mt-4">View In Blog</button>
+          <button className="bg-white rounded-lg font-normal  px-4 py-2 mt-4">View In Blog</button>
         </div>
         <div className="w-[50%] flex flex-col items-center justify-center text-center">
           <img src={youth} alt="youth" className="h-[400px]" />
-          <p className="text-4xl font-bold mt-4">
+          <p className="text-4xl alstoria w-[80%] font-bold mt-4">
             Youth Led Organization in Mombasa Paves the way for Educational
             empowerment
           </p>

@@ -18,7 +18,7 @@ const BlogHero = () => {
       <div className="w-10/12 flex flex-col   justify-end items-end ">
         <div className="relative">
           <div className="absolute top-1/2 left-20 w-[28%] ">
-            <p className="text-5xl font-bold">Impact Series</p>
+            <p className="text-5xl font-bold alstoria">Impact Series</p>
             <p>
               Join the impact revolution with our weekly blog, featuring social
             </p>

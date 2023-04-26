@@ -1,13 +1,13 @@
 import React from "react";
-import ClientsHero from "../components/ClientsComponents/ClientsHero";
+import Resources from "../components/FreeResources/Resources";
 import GrayInquiry from "../components/GrayInquiry";
-const Clients = () => {
+const FreeResources = () => {
   return (
     <div>
-      <ClientsHero />
+      <Resources />
       <GrayInquiry />
     </div>
   );
 };
 
-export default Clients;
+export default FreeResources;

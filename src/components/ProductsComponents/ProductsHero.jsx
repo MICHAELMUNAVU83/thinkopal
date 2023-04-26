@@ -15,7 +15,7 @@ const ProductsHero = () => {
         <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
       </Link>
       <div className="w-8/10 flex justify-center items-center ">vghjk</div>
-      <Link className="w-1/10 flex justify-center items-center " to="/">
+      <Link className="w-1/10 flex justify-center items-center " to="/blog">
         <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
       </Link>
     </div>

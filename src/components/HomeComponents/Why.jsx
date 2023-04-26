@@ -17,7 +17,7 @@ const Why = () => {
         </div>
         <div className="relative">
           <img src={whypic} alt="whatpic" className="h-[500px] w-[500px]" />
-          <div className="absolute top-2/3  left-[35%] text-center  text-7xl font-bold flex flex-col ">
+          <div className="absolute top-2/3  left-[35%] alstoria text-center  text-7xl font-bold flex flex-col ">
             <p className="text-3xl">Why We</p>
             <p>Do It</p>
           </div>

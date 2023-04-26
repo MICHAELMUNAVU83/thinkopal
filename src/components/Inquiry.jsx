@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const Inquiry = () => {
   return (
     <div
       className="
@@ -54,13 +54,13 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex flex-col font-bold  text-end gap-4 justify-center ">
-        <h1 className="text-7xl ">Get An</h1>
-        <h1 className="text-7xl">Inquiry</h1>
-        <p className="font-normal ">Learn more about our services</p>
-        <p className="font-normal ">We'd love to help!</p>
+        <h1 className="text-7xl alstoria ">Get An</h1>
+        <h1 className="text-7xl alstoria">Inquiry</h1>
+        <p className="font-normal  text-3xl">Learn more about our services</p>
+        <p className="font-normal  text-2xl">We'd love to help!</p>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default Inquiry;

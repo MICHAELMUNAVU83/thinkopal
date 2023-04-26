@@ -5,7 +5,7 @@ import coaching2 from "../images/coaching2.png";
 import coaching3 from "../images/coaching3.png";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+
 
 const Coaching = () => {
   return (
@@ -27,7 +27,7 @@ const Coaching = () => {
             alt="whatpic"
             className="h-[500px] w-[500px]"
           />
-          <div className="absolute top-2/3 left-[25%] text-center  text-4xl font-bold flex flex-col ">
+          <div className="absolute top-2/3 left-[25%] alstoria text-center  text-5xl font-bold flex flex-col ">
             <p>Coaching And</p>
             <p className="text-5xl">Membership</p>
           </div>

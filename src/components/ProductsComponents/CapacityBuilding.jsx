@@ -5,7 +5,7 @@ import capacity2 from "../images/capacity2.png";
 import capacity3 from "../images/capacity3.png";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+
 
 const CapacityBuilding = () => {
   return (
@@ -28,7 +28,7 @@ const CapacityBuilding = () => {
             alt="whatpic"
             className="h-[500px] w-[500px]"
           />
-          <div className="absolute top-2/3 left-[25%] text-center  text-6xl font-bold flex flex-col ">
+          <div className="absolute top-2/3 left-[30%] text-center alstoria  text-6xl font-bold flex flex-col ">
             <p>Capacity</p>
             <p >Building</p>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import MissionHero from "../components/MissionComponents/MissionHero";
 import SustainableGoals from "../components/SustainableGoals";
-import Contact from "../components/Contact";
+import Inquiry from "../components/Inquiry";
 import TargetSectors from "../components/MissionComponents/TargetSectors";
 const Mission = () => {
   return (
@@ -9,7 +9,7 @@ const Mission = () => {
       <MissionHero />
       <TargetSectors />
       <SustainableGoals />
-      <Contact />
+      <Inquiry />
     </div>
   );
 };

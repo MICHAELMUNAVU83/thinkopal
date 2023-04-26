@@ -7,6 +7,8 @@ import Mission from "./pages/Mission";
 import Products from "./pages/Products";
 import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
+import FreeResources from "./pages/FreeResources";
+import "./App.css";
 function App() {
   return (
     <>
@@ -19,8 +21,9 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/free-resources" element={<FreeResources />} />
         </Routes>
-        
+
         <Footer />
       </Router>
     </>

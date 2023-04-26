@@ -31,6 +31,7 @@ const ClientsHero = () => {
     <div className=" bg-[#FFD230]  ">
       <div className="py-32 flex flex-col  w-[80%] mx-auto gap-4 ">
         <Splide
+          className="px-16"
           options={{
             type: "loop",
             perPage: 3,
@@ -46,17 +47,17 @@ const ClientsHero = () => {
           }}
         >
           <SplideSlide>
-            <div className="flex justify-center items-center bg-white h-[150px] p-1 ">
+            <div className="flex justify-center items-center  bg-white h-[150px]  ">
               <img src={clientlogo} alt="" className="h-[130px] w-[130px]" />
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-center items-center bg-white  h-[150px] p-1">
+            <div className="flex justify-center items-center  bg-white  h-[150px] ">
               <img src={clientlogo2} alt="" className="h-[130px] w-[130px]" />
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-center items-center bg-white  h-[150px] p-1 bg-white">
+            <div className="flex justify-center items-center bg-white   h-[150px]  bg-white">
               <img src={clientlogo3} alt="" className="h-[130px] w-[130px]" />
             </div>
           </SplideSlide>

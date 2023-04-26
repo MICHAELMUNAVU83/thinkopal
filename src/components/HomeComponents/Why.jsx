@@ -4,12 +4,13 @@ const Why = () => {
   return (
     <div className="bg-[#FFD230] py-8  ">
       <div className="flex justify-between w-[80%] mx-auto">
-        <div className="flex flex-col  text-xl gap-1 justify-center text-start">
-          <p>To contribute towards the growth of</p>
-          <p>sustainable & Impactful Enterprises to</p>
-          <p>Reduce Inequalities, & contribute</p>
-          <p>towards the growth of sustainable</p>
-          <p className="mb-4">communities and cities in East Africa.</p>
+        <div className="flex flex-col w-[40%]  text-xl gap-1 justify-center text-start">
+          <p className="mb-4">
+            To contribute towards the growth of sustainable & Impactful
+            Enterprises to Reduce Inequalities, & contribute towards the growth
+            of sustainable communities and cities in East Africa.
+          </p>
+        
           <button className="bg-white  w-[60%] rounded-md shadow-md shadow-gray-300 px-2 py-4 uppercase">
             Our Mission
           </button>

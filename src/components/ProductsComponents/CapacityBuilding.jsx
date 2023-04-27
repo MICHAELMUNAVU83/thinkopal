@@ -12,7 +12,7 @@ const CapacityBuilding = () => {
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex justify-between w-[80%] mx-auto">
         <div className="flex flex-col  text-xl gap-1 justify-center w-[40%] text-start">
-          <p>
+          <p className="quicksand-500">
             Our capacity building programs provide entrepreneurs with the
             technical and operational skills they need to manage their
             businesses more effectively and efficiently. We offer training in

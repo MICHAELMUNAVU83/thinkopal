@@ -5,9 +5,9 @@ import youth from "../images/youth.png";
 const Blogs = () => {
   return (
     <div className="bg-[#FFD230] ">
-      <div className="flex justify-between text-2xl py-8  w-[80%] mx-auto items-center ">
+      <div className="flex justify-between text-xl py-8  w-[80%] mx-auto items-center ">
         <div className="  w-[40%]">
-          <p>
+          <p className="quicksand-500">
             Path Youth Organization, a Kenyan non-profit, empowers impoverished
             students to succeed in their academic pursuits. Through community
             outreach, volunteer programs, and partnerships with other
@@ -16,7 +16,7 @@ const Blogs = () => {
             obstacles and achieve their academic goals. Find out more about its
             impact in Mombasa.
           </p>
-          <button className="bg-white rounded-lg font-normal  px-4 py-2 mt-4">View In Blog</button>
+          <button className="bg-white  quicksand-700 rounded-lg font-normal hover:scale-105 duration-500 transition-all  px-4 py-2 mt-4">View In Blog</button>
         </div>
         <div className="w-[50%] flex flex-col items-center justify-center text-center">
           <img src={youth} alt="youth" className="h-[400px]" />
@@ -26,9 +26,9 @@ const Blogs = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between text-2xl py-8  w-[80%] mx-auto items-center ">
+      <div className="flex justify-between text-xl py-8  w-[80%] mx-auto items-center ">
         <div className="  w-[40%]">
-          <p>
+          <p className="quicksand-500">
             Path Youth Organization, a Kenyan non-profit, empowers impoverished
             students to succeed in their academic pursuits. Through community
             outreach, volunteer programs, and partnerships with other
@@ -37,7 +37,7 @@ const Blogs = () => {
             obstacles and achieve their academic goals. Find out more about its
             impact in Mombasa.
           </p>
-          <button className="bg-white rounded-lg font-normal  px-4 py-2 mt-4">View In Blog</button>
+          <button className="bg-white rounded-lg font-normal hover:scale-105 duration-500 transition-all  quicksand-700 px-4 py-2 mt-4">View In Blog</button>
         </div>
         <div className="w-[50%] flex flex-col items-center justify-center text-center">
           <img src={youth} alt="youth" className="h-[400px]" />
@@ -47,9 +47,9 @@ const Blogs = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between text-2xl py-8  w-[80%] mx-auto items-center ">
+      <div className="flex justify-between text-xl py-8  w-[80%] mx-auto items-center ">
         <div className="  w-[40%]">
-          <p>
+          <p className="quicksand-500">
             Path Youth Organization, a Kenyan non-profit, empowers impoverished
             students to succeed in their academic pursuits. Through community
             outreach, volunteer programs, and partnerships with other
@@ -58,7 +58,7 @@ const Blogs = () => {
             obstacles and achieve their academic goals. Find out more about its
             impact in Mombasa.
           </p>
-          <button className="bg-white rounded-lg font-normal  px-4 py-2 mt-4">View In Blog</button>
+          <button className="bg-white rounded-lg font-normal hover:scale-105 duration-500 transition-all quicksand-700 px-4 py-2 mt-4">View In Blog</button>
         </div>
         <div className="w-[50%] flex flex-col items-center justify-center text-center">
           <img src={youth} alt="youth" className="h-[400px]" />

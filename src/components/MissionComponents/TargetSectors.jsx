@@ -5,7 +5,7 @@ const TargetSectors = () => {
     <div className="py-2 bg-[#FFD230] ">
       <div className=" flex justify-around mx-auto w-[80%]">
         <div className="  text-2xl gap-1  text-start flex justify-center flex-col">
-          <ul className="list-disc">
+          <ul className="list-disc quicksand-500">
             <li className="my-1">HealthCare</li>
             <li className="my-1">Education</li>
             <li className="my-1">Technology</li>

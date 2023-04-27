@@ -11,11 +11,7 @@ const Blog = () => {
     >
       <div className=" flex justify-between">
         <div className="w-[100%]">
-          <img
-            src={blogimage}
-            alt="blogimage"
-            className=""
-          />
+          <img src={blogimage} alt="blogimage" className="" />
         </div>
         <div className=" mr-8 flex flex-col gap-8 justify-center items-end">
           <h1 className="alstoria font-bold text-7xl ">Impact Series</h1>
@@ -29,9 +25,14 @@ const Blog = () => {
               in Kenya
             </span>
           </p>
-          <button className="bg-white quicksand-700 hover:scale-105 transition-all duration-300   text-black uppercase text-center py-4 px-2 justify-start w-[20%] shadow-gray-400 shadow-2xl">
-            View In bLog
-          </button>
+          <div className="flex gap-12 justify-between ">
+            <button className="bg-white quicksand-700 hover:scale-105 transition-all duration-300   text-black uppercase text-center py-4 px-2 justify-start  shadow-gray-400 shadow-2xl">
+              ABOUT THE IMPACT SERIES
+            </button>
+            <button className="bg-white quicksand-700 hover:scale-105 transition-all duration-300   text-black uppercase text-center py-4 px-2 justify-start  shadow-gray-400 shadow-2xl">
+              View In bLog
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -11,10 +11,10 @@ const SustainableGoals = () => {
       <div className="flex justify-end   flex-col items-start text-7xl font-bold">
         <h1 className="alstoria">Sustainable</h1>
         <h1 className="alstoria">Development Goals</h1>
-        <p className="text-xl mt-4 font-normal">
+        <p className="text-xl mt-4 quicksand-500 font-normal">
           Through our work, we support the
         </p>
-        <p className="text-xl font-normal">
+        <p className="text-xl quicksand-500 font-normal">
           attainable of the following SDG goals
         </p>
       </div>

@@ -12,7 +12,7 @@ const Coaching = () => {
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex justify-between w-[80%] mx-auto">
         <div className="flex flex-col  text-xl gap-1 justify-center w-[40%] text-start">
-          <p>
+          <p className="quicksand-500">
             Our coaching and mentorship services are tailored to meet the unique
             needs of each entrepreneur, providing them with the guidance and
             support they need to succeed in a highly competitive market. We work
@@ -52,7 +52,7 @@ const Coaching = () => {
           }}
         >
           <SplideSlide>
-            <div className="flex justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
               <img src={coaching1} alt="" className="h-[100px] w-[100px]" />
               <p className="font-bold w-[70%]">
                 Business Planning and Sustainability Strategy Development
@@ -60,13 +60,13 @@ const Coaching = () => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
               <img src={coaching2} alt="" className="h-[100px] w-[100px]" />
               <p className="font-bold ">Marketing, Business Development</p>
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-center items-center rounded-lg p-4 w-[50%] mx-auto  bg-white h-[130px]  ">
+            <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 w-[50%] mx-auto  bg-white h-[130px]  ">
               <img src={coaching3} alt="" className="h-[100px] w-[100px]" />
             </div>
           </SplideSlide>

@@ -17,11 +17,11 @@ const MissionHero = () => {
       </Link>
       <div className="w-10/12 flex flex-col   justify-end items-end ">
         <div className="relative">
-          <div className="absolute top-1/2 left-20 w-[28%] ">
+          <div className="absolute text-xl top-1/2 left-20 w-[28%] ">
             <p className="text-6xl font-bold alstoria">Our Mission</p>
-            <p>To contribute towards the growth of sustainable & Impactful</p>
-            <p>Enterprises to Reduce Inequalities, & contribute towards the</p>
-            <p>growth of sustainable communities and cities in East Africa.</p>
+            <p className="quicksand-500">To contribute towards the growth of sustainable & Impactful</p>
+            <p className="quicksand-500">Enterprises to Reduce Inequalities, & contribute towards the</p>
+            <p className="quicksand-500">growth of sustainable communities and cities in East Africa.</p>
           </div>
           <img src={unt} alt="unt" className="h-[80vh] " />
         </div>

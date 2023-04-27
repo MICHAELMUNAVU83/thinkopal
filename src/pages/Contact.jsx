@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import GrayInquiry from "../components/GrayInquiry";
+import Maps from "../components/ContactComponents/Maps";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <Maps />
+      <GrayInquiry />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

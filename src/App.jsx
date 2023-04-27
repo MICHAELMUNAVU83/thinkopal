@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -8,11 +9,13 @@ import Products from "./pages/Products";
 import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import FreeResources from "./pages/FreeResources";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

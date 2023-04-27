@@ -1,3 +1,7 @@
 .alstoria {
   font-family: "Alstoria";
 }
+
+html {
+  scroll-behavior: smooth !important;
+}

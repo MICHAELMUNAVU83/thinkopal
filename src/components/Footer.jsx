@@ -36,12 +36,12 @@ const Footer = () => {
       </div>
       <div className="flex px-24  py-8 justify-between items-center bg-[#FFD230] ">
         <div className="text-xl text-center flex flex-col gap-4">
-          <div className="flex gap-2 justify-center">
+          <div className="flex gap-2 quicksand-400 justify-center">
             <IoCall className="text-2xl" />
             <p>+254798 543030</p>
           </div>
           <p className="border-b-2 border-black w-[100%]" />
-          <p>Privacy Policy</p>
+          <p className="quicksand-700">Privacy Policy</p>
         </div>
         <div>
           <img src={logo} alt="lightup" className="h-[97px]" />
@@ -49,14 +49,14 @@ const Footer = () => {
         <div className="text-xl text-center flex flex-col gap-4">
           <div className="flex gap-2 justify-center">
             <HiLocationMarker size={60} />
-            <div className="flex text-start flex-col justify-between">
+            <div className="flex text-start flex-col quicksand-400 justify-between">
               <p>WestPark Towers,</p>
               <p>Westlands. </p>
               <p>Nairobi , Kenya</p>
             </div>
           </div>
           <p className="border-b-2 border-black w-[100%]" />
-          <p>Cookie Policy</p>
+          <p className="quicksand-700">Cookie Policy</p>
         </div>
       </div>
     </div>

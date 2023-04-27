@@ -6,7 +6,7 @@ const Inquiry = () => {
       className="
     bg-[#FFD230]  flex justify-between p-24"
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex quicksand-400 flex-col gap-4">
         <div className="flex gap-[30px]">
           <input
             type="text"
@@ -48,7 +48,7 @@ const Inquiry = () => {
           </p>
         </div>
         <div className="flex justify-start">
-          <button className="bg-white mr-24  text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
+          <button className="bg-white mr-24  hover:scale-105 transition-all duration-500 text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
             Send Message
           </button>
         </div>
@@ -56,8 +56,8 @@ const Inquiry = () => {
       <div className="flex flex-col font-bold  text-end gap-4 justify-center ">
         <h1 className="text-7xl alstoria ">Get An</h1>
         <h1 className="text-7xl alstoria">Inquiry</h1>
-        <p className="font-normal  text-3xl">Learn more about our services</p>
-        <p className="font-normal  text-2xl">We'd love to help!</p>
+        <p className="font-normal  quicksand-700 text-3xl">Learn more about our services</p>
+        <p className="font-normal quicksand-700   text-2xl">We'd love to help!</p>
       </div>
     </div>
   );

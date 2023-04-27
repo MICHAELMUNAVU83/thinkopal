@@ -2,7 +2,7 @@ import React from "react";
 
 const GrayInquiry = () => {
   return (
-    <div className=" bg-white  flex justify-between p-24">
+    <div className=" bg-white quicksand-400  flex justify-between p-24">
       <div className="flex flex-col gap-4">
         <div className="flex gap-[30px]">
           <input
@@ -45,7 +45,7 @@ const GrayInquiry = () => {
           </p>
         </div>
         <div className="flex justify-start">
-          <button className=" bg-[#FFD230] mr-24  text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
+          <button className=" bg-[#FFD230] mr-24 hover:scale-105 duration-500 transition-all text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
             Send Message
           </button>
         </div>
@@ -53,8 +53,8 @@ const GrayInquiry = () => {
       <div className="flex flex-col font-bold  text-end gap-4 justify-center ">
         <h1 className="text-7xl alstoria ">Get An</h1>
         <h1 className="text-7xl alstoria">Inquiry</h1>
-        <p className="font-normal text-3xl ">Learn more about our services</p>
-        <p className="font-normal text-2xl ">We'd love to help!</p>
+        <p className="font-normal quicksand-700 text-3xl ">Learn more about our services</p>
+        <p className="font-normal  quicksand-700 text-2xl ">We'd love to help!</p>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import unt from "../images/unt.png";
 import { Link } from "react-router-dom";
+import cdmssmall from "../images/cdmssmall.png";
 const HomeHero = () => {
   return (
     <div
@@ -17,11 +18,15 @@ const HomeHero = () => {
       </Link>
       <div className="w-10/12 flex flex-col   justify-end items-end ">
         <div className="relative">
-          <div className="absolute   top-1/2 left-24 text-4xl">
+          <div className="absolute quicksand-700   top-1/2 left-24 text-3xl">
             <p>We helped a health</p>
             <p>start-up deliver</p>
             <p>quality affordable</p>
             <p>patient experiences</p>
+            <p className="border-b-2 border-black w-[100%] my-2"></p>
+            <img src={cdmssmall} alt="cdmssmall" className=" h-[77px] " />
+
+         
           </div>
           <img src={unt} alt="unt" className="h-[80vh] " />
         </div>

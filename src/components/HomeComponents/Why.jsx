@@ -5,13 +5,13 @@ const Why = () => {
     <div className="bg-[#FFD230] py-8  ">
       <div className="flex justify-between w-[80%] mx-auto">
         <div className="flex flex-col w-[40%]  text-xl gap-1 justify-center text-start">
-          <p className="mb-4">
+          <p className="mb-4 quicksand-400">
             To contribute towards the growth of sustainable & Impactful
             Enterprises to Reduce Inequalities, & contribute towards the growth
             of sustainable communities and cities in East Africa.
           </p>
         
-          <button className="bg-white  w-[60%] rounded-md shadow-md shadow-gray-300 px-2 py-4 uppercase">
+          <button className="bg-white quicksand-700 hover:scale-105 transition-all duration-300  w-[60%] rounded-md shadow-md shadow-gray-300 px-2 py-4 uppercase">
             Our Mission
           </button>
         </div>

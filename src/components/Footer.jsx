@@ -5,6 +5,7 @@ import logo from "./images/logo.png";
 import { BsInstagram } from "react-icons/bs";
 import { BsMedium } from "react-icons/bs";
 import { ImFacebook2 } from "react-icons/im";
+import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
@@ -18,9 +19,6 @@ const Footer = () => {
         <div>
           <img src={lightup} alt="lightup" className="h-[97px]" />
         </div>
-        <div>
-          <img src={athari} alt="athari" className="h-[174px]" />
-        </div>
       </div>
       <p
         style={{
@@ -31,7 +29,7 @@ const Footer = () => {
       <div className="px-48 my-8 flex justify-between items-center ">
         <BsInstagram className="text-5xl" />
 
-        <ImFacebook2 className="text-5xl" />
+        <BsTwitter className="text-5xl" />
         <BsLinkedin className="text-5xl" />
         <SiGmail className="text-5xl" />
         <BsMedium className="text-5xl" />

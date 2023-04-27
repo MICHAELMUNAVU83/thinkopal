@@ -10,6 +10,7 @@ import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import FreeResources from "./pages/FreeResources";
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./pages/Contact";
 import "./App.css";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/clients" element={<Clients />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/free-resources" element={<FreeResources />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />

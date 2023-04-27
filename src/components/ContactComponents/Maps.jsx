@@ -19,6 +19,7 @@ const Maps = () => {
           <div className="flex text-start flex-col justify-between">
             <p>WestPark Towers,</p>
             <p>Westlands. </p>
+            <p>Mpesa Lane,Jenga leo co-working space</p>
             <p>Nairobi , Kenya</p>
           </div>
         </div>
@@ -51,11 +52,11 @@ const Maps = () => {
         <Marker
           latitude={-1.264065}
           longitude={36.807052}
-          offsetLeft={-80}
+          offsetLeft={-20}
           offsetTop={-10}
         >
-          <p className="bg-red-600/90 font-bold px-2 py-1 w-[40%] text-white rounded-xl">
-            westpark towers 12th floor , mpesa Lane -Jenga leo co-working space
+          <p className="bg-red-600/90 font-bold px-2 py-1 text-white rounded-xl">
+            Think Opal Offices
           </p>
           <HiLocationMarker className="text-5xl text-red-600" />
         </Marker>

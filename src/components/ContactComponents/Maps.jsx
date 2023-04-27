@@ -8,7 +8,7 @@ import Map, { Marker } from "react-map-gl";
 const Maps = () => {
   return (
     <div className="bg-[#FFD230]  flex items-center justify-between   ">
-      <div className="flex flex-col px-8 gap-2">
+      <div className="flex flex-col px-8 quicksand-500 gap-2">
         <h1 className="text-7xl font-bold items-center  alstoria">Reach Us</h1>
         <div className="flex items-center jusify-around">
           <IoCall size={40} />
@@ -49,13 +49,13 @@ const Maps = () => {
         mapStyle="mapbox://styles/mapbox/streets-v11" // This is the style of the map
       >
         <Marker
-          latitude={ -1.264065}
+          latitude={-1.264065}
           longitude={36.807052}
-          offsetLeft={-20}
+          offsetLeft={-80}
           offsetTop={-10}
         >
-          <p className="bg-red-600/90 font-bold px-2 py-1 text-white rounded-xl">
-            Think Opal Offices
+          <p className="bg-red-600/90 font-bold px-2 py-1 w-[40%] text-white rounded-xl">
+            westpark towers 12th floor , mpesa Lane -Jenga leo co-working space
           </p>
           <HiLocationMarker className="text-5xl text-red-600" />
         </Marker>

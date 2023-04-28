@@ -2,7 +2,7 @@ import React from "react";
 import purposeinquirypic from "../images/purposeinquirypic.png";
 const PurposeInquiry = () => {
   return (
-    <div className=" bg-white md:bg-[#FFD230] md:flex md:justify-between pt-20 md:pt-0 p-10 md:p-24">
+    <div className=" bg-white md:bg-[#FFD230] md:flex md:justify-between pt-20  p-10 md:p-24">
       <div className="flex flex-col gap-4">
         <h1 className="text-4xl md:text-7xl alstoria ">Get An Inquiry</h1>
 

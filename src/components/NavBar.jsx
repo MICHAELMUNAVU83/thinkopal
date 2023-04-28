@@ -74,9 +74,17 @@ const NavBar = () => {
         </div>
         <div className="md:hidden ">
           {nav ? (
-            <AiOutlineClose size={25} onClick={handleNav} className=" mt-6" />
+            <AiOutlineClose
+              size={25}
+              onClick={handleNav}
+              className=" mt-6 z-50"
+            />
           ) : (
-            <AiOutlineMenu size={25} onClick={handleNav} className="mt-6" />
+            <AiOutlineMenu
+              size={25}
+              onClick={handleNav}
+              className="mt-6 z-50"
+            />
           )}
         </div>
       </div>

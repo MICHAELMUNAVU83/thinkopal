@@ -68,10 +68,14 @@ const Footer = () => {
       </div>
       <div className="flex md:px-24 flex-col md:flex-row md:py-8   py-24 gap-8 md:gap-0 justify-between items-center bg-[#FFD230] ">
         <div className="text-xl text-center flex flex-col gap-4">
-          <div className="flex gap-2 quicksand-400 justify-center">
+          <a
+            className="flex gap-2 quicksand-400 justify-center"
+            rel="noopener noreferrer"
+            href="tel:0798543030"
+          >
             <IoCall className="text-2xl" />
             <p>+254798 543030</p>
-          </div>
+          </a>
           <p className="border-b-2 border-black w-[100%]" />
           <p className="quicksand-700">Privacy Policy</p>
         </div>

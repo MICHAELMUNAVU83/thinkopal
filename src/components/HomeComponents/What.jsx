@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import whatpic from "../images/whatpic.png";
+import whatwedo from "../images/whatwedo.svg";
 
 const What = () => {
   return (
-    <div className=" bg-[#FFD230] py-8 ">
+    <div
+      className=" bg-[#FFD230] py-8 "
+      style={{
+        backgroundImage: `url(${whatwedo})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="flex justify-between quicksand-500 w-[80%] mx-auto">
         <div className="flex flex-col  text-xl  justify-center text-start">
           <p className="my-2">Coaching and Mentorship</p>

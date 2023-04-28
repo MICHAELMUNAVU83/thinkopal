@@ -13,7 +13,6 @@ import clientpic5 from "../images/clientpic5.png";
 import afrikapupic from "../images/afrikapupic.jpeg";
 import afrikapubg from "../images/afrikapubg.png";
 
-
 import "../splide.min.css";
 
 const ClientsHero = () => {
@@ -119,8 +118,9 @@ const ClientsHero = () => {
                 />
 
                 <div className="flex flex-col gap-4">
-                
-                  <p className="text-2xl quicksand-500 w-[90%]">{client.text}</p>
+                  <p className="text-2xl quicksand-500 w-[90%]">
+                    {client.text}
+                  </p>
                 </div>
               </div>
             </SplideSlide>

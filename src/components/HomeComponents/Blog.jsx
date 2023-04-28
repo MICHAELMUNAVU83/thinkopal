@@ -35,7 +35,7 @@ const Blog = () => {
               ABOUT THE IMPACT SERIES
             </p>
             <button className="bg-white ml-20 md:ml-0 quicksand-700 hover:scale-105 transition-all duration-300 text-black uppercase text-center py-4 px-2 justify-start  shadow-gray-400 shadow-2xl">
-              View In bLog
+              View In blog
             </button>
           </div>
         </div>

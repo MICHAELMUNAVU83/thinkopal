@@ -13,6 +13,7 @@ import clientpic5 from "../images/clientpic5.png";
 import afrikapupic from "../images/afrikapupic.jpeg";
 import afrikapubg from "../images/afrikapubg.png";
 
+
 import "../splide.min.css";
 
 const ClientsHero = () => {
@@ -59,7 +60,7 @@ const ClientsHero = () => {
 
   return (
     <div className=" bg-[#FFD230] py-32   ">
-      <div className="w-[80%] mb-8 gap-4 mx-auto flex items-center">
+      <div className="w-[80%] mb-8 gap-4 mx-auto flex justify-center items-center">
         <h1 className="text-5xl w-[20%] alstoria">Our Clients</h1>
         <p className="border-b-2 border-white h-[10px] w-[70%]" />
       </div>
@@ -119,7 +120,7 @@ const ClientsHero = () => {
 
                 <div className="flex flex-col gap-4">
                 
-                  <p className="text-2xl w-[90%]">{client.text}</p>
+                  <p className="text-2xl quicksand-500 w-[90%]">{client.text}</p>
                 </div>
               </div>
             </SplideSlide>

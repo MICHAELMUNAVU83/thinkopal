@@ -15,7 +15,7 @@ const Home = () => {
       <What />
       <Why />
       <Blog />
-      {/* <Carousel /> */}
+      <Carousel />
       <Inquiry />
     </div>
   );

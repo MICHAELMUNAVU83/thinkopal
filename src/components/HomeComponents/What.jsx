@@ -4,7 +4,7 @@ import whatpic from "../images/whatpic.png";
 const What = () => {
   return (
     <div className=" bg-[#FFD230] py-8 ">
-      <div className="flex justify-between quicksand-400 w-[80%] mx-auto">
+      <div className="flex justify-between quicksand-500 w-[80%] mx-auto">
         <div className="flex flex-col  text-xl  justify-center text-start">
           <p className="my-2">Coaching and Mentorship</p>
           <p className="my-2">Capacity Building</p>

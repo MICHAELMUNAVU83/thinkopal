@@ -5,7 +5,7 @@ const Who = () => {
   return (
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex justify-between w-[80%] mx-auto">
-        <div className="flex flex-col w-[40%] quicksand-400  text-xl gap-4 justify-center text-start">
+        <div className="flex flex-col w-[40%] quicksand-500  text-xl gap-4 justify-center text-start">
           <p className="my-8">
             We are a Entrepreneurship Support Organization that supports Social
             Enterprises & Impactful Start ups in East Africa that seek to make a

@@ -5,7 +5,7 @@ const Why = () => {
     <div className="bg-[#FFD230] py-8  ">
       <div className="flex justify-between w-[80%] mx-auto">
         <div className="flex flex-col w-[40%]  text-xl gap-1 justify-center text-start">
-          <p className="mb-4 quicksand-400">
+          <p className="mb-4 quicksand-500">
             To contribute towards the growth of sustainable & Impactful
             Enterprises to Reduce Inequalities, & contribute towards the growth
             of sustainable communities and cities in East Africa.

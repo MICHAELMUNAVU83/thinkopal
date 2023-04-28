@@ -12,6 +12,7 @@
 }
 .splide.is-initialized:not(.is-active) .splide__list {
   display: block;
+  
 }
 .splide__pagination {
   -ms-flex-align: center;
@@ -196,16 +197,15 @@
 }
 .splide__pagination__page {
   background: #ccc;
-  border: 0;
   border-radius: 50%;
+  cursor: pointer;
   display: inline-block;
-  height: 8px;
-  margin: 3px;
+  height: 1em;
+  margin: 0 0.25em;
   opacity: 0.7;
   padding: 0;
-  position: relative;
-  transition: transform 0.2s linear;
-  width: 8px;
+  transition: transform 0.2s;
+  width: 1em;
 }
 .splide__pagination__page.is-active {
   background: #fff;

@@ -20,7 +20,7 @@ const Blog = () => {
           </button>
           <p className="text-5xl w-[60%] text-end quicksand-700 font-semibold ">
             Data-Driven Livestock Management:{" "}
-            <span className=" font-normal quicksand-400">
+            <span className=" font-normal quicksand-500">
               How an Agri-Fintech company is Revolutionizing Livestock Farming
               in Kenya
             </span>

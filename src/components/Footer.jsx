@@ -25,12 +25,46 @@ const Footer = () => {
       />
 
       <div className=" my-8 gap-12 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">
-        <BsInstagram className="text-5xl" />
-
-        <BsTwitter className="text-5xl" />
-        <BsLinkedin className="text-5xl" />
-        <SiGmail className="text-5xl" />
-        <BsMedium className="text-5xl" />
+        <a
+          href="https://www.instagram.com/thinkopal_solutions/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:scale-105 transition-all duration-300"
+        >
+          <BsInstagram className="text-5xl" />
+        </a>
+        <a
+          href="https://twitter.com/ThinkOpal"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:scale-105 transition-all duration-300"
+        >
+          <BsTwitter className="text-5xl" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/think-opal-solutions/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:scale-105 transition-all duration-300"
+        >
+          <BsLinkedin className="text-5xl" />
+        </a>
+        <a
+          href="mailto:mailto:info@thinkopal.com"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:scale-105 transition-all duration-300"
+        >
+          <SiGmail className="text-5xl" />
+        </a>
+        <a
+          href="https://medium.com/@thinkopal"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:scale-105 transition-all duration-300"
+        >
+          <BsMedium className="text-5xl" />
+        </a>
       </div>
       <div className="flex md:px-24 flex-col md:flex-row md:py-8   py-24 gap-8 md:gap-0 justify-between items-center bg-[#FFD230] ">
         <div className="text-xl text-center flex flex-col gap-4">

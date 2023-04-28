@@ -1,10 +1,8 @@
 import React from "react";
 import lightup from "./images/lightup.png";
-import athari from "./images/athari.png";
 import logo from "./images/logo.png";
 import { BsInstagram } from "react-icons/bs";
 import { BsMedium } from "react-icons/bs";
-import { ImFacebook2 } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
@@ -14,7 +12,7 @@ import { HiLocationMarker } from "react-icons/hi";
 const Footer = () => {
   return (
     <div className=" flex  flex-col gap-4">
-      <div className="flex p-24 justify-between items-center ">
+      <div className="flex md:p-24  md:flex-row flex-col gap-4 justify-between items-center ">
         <div className="text-7xl alstoria font-bold">Our Partners</div>
         <div>
           <img src={lightup} alt="lightup" className="h-[97px]" />
@@ -26,7 +24,7 @@ const Footer = () => {
         }}
       />
 
-      <div className="px-48 my-8 flex justify-between items-center ">
+      <div className=" my-8 gap-12 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">
         <BsInstagram className="text-5xl" />
 
         <BsTwitter className="text-5xl" />
@@ -34,7 +32,7 @@ const Footer = () => {
         <SiGmail className="text-5xl" />
         <BsMedium className="text-5xl" />
       </div>
-      <div className="flex px-24  py-8 justify-between items-center bg-[#FFD230] ">
+      <div className="flex md:px-24 flex-col md:flex-row md:py-8   py-24 gap-8 md:gap-0 justify-between items-center bg-[#FFD230] ">
         <div className="text-xl text-center flex flex-col gap-4">
           <div className="flex gap-2 quicksand-400 justify-center">
             <IoCall className="text-2xl" />

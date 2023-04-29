@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { MdTrolley } from "react-icons/md";
 import cdmspic from "../images/cdmspic.jpeg";
@@ -16,6 +16,25 @@ import afrikapubg from "../images/afrikapubg.png";
 import "../splide.min.css";
 
 const ClientsHero = () => {
+  const [perPage, setPerPage] = useState(3);
+
+  //UPDATE PER PAGE ON RESIZE
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setPerPage(1);
+      } else {
+        setPerPage(3);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const clients = [
     {
       id: 1,
@@ -68,7 +87,7 @@ const ClientsHero = () => {
           className="px-16"
           options={{
             type: "loop",
-            perPage: 3,
+            perPage: perPage,
             perMove: 1,
             pagination: true,
 
@@ -114,7 +133,7 @@ const ClientsHero = () => {
                 <img
                   src={client.image}
                   alt=""
-                  className="w-[400px] h-[400px] rounded-full"
+                  className="md:w-[400px] md:h-[400px] rounded-full"
                 />
 
                 <div className="flex flex-col gap-4">

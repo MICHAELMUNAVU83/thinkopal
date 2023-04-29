@@ -2,29 +2,36 @@ import React from "react";
 import purposeinquirypic from "../images/purposeinquirypic.png";
 const PurposeInquiry = () => {
   return (
-    <div className=" bg-[#FFD230]  flex justify-between p-24">
+    <div className=" bg-white md:bg-[#FFD230] md:flex md:justify-between pt-20  p-10 md:p-24">
       <div className="flex flex-col gap-4">
-        <h1 className="text-7xl alstoria ">Get An Inquiry</h1>
+        <h1 className="text-4xl md:text-7xl alstoria ">Get An Inquiry</h1>
 
         <p className="font-normal  text-xl">Learn more about our services</p>
         <p className="font-normal  text-md">We'd love to help!</p>
-        <div className="flex gap-[30px]">
+        <div className="flex align-center gap-[30px]">
           <input
             type="text"
-            placeholder="Name"
-            className="w-[299px] h-[42px] p-2  rounded-md"
+            placeholder="Your name"
+            className="w-[299px] h-[42px] md:text-black p-2 bg-[#FFD230] md:bg-white  rounded-md"
           />
           <input
             type="text"
-            placeholder="Email"
-            className="w-[299px] h-[42px] p-2  rounded-md"
+            placeholder="Your Email"
+            className="w-[299px] h-[42px] bg-[#FFD230] md:bg-white md:text-[#000] hidden md:block p-2  rounded-md"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Your Email"
+            className="w-[299px] h-[42px] bg-[#FFD230] md:text-[#000] md:hidden p-2  rounded-md"
           />
         </div>
         <div>
           <input
             type="text"
             placeholder="Subject"
-            className="w-[628px] h-[42px] p-2  rounded-md"
+            className="w-[299px] h-[42px] p-2 bg-[#FFD230] md:bg-white md:text-[#000]  rounded-md"
           />
         </div>
         <div>
@@ -34,7 +41,7 @@ const PurposeInquiry = () => {
             cols="30"
             rows="10"
             placeholder="Message"
-            className="w-[628px] h-[200px] p-2  rounded-md"
+            className="w-[299px] h-[200px] p-2 bg-[#FFD230] md:bg-white  rounded-md"
           ></textarea>
         </div>
         <div className="flex justify-start">
@@ -49,7 +56,7 @@ const PurposeInquiry = () => {
           </p>
         </div>
         <div className="flex justify-start">
-          <button className="bg-white mr-24  text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
+          <button className="md:bg-white bg-[#000] ml-10 md:ml-0 md:mr-24 text-[white] md:text-black uppercase text-center py-4 px-8 md:justify-start  shadow-gray-300 rounded-md shadow-xl">
             Send Message
           </button>
         </div>
@@ -58,7 +65,7 @@ const PurposeInquiry = () => {
         <img
           src={purposeinquirypic}
           alt="whatpic"
-          className="h-[500px] w-[500px]"
+          className="h-[500px] w-[500px] hidden md:block"
         />
       </div>
     </div>

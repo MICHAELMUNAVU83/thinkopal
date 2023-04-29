@@ -11,19 +11,19 @@ const Inquiry = () => {
           <input
             type="text"
             placeholder="Name"
-            className="md:w-[299px]  w-[90%] mx-auto h-[42px] p-2  rounded-md"
+            className="md:w-[299px]  w-[80%] mx-auto h-[42px] p-2  rounded-md"
           />
           <input
             type="text"
             placeholder="Email"
-            className="md:w-[299px]  w-[90%] mx-auto h-[42px] p-2  rounded-md"
+            className="md:w-[299px]  w-[80%] mx-auto h-[42px] p-2  rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
             placeholder="Subject"
-            className="md:w-[628px] w-[90%] mx-auto h-[42px] p-2  rounded-md"
+            className="md:w-[628px] w-[80%] mx-auto h-[42px] p-2  rounded-md"
           />
         </div>
         <div className="flex flex-col">
@@ -33,10 +33,10 @@ const Inquiry = () => {
             cols="30"
             rows="10"
             placeholder="Message"
-            className="md:w-[628px] w-[90%] mx-auto h-[200px] p-2  rounded-md"
+            className="md:w-[628px] w-[80%] mx-auto h-[200px] p-2  rounded-md"
           ></textarea>
         </div>
-        <div className="flex justify-start">
+        <div className="flex p-8 justify-start">
           <input
             type="checkbox"
             name=""
@@ -54,8 +54,11 @@ const Inquiry = () => {
         </div>
       </div>
       <div className="flex flex-col font-bold text-center md:text-end gap-4 justify-center ">
-        <h1 className="text-7xl alstoria ">Get An</h1>
-        <h1 className="text-7xl alstoria">Inquiry</h1>
+        <div className="flex justify-center md:block">
+          <h1 className="md:text-7xl text-4xl alstoria ">Get An</h1>
+          <h1 className="md:text-7xl text-4xl alstoria">Inquiry</h1>
+        </div>
+
         <p className="font-normal  quicksand-700 text-xl md:text-3xl">
           Learn more about our services
         </p>

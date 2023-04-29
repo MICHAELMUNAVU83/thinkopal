@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "./images/logo.png";
 
 const NavBar = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
 
@@ -74,9 +74,17 @@ const NavBar = () => {
         </div>
         <div className="md:hidden ">
           {nav ? (
-            <AiOutlineClose size={25} onClick={handleNav} className=" mt-6" />
+            <AiOutlineClose
+              size={25}
+              onClick={handleNav}
+              className=" mt-6 z-50"
+            />
           ) : (
-            <AiOutlineMenu size={25} onClick={handleNav} className="mt-6" />
+            <AiOutlineMenu
+              size={25}
+              onClick={handleNav}
+              className="mt-6 z-50"
+            />
           )}
         </div>
       </div>

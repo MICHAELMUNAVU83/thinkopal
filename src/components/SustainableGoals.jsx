@@ -7,10 +7,10 @@ import sdgpic2 from "./images/sdgpic2.jpg";
 import sdgpic3 from "./images/sdgpic3.jpg";
 const SustainableGoals = () => {
   return (
-    <div className="flex  justify-between p-12 ">
-      <div className="flex justify-end   flex-col items-start text-7xl font-bold">
+    <div className="flex justify-between md:p-12 ">
+      <div className="flex md:justify-end  flex-col items-center md:items-start text-5xl md:text-7xl font-bold">
         <h1 className="alstoria">Sustainable</h1>
-        <h1 className="alstoria">Development Goals</h1>
+        <h1 className="alstoria hidden md:block">Development Goals</h1>
         <p className="text-xl mt-4 quicksand-500 font-normal">
           Through our work, we support the
         </p>
@@ -19,7 +19,7 @@ const SustainableGoals = () => {
         </p>
       </div>
       <div>
-        <div className="flex [&:hover>div]:w-16  [&>div:hover]:w-[40rem]">
+        <div className="hidden md:flex [&:hover>div]:w-16  [&>div:hover]:w-[40rem]">
           <div
             className="group relative 
            w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500 "

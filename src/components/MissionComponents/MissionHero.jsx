@@ -28,6 +28,8 @@ const MissionHero = () => {
       style={{
         backgroundImage: `url(${background})`,
         backgroundColor: "#FFD230",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
       className="h-[90vh] bg-cover flex justify-between "
     >

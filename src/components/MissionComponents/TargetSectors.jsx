@@ -5,20 +5,6 @@ import missio from "../images/missio.svg";
 const TargetSectors = () => {
   return (
     <div className="py-2 bg-[#FFD230] pt-20">
-      <div
-        className="md:hidden"
-        style={{
-          backgroundImage: `url(${missio})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "300px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h2 className="text-2xl text-white">Mission Statement Goes Here</h2>
-      </div>
       <div className="flex justify-around mx-auto w-[80%]">
         <div className="text-2xl gap-1 text-start flex justify-center flex-col">
           <ul className="list-disc quicksand-500">

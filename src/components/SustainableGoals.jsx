@@ -9,13 +9,22 @@ const SustainableGoals = () => {
   return (
     <div className="flex justify-between md:p-12 ">
       <div className="flex md:justify-end  flex-col items-center md:items-start text-5xl md:text-7xl font-bold">
-        <h1 className="alstoria">Sustainable</h1>
+        <h1 className="alstoria mt-5">Sustainable</h1>
         <h1 className="alstoria hidden md:block">Development Goals</h1>
-        <p className="text-xl mt-4 quicksand-500 font-normal">
+        <p className="text-xl hidden md:block mt-4 quicksand-500 font-normal">
           Through our work, we support the
         </p>
-        <p className="text-xl quicksand-500 font-normal">
+        <p className="text-xl hidden md:block quicksand-500 font-normal">
           attainable of the following SDG goals
+        </p>
+        <p className="text-xl quicksand-500 text-center p-4 font-normal">
+          Over the years, we've had the pleasure of working with some amazing
+          people and organizations, who have inspired us with their passion,
+          dedication, and innovative ideas. Our clients come from a range of
+          sectors, including agriculture, renewable energy, health, and
+          education, and we're proud to have played a part in their success.
+          We're committed to continuing to support entrepreneurs in East Africa
+          and helping them to achieve their goals.
         </p>
       </div>
       <div>

@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "./images/logo.png";
 
 const NavBar = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
 

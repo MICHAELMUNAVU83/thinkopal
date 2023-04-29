@@ -1,8 +1,9 @@
 import React from "react";
 import targetpic from "../images/targetsectorspic.png";
+import missio from "../images/missio.svg";
 const TargetSectors = () => {
   return (
-    <div className="py-2 bg-[#FFD230] ">
+    <div className="py-2 bg-[#FFD230] pt-20 ">
       <div className=" flex justify-around mx-auto w-[80%]">
         <div className="  text-2xl gap-1  text-start flex justify-center flex-col">
           <ul className="list-disc quicksand-500">
@@ -17,7 +18,9 @@ const TargetSectors = () => {
             <li className="my-1">Blue Economy</li>
           </ul>
         </div>
-        <div className="relative">
+        <div></div>
+
+        <div className="hidden md:relative ">
           <img src={targetpic} alt="whatpic" className="h-[500px] w-[500px]" />
           <div className="absolute top-2/3 left-[29%] alstoria text-center  text-7xl font-bold flex flex-col ">
             <p className="text-5xl">Target</p>

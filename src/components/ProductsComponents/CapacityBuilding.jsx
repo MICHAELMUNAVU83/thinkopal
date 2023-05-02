@@ -10,8 +10,8 @@ import "../splide.min.css";
 const CapacityBuilding = () => {
   return (
     <div className="bg-[#FFD230] py-8 ">
-      <div className="  flex justify-between w-[80%] mx-auto">
-        <div className="flex flex-col  text-xl gap-1 justify-center w-[40%] text-start">
+      <div className="  flex flex-col-reverse md:flex-row justify-between w-[80%] mx-auto">
+        <div className="flex flex-col  text-xl gap-1 justify-center md:w-[40%] text-start">
           <p className="quicksand-500">
             Our capacity building programs provide entrepreneurs with the
             technical and operational skills they need to manage their
@@ -26,11 +26,11 @@ const CapacityBuilding = () => {
           <img
             src={capacitypic}
             alt="whatpic"
-            className="h-[500px] w-[500px]"
+            className="md:h-[500px] md:w-[500px]"
           />
-          <div className="absolute top-2/3 left-[30%] text-center alstoria  text-6xl font-bold flex flex-col ">
+          <div className="absolute top-1/2 left-[15%] md:top-2/3 md:left-[30%] text-center alstoria  text-6xl font-bold flex flex-col ">
             <p>Capacity</p>
-            <p >Building</p>
+            <p>Building</p>
           </div>
         </div>
       </div>

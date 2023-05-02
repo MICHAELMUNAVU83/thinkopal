@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import coachingpic from "../images/coaching.png";
 import coaching1 from "../images/coaching1.png";
 import coaching2 from "../images/coaching2.png";
@@ -6,12 +6,29 @@ import coaching3 from "../images/coaching3.png";
 import "../splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-
 const Coaching = () => {
+  const [perPage, setPerPage] = useState(3);
+
+  //UPDATE PER PAGE ON RESIZE
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setPerPage(1);
+      } else {
+        setPerPage(3);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="bg-[#FFD230] py-8 ">
-      <div className="  flex justify-between w-[80%] mx-auto">
-        <div className="flex flex-col  text-xl gap-1 justify-center w-[40%] text-start">
+      <div className="  flex flex-col-reverse md:flex-row justify-between md:w-[80%] p-8 md:p-0 mx-auto">
+        <div className="flex flex-col  text-xl gap-1 justify-center md:w-[40%] text-start">
           <p className="quicksand-500">
             Our coaching and mentorship services are tailored to meet the unique
             needs of each entrepreneur, providing them with the guidance and
@@ -25,9 +42,9 @@ const Coaching = () => {
           <img
             src={coachingpic}
             alt="whatpic"
-            className="h-[500px] w-[500px]"
+            className="md:h-[500px] md:w-[500px]"
           />
-          <div className="absolute top-2/3 left-[25%] alstoria text-center  text-5xl font-bold flex flex-col ">
+          <div className="absolute top-1/2 left-[9%] md:top-2/3 md:left-[25%] alstoria text-center  text-5xl font-bold flex flex-col ">
             <p>Coaching And</p>
             <p className="text-5xl">Membership</p>
           </div>
@@ -39,7 +56,7 @@ const Coaching = () => {
           className="px-16"
           options={{
             type: "loop",
-            perPage: 3,
+            perPage: perPage,
             perMove: 1,
             pagination: true,
 

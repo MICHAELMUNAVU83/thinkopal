@@ -64,7 +64,7 @@ const CapacityBuilding = () => {
             type: "loop",
             perPage: perPage,
             perMove: 1,
-            pagination: true,
+            pagination: false,
 
             margin: "0.5rem",
             gap: "1rem",

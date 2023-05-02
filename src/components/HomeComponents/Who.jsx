@@ -4,10 +4,10 @@ import whatwedo from "../images/whatwedo.svg";
 
 const Who = () => {
   return (
-    <div className="bg-[#FFD230] ma py-8">
-      <div className="flex flex-col-reverse md:flex-row justify-between w-[80%] mx-auto">
-        <div className="flex flex-col w-[100%] bg-cover md:w-[40%] quicksand-500 text-xl md:gap-4 justify-center text-start bg-[#FFD230]">
-          <p className="my-8 p-4">
+    <div className="bg-[#FFD230]  md:py-8">
+      <div className="flex flex-col-reverse md:flex-row justify-between ">
+        <div className="flex flex-col  w-[90%] mx-auto bg-cover md:w-[40%] quicksand-500 text-xl md:gap-4 justify-center text-center md:text-start bg-[#FFD230]">
+          <p className="my-8  p-4">
             We are a Entrepreneurship Support Organization that supports Social
             Enterprises & Impactful Start ups in East Africa that seek to make a
             positive impact on Society and the environment while still
@@ -17,13 +17,13 @@ const Who = () => {
             Our Purpose
           </button>
         </div>
-        <div className="relative">
+        <div className="relative curved-bg  mx-auto">
           <img
             src={whopic}
             alt="whatpic"
             className="md:h-[500px] md:w-[500px] h-[300px]"
           />
-          <div className="absolute top-[53%] md:top-2/3 left-[23%] md:left-[27%] alstoria text-center md:text-7xl text-5xl font-bold flex flex-col">
+          <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[27%] alstoria text-center md:text-7xl text-5xl font-bold flex flex-col">
             <p className="md:text-5xl text-3xl">Who</p>
             <p>We Are</p>
           </div>
@@ -31,10 +31,16 @@ const Who = () => {
       </div>
       <style jsx>{`
         @media only screen and (max-width: 767px) {
-          .ma {
+          .curved-bg {
             background-image: url(${whatwedo});
+            width: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            display: flex;
+            border-radius: 0px 0px 150px 150px;
+            justify-content: center;
+            
+           
             background-size: cover;
           }
         }

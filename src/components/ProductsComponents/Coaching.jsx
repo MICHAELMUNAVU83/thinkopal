@@ -49,9 +49,20 @@ const Coaching = () => {
             <p className="text-5xl">Membership</p>
           </div>
         </div>
-        <div className="md:hidden alstoria text-center  text-5xl font-bold flex flex-col justify-center items-center ">
-          <p>Coaching And</p>
-          <p className="text-5xl">Membership</p>
+
+        <div className="md:hidden mt-4 text-center  quicksand-500  flex flex-col justify-center items-center ">
+          <p className="my-8">
+            At Think Opal, we're dedicated to providing innovative solutions to
+            help social enterprises and impactful startups in East Africa
+            thrive. Our products are designed to support entrepreneurs who are
+            committed to making a positive impact on society and the environment
+            while generating sustainable profits.
+          </p>
+          <div className="md:hidden alstoria mb-4  text-center  text-4xl font-bold flex flex-col justify-center items-center ">
+            <p>Coaching And</p>
+
+            <p className="text-5xl">Mentorship</p>
+          </div>
         </div>
       </div>
 

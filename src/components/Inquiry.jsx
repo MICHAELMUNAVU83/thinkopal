@@ -6,7 +6,7 @@ const Inquiry = () => {
       className="
     bg-[#FFD230] flex-col-reverse md:flex-row  flex justify-between py-12 md:p-24"
     >
-      <div className="flex quicksand-400 flex-col gap-4">
+      <div className="flex quicksand-400 flex-col gap-4 w-[90%] mx-auto md:ml-0 md:mr-0">
         <div className="flex flex-col md:flex-row gap-[30px]">
           <input
             type="text"

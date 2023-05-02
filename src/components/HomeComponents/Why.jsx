@@ -15,7 +15,7 @@ const Why = () => {
             Our Mission
           </button>
         </div>
-        <div className="relative">
+        <div className="relative mx-auto">
           <img
             src={whypic}
             alt="whatpic"

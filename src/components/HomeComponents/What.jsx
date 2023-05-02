@@ -5,7 +5,7 @@ import whatwedo from "../images/whatwedo.svg";
 const What = () => {
   return (
     <div className="bg-[#FFD230] ma py-8">
-      <div className="flex flex-col-reverse md:flex-row-reverse justify-between w-[80%] mx-auto">
+      <div className="flex flex-col-reverse md:flex-row justify-between w-[80%] mx-auto">
         <div className="flex flex-col w-[100%] bg-cover md:w-[40%] quicksand-500 text-xl md:gap-4 justify-center text-start bg-[#FFD230]">
           <p className="my-8 p-4">
             Coaching and Mentorship Capacity Building Mbinu Enterprise Program
@@ -14,7 +14,7 @@ const What = () => {
             Our Products
           </button>
         </div>
-        <div className="relative">
+        <div className="relative mx-auto">
           <img src={whatpic} alt="whatpic" className="md:h-[500px] md:w-[500px] h-[300px]" />
           <div className="absolute top-[53%] md:top-2/3 left-[23%] md:left-[27%] alstoria text-center md:text-7xl text-5xl font-bold flex flex-col">
             <p className="md:text-5xl text-3xl">What</p>

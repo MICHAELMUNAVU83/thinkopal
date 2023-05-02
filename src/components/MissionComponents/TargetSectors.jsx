@@ -17,7 +17,7 @@ const TargetSectors = () => {
             <li className="my-1">Blue Economy</li>
           </ul>
         </div>
-        <div className="relative">
+        <div className="relative hidden md:block">
           <img
             src={targetpic}
             alt="whatpic"
@@ -26,6 +26,18 @@ const TargetSectors = () => {
           <div className="absolute top-1/4 left-[20%] md:top-2/3 md:left-[29%] alstoria text-center  text-7xl font-bold flex flex-col ">
             <p className="text-5xl">Target</p>
             <p>Sectors</p>
+          </div>
+        </div>
+        <div className="md:hidden mt-8 text-center  quicksand-500  flex flex-col justify-center items-center ">
+          <p className="my-8">
+            To contribute towards the growth of sustainable & Impactful
+            Enterprises to Reduce Inequalities, & contribute towards the growth
+            of sustainable communities and cities in East Africa.
+          </p>
+          <div className="md:hidden alstoria  text-center  text-4xl font-bold flex flex-col justify-center items-center ">
+            <p>Target</p>
+
+            <p className="text-5xl">Sectors</p>
           </div>
         </div>
       </div>

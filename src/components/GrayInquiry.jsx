@@ -3,24 +3,24 @@ import React from "react";
 const GrayInquiry = () => {
   return (
     <div className=" bg-white quicksand-400  flex-col-reverse md:flex-row  flex justify-between py-12 md:p-24">
-      <div className="flex quicksand-400 flex-col gap-4">
+      <div className="flex  quicksand-400 flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-[20px]">
           <input
             type="text"
             placeholder="Name"
-            className="md:w-[299px]  w-[90%] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25  placeholder-white rounded-md"
+            className="md:w-[299px]  w-[80%] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25  placeholder-white rounded-md"
           />
           <input
             type="text"
             placeholder="Email"
-            className="md:w-[299px]  w-[90%] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2  placeholder-white  rounded-md"
+            className="md:w-[299px]  w-[80%] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2  placeholder-white  rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
             placeholder="Subject"
-            className="md:w-[628px] w-[90%] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   placeholder-white rounded-md"
+            className="md:w-[628px] w-[80%] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   placeholder-white rounded-md"
           />
         </div>
         <div className="flex flex-col">
@@ -30,17 +30,17 @@ const GrayInquiry = () => {
             cols="30"
             rows="10"
             placeholder="Message"
-            className="md:w-[628px] w-[90%] mx-auto  bg-[#000000]/25 h-[200px] p-2  placeholder-white  rounded-md"
+            className="md:w-[628px] w-[80%] mx-auto  bg-[#000000]/25 h-[200px] p-2  placeholder-white  rounded-md"
           ></textarea>
         </div>
-        <div className="flex justify-start">
+        <div className="flex w-[80%] mx-auto">
           <input
             type="checkbox"
             name=""
             id=""
             className="mr-2 bg-red-500 h-6 w-6  "
           />
-          <p className="text-xl">
+          <p className="md:text-xl text-sm">
             I would love to receive information on newsletters and more offers
           </p>
         </div>

@@ -5,7 +5,7 @@ import Coaching from "../components/ProductsComponents/Coaching";
 import CapacityBuilding from "../components/ProductsComponents/CapacityBuilding";
 import Mbinu from "../components/ProductsComponents/Mbinu";
 import FreeDownloads from "../components/ProductsComponents/FreeDownloads";
-import MbinuShowcase from "../components/ProductsComponents/MbinuShowcase";
+import MbinuShow from "../components/ProductsComponents/MbinuShow";
 const Products = () => {
   return (
     <div>
@@ -13,7 +13,7 @@ const Products = () => {
       <Coaching />
       <CapacityBuilding />
       <Mbinu />
-      <MbinuShowcase />
+      <MbinuShow />
       <FreeDownloads />
       <Inquiry />
     </div>

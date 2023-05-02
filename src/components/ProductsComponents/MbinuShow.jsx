@@ -3,7 +3,7 @@ import React from "react";
 import sdgpic1 from "../images/sdgpic1.jpg";
 import sdgpic2 from "../images/sdgpic2.jpg";
 import sdgpic3 from "../images/sdgpic3.jpg";
-const MbinuShowcase = () => {
+const MbinuShow = () => {
   return (
     <div className="flex flex-col  my-12   justify-center items-center">
       <div>
@@ -50,4 +50,4 @@ const MbinuShowcase = () => {
   );
 };
 
-export default MbinuShowcase;
+export default MbinuShow;

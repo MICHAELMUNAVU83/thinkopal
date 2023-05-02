@@ -91,7 +91,7 @@ const ClientsHero = () => {
             type: "loop",
             perPage: perPage,
             perMove: 1,
-            pagination: true,
+            pagination: false,
 
             margin: "0.5rem",
             gap: "0.5rem",
@@ -104,7 +104,7 @@ const ClientsHero = () => {
           {clientlogos.map((clientlogo) => (
             <SplideSlide>
               <div className="flex justify-center items-center p-4  bg-white h-[150px]  ">
-                <img src={clientlogo.logo} alt="" className="h-[130px] " />
+                <img src={clientlogo.logo} alt="" className=" " />
               </div>
             </SplideSlide>
           ))}
@@ -118,31 +118,34 @@ const ClientsHero = () => {
             margin: "0.5rem",
             gap: "0.5rem",
             height: "700px",
-            pagination: true,
+            pagination: false,
             arrows: false,
+            autoplay: true,
 
-            interval: 2000,
+            interval: 4000,
           }}
         >
           {clients.map((client) => (
             <SplideSlide key={client.id}>
               <div
-                className="flex flex-col  gap-8 rounded-2xl  items-center  bg-cover bg-center bg-no-repeat h-[650px] p-2"
+                className=" cursor-pointer rounded-2xl    bg-cover bg-center bg-no-repeat h-[650px]"
                 style={{
                   backgroundImage: `url(${client.background})`,
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <img
-                  src={client.image}
-                  alt=""
-                  className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full"
-                />
+                <div className="bg-white/50 h-[650px] w-[100%] flex md:flex-row flex-col justify-center items-center  gap-8  rounded-2xl flex flex-col justify-center items-center">
+                  <img
+                    src={client.image}
+                    alt=""
+                    className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full"
+                  />
 
-                <div className="flex flex-col gap-4">
-                  <p className="md:text-2xl quicksand-500 w-[90%]">
-                    {client.text}
-                  </p>
+                  <div className="flex flex-col gap-4">
+                    <p className="md:text-2xl  quicksand-500 mx-auto w-[90%]">
+                      {client.text}
+                    </p>
+                  </div>
                 </div>
               </div>
             </SplideSlide>

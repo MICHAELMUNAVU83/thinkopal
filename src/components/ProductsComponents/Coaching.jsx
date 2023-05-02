@@ -24,7 +24,7 @@ const Coaching = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [ window.innerWidth]);
   return (
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex flex-col-reverse md:flex-row justify-between md:w-[80%] p-8 md:p-0 mx-auto">

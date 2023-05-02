@@ -18,18 +18,18 @@ const SustainableGoals = () => {
           attainable of the following SDG goals
         </p>
       </div>
-      <div>
-        <div className="flex [&:hover>div]:w-16  [&>div:hover]:w-[40rem]">
+      <div className="">
+        <div className="flex md:[&:hover>div]:w-16 [&:hover>div]:w-8   [&>div:hover]:w-[20rem] md:[&>div:hover]:w-[40rem]">
           <div
             className="group relative 
-           w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500 "
+            md:w-16 w-8 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500 "
           >
             <img
               className="h-[600px] object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
               src={sdgpic1}
               alt=""
             />
-            <div className=" absolute inset-0  absolute inset-0 bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center visible">
+            <div className=" absolute inset-0  group-hover:bg-none  bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center visible">
               <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
                 <img src={sdg1} alt="" />
               </div>
@@ -37,14 +37,14 @@ const SustainableGoals = () => {
           </div>
           <div
             className="group relative  
-           w-[40rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500"
+            md:w-[40rem] w-[20rem]  cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500"
           >
             <img
               className="h-[600px] object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
               src={sdgpic2}
               alt=""
             />
-            <div className="absolute inset-0 bg-gradient-to-tr  from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center">
+            <div className="absolute inset-0 bg-none bg-gradient-to-tr  from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center">
               <div className="absolute inset-x-5 bottom-6 left-[40%]">
                 <img src={sdg2} alt="" />
               </div>
@@ -52,14 +52,14 @@ const SustainableGoals = () => {
           </div>
           <div
             className="group   relative 
-           w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500"
+            md:w-16 w-8 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500"
           >
             <img
               className="h-[600px] object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
               src={sdgpic3}
               alt=""
             />
-            <div className=" absolute inset-0 absolute inset-0 bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">
+            <div className=" absolute inset-0 absolute inset-0  group-hover:bg-none bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">
               <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
                 <img src={sdg3} alt="" />
               </div>

@@ -26,7 +26,7 @@ const Footer = () => {
         }}
       />
 
-      <div className=" my-8 gap-12 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">
+      <div className=" my-8 gap-4 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">
         <a
           href="https://www.instagram.com/thinkopal_solutions/?igshid=YmMyMTA2M2Y%3D"
           target="_blank"

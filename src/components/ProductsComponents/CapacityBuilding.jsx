@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import capacitypic from "../images/coaching.png";
 import capacity1 from "../images/capacity1.png";
 import capacity2 from "../images/capacity2.png";
@@ -8,11 +8,29 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import "../splide.min.css";
 const CapacityBuilding = () => {
+  const [perPage, setPerPage] = useState(3);
+
+  //UPDATE PER PAGE ON RESIZE
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setPerPage(1);
+      } else {
+        setPerPage(3);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex flex-col-reverse md:flex-row justify-between w-[80%] mx-auto">
         <div className="flex flex-col  text-xl gap-1 justify-center md:w-[40%] text-start">
-          <p className="quicksand-500">
+          <p className="quicksand-500 md:text-start text-center">
             Our capacity building programs provide entrepreneurs with the
             technical and operational skills they need to manage their
             businesses more effectively and efficiently. We offer training in
@@ -22,7 +40,7 @@ const CapacityBuilding = () => {
             in the following areas.
           </p>
         </div>
-        <div className="relative">
+        <div className="relative hidden md:block">
           <img
             src={capacitypic}
             alt="whatpic"
@@ -33,6 +51,10 @@ const CapacityBuilding = () => {
             <p>Building</p>
           </div>
         </div>
+        <div className="md:hidden alstoria text-center  text-5xl font-bold flex flex-col justify-center items-center ">
+          <p>Capacity</p>
+          <p>Building</p>
+        </div>
       </div>
 
       <div className=" w-[85%] mx-auto mt-8">
@@ -40,7 +62,7 @@ const CapacityBuilding = () => {
           className="px-16"
           options={{
             type: "loop",
-            perPage: 3,
+            perPage: perPage,
             perMove: 1,
             pagination: true,
 
@@ -53,22 +75,34 @@ const CapacityBuilding = () => {
           }}
         >
           <SplideSlide>
-            <div className="flex justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
-              <img src={capacity1} alt="" className="h-[100px] w-[100px]" />
-              <p className="font-bold w-[70%]">
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]  ">
+              <img
+                src={capacity1}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
+              <p className="font-bold text-xs md:text-xl  ">
                 Digital Marketing & Communication
               </p>
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
-              <img src={capacity2} alt="" className="h-[100px] w-[100px]" />
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]   ">
+              <img
+                src={capacity2}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
               <p className="font-bold ">Impact Measurement & Reporting</p>
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-center items-center rounded-lg p-4 w-[50%] mx-auto  bg-white h-[130px]  ">
-              <img src={capacity3} alt="" className="h-[100px] w-[100px]" />
+            <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 md:w-[50%] mx-auto  bg-white md:h-[130px] h-[80px]   ">
+              <img
+                src={capacity3}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
             </div>
           </SplideSlide>
         </Splide>

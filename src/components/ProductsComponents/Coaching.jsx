@@ -29,7 +29,7 @@ const Coaching = () => {
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex flex-col-reverse md:flex-row justify-between md:w-[80%] p-8 md:p-0 mx-auto">
         <div className="flex flex-col  text-xl gap-1 justify-center md:w-[40%] text-start">
-          <p className="quicksand-500">
+          <p className="quicksand-500 md:text-start text-center">
             Our coaching and mentorship services are tailored to meet the unique
             needs of each entrepreneur, providing them with the guidance and
             support they need to succeed in a highly competitive market. We work
@@ -38,7 +38,7 @@ const Coaching = () => {
             technical and expert support in the following areas.
           </p>
         </div>
-        <div className="relative">
+        <div className="relative hidden md:block">
           <img
             src={coachingpic}
             alt="whatpic"
@@ -48,6 +48,10 @@ const Coaching = () => {
             <p>Coaching And</p>
             <p className="text-5xl">Membership</p>
           </div>
+        </div>
+        <div className="md:hidden alstoria text-center  text-5xl font-bold flex flex-col justify-center items-center ">
+          <p>Coaching And</p>
+          <p className="text-5xl">Membership</p>
         </div>
       </div>
 
@@ -69,22 +73,36 @@ const Coaching = () => {
           }}
         >
           <SplideSlide>
-            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
-              <img src={coaching1} alt="" className="h-[100px] w-[100px]" />
-              <p className="font-bold w-[70%]">
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]  ">
+              <img
+                src={coaching1}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
+              <p className="font-bold text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
               </p>
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white h-[130px]  ">
-              <img src={coaching2} alt="" className="h-[100px] w-[100px]" />
-              <p className="font-bold ">Marketing, Business Development</p>
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]   ">
+              <img
+                src={coaching2}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
+              <p className="font-bold text-xs md:text-xl  ">
+                Marketing, Business Development
+              </p>
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 w-[50%] mx-auto  bg-white h-[130px]  ">
-              <img src={coaching3} alt="" className="h-[100px] w-[100px]" />
+            <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 md:w-[50%] mx-auto  bg-white md:h-[130px] h-[80px]   ">
+              <img
+                src={coaching3}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
             </div>
           </SplideSlide>
         </Splide>

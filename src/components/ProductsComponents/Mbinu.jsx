@@ -5,7 +5,7 @@ const Mbinu = () => {
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex flex-col-reverse md:flex-row justify-between w-[80%] mx-auto">
         <div className="flex flex-col  text-xl gap-1 justify-center md:w-[40%] text-start">
-          <p className="quicksand-500">
+          <p className="quicksand-500 md:text-start text-center">
             “Mbinu” is a Swahili for Tactic. The Mbinu Enterprise program
             involves working in identifying gaps social enterprises & innovative
             start ups are facing and working with them through coaching,
@@ -14,7 +14,7 @@ const Mbinu = () => {
             improvement to ensure growth and goals & objectives are achieved.
           </p>
         </div>
-        <div className="relative">
+        <div className="relative hidden md:block">
           <img
             src={mbinupic}
             alt="whatpic"
@@ -25,6 +25,10 @@ const Mbinu = () => {
             <p>Enterprise</p>
             <p>Program</p>
           </div>
+        </div>
+        <div className="md:hidden alstoria text-center  text-4xl font-bold flex flex-col justify-center items-center ">
+          <p>Mbinu Enterprise</p>
+          <p className="text-5xl">Program</p>
         </div>
       </div>
     </div>

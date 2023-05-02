@@ -15,9 +15,9 @@ const What = () => {
           </button>
         </div>
         <div className="relative">
-          <img src={whatpic} alt="whatpic" className="h-[500px] w-[500px]" />
-          <div className="absolute top-1/2 md:top-2/3 left-[13%] md:left-[27%] alstoria text-center text-7xl font-bold flex flex-col">
-            <p className="text-5xl">What</p>
+          <img src={whatpic} alt="whatpic" className="md:h-[500px] md:w-[500px] h-[300px]" />
+          <div className="absolute top-[53%] md:top-2/3 left-[23%] md:left-[27%] alstoria text-center md:text-7xl text-5xl font-bold flex flex-col">
+            <p className="md:text-5xl text-3xl">What</p>
             <p>We Do</p>
           </div>
         </div>

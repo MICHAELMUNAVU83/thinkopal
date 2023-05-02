@@ -87,7 +87,7 @@ const NavBar = () => {
         <div
           className={
             nav
-              ? "fixed w-[100%] flex  flex-col justify-center   top-0 md-[45%] bg-white/80 transition  ease-in-out duration-500"
+              ? "fixed w-[100%] flex  flex-col justify-center pb-8  top-0 md-[45%] bg-white/80 transition  ease-in-out duration-500"
               : "fixed left-[-100%] h-[20%] -top-[100%] p-10 ease-in-out transition  duration-500"
           }
           onClick={handleNav}

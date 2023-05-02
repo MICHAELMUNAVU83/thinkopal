@@ -32,9 +32,9 @@ const HomeHero = () => {
         backgroundImage: `url(${background})`,
         backgroundColor: "#FFD230",
       }}
-      className="h-[100vh] bg-cover md:flex justify-between"
+      className="h-[100vh] bg-cover flex justify-between"
     >
-      <Link className="flex md:justify-center md:items-center pl-4 " to="/products">
+      <Link className="flex justify-center items-center pl-4 " to="/products">
         <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
       </Link>
       <div className="w-10/12 hidden md:flex flex-col justify-end items-end ">

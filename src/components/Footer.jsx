@@ -13,7 +13,9 @@ const Footer = () => {
   return (
     <div className=" flex  flex-col gap-4">
       <div className="flex md:p-24  md:flex-row flex-col gap-4 justify-between items-center ">
-        <div className="text-7xl alstoria font-bold">Our Partners</div>
+        <div className=" mt-4 text-5xl md:text-7xl alstoria font-bold">
+          Our Partners
+        </div>
         <div>
           <img src={lightup} alt="lightup" className="h-[97px]" />
         </div>
@@ -31,7 +33,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:scale-105 transition-all duration-300"
         >
-          <BsInstagram className="text-5xl" />
+          <BsInstagram className="text-2xl md:text-5xl" />
         </a>
         <a
           href="https://twitter.com/ThinkOpal"
@@ -39,7 +41,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:scale-105 transition-all duration-300"
         >
-          <BsTwitter className="text-5xl" />
+          <BsTwitter className="text-2xl md:text-5xl" />
         </a>
         <a
           href="https://www.linkedin.com/company/think-opal-solutions/"
@@ -47,7 +49,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:scale-105 transition-all duration-300"
         >
-          <BsLinkedin className="text-5xl" />
+          <BsLinkedin className="text-2xl md:text-5xl" />
         </a>
         <a
           href="mailto:mailto:info@thinkopal.com"
@@ -55,7 +57,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:scale-105 transition-all duration-300"
         >
-          <SiGmail className="text-5xl" />
+          <SiGmail className="text-2xl md:text-5xl" />
         </a>
         <a
           href="https://medium.com/@thinkopal"
@@ -63,7 +65,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:scale-105 transition-all duration-300"
         >
-          <BsMedium className="text-5xl" />
+          <BsMedium className="text-3xl md:text-5xl" />
         </a>
       </div>
       <div className="flex md:px-24 flex-col md:flex-row md:py-8   py-24 gap-8 md:gap-0 justify-between items-center bg-[#FFD230] ">

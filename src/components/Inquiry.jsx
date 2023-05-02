@@ -11,19 +11,19 @@ const Inquiry = () => {
           <input
             type="text"
             placeholder="Name"
-            className="md:w-[299px]  w-[80%] mx-auto h-[42px] p-2  rounded-md"
+            className="md:w-[299px]  w-[80%] mx-auto md:ml-0 md:mr-0 h-[42px] p-2  rounded-md"
           />
           <input
             type="text"
             placeholder="Email"
-            className="md:w-[299px]  w-[80%] mx-auto h-[42px] p-2  rounded-md"
+            className="md:w-[299px]  w-[80%] mx-auto md:ml-0 md:mr-0 h-[42px] p-2  rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
             placeholder="Subject"
-            className="md:w-[628px] w-[80%] mx-auto h-[42px] p-2  rounded-md"
+            className="md:w-[628px] w-[80%] mx-auto md:ml-0 md:mr-0 h-[42px] p-2  rounded-md"
           />
         </div>
         <div className="flex flex-col">
@@ -33,7 +33,7 @@ const Inquiry = () => {
             cols="30"
             rows="10"
             placeholder="Message"
-            className="md:w-[628px] w-[80%] mx-auto h-[200px] p-2  rounded-md"
+            className="md:w-[628px] w-[80%] mx-auto md:ml-0 md:mr-0 h-[200px] p-2  rounded-md"
           ></textarea>
         </div>
         <div className="flex p-8 justify-start">

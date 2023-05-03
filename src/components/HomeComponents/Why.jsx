@@ -21,9 +21,9 @@ const Why = () => {
             alt="whatpic"
             className="md:h-[500px] md:w-[500px] h-[300px]"
           />
-          <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[27%] alstoria text-center text-6xl font-bold flex flex-col">
-            <p className="">Who</p>
-            <p>We Are</p>
+          <div className="absolute top-[53%] md:top-2/3 left-[28%] md:left-[27%] alstoria text-center md:text-6xl text-5xl font-bold flex flex-col">
+            <p className="">Why</p>
+            <p>We Do It</p>
           </div>
         </div>
       </div>

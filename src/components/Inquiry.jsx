@@ -59,8 +59,11 @@ const Inquiry = () => {
           <h1 className="md:text-6xl text-4xl alstoria">Inquiry</h1>
         </div>
 
-        <p className="font-normal  quicksand-500 text-xl md:text-xl">
-          Learn more about our services we'd love to help
+        <p className="font-normal quicksand-700  text-xl md:text-3xl ">
+          Learn more about our services
+        </p>
+        <p className="font-normal quicksand-700 md:mb-0 mb-4   text-2xl">
+          We'd love to help!
         </p>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import unt from "../images/unt.png";
 import homemobi from "../images/Vector.png";
 const PurposeHero = () => {
-  const [background, setBackground] = useState(background2);
+  const [background, setBackground] = useState(homemobi);
 
   useEffect(() => {
     const handleResize = () => {

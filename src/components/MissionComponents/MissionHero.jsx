@@ -19,10 +19,13 @@ const MissionHero = () => {
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("load", handleResize);
+    // load background when pages changes from purpose to mission
+    window.addEventListener("pageshow", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("load", handleResize);
+      window.removeEventListener("pageshow", handleResize);
     };
   }, []);
   return (

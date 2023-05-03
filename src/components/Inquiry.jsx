@@ -36,7 +36,7 @@ const Inquiry = () => {
             className="md:w-[628px] w-[80%] mx-auto md:ml-0 md:mr-0 h-[200px] p-2  rounded-md"
           ></textarea>
         </div>
-        <div className="flex p-8 justify-start">
+        <div className="flex py-4 justify-start">
           <input
             type="checkbox"
             name=""
@@ -48,22 +48,19 @@ const Inquiry = () => {
           </p>
         </div>
         <div className="flex md:justify-start justify-center">
-          <button className="bg-white md:mr-24  hover:scale-105 transition-all duration-500 text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
+          <button className="bg-white md:mr-24  hover:scale-105 transition-all duration-500 text-black uppercase text-center py-4 px-8 justify-start  shadow-[#00000040] rounded-md shadow-xl">
             Send Message
           </button>
         </div>
       </div>
-      <div className="flex flex-col font-bold text-center md:text-end gap-4 justify-center ">
+      <div className="flex flex-col font-normal text-center md:text-end gap-4 justify-center ">
         <div className="flex justify-center md:block">
-          <h1 className="md:text-7xl text-4xl alstoria ">Get An</h1>
-          <h1 className="md:text-7xl text-4xl alstoria">Inquiry</h1>
+          <h1 className="md:text-6xl text-4xl alstoria ">Get An</h1>
+          <h1 className="md:text-6xl text-4xl alstoria">Inquiry</h1>
         </div>
 
-        <p className="font-normal  quicksand-700 text-xl md:text-3xl">
-          Learn more about our services
-        </p>
-        <p className="font-normal quicksand-700 md:mb-0 mb-4   text-2xl">
-          We'd love to help!
+        <p className="font-normal  quicksand-500 text-xl md:text-xl">
+          Learn more about our services we'd love to help
         </p>
       </div>
     </div>

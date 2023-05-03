@@ -13,7 +13,7 @@ const Who = () => {
             positive impact on Society and the environment while still
             generating Sustainable Profits.
           </p>
-          <button className="bg-white w-[60%] hover:scale-105 transition-all duration-300 quicksand-700 rounded-md shadow-md shadow-gray-300 mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase">
+          <button className="bg-white w-[60%] hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase">
             Our Purpose
           </button>
         </div>
@@ -23,8 +23,8 @@ const Who = () => {
             alt="whatpic"
             className="md:h-[500px] md:w-[500px] h-[300px]"
           />
-          <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[27%] alstoria text-center md:text-7xl text-5xl font-bold flex flex-col">
-            <p className="md:text-5xl text-3xl">Who</p>
+          <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[27%] alstoria text-center md:text-6xl text-6xl font-semibold flex flex-col">
+            <p className="">Who</p>
             <p>We Are</p>
           </div>
         </div>
@@ -39,8 +39,7 @@ const Who = () => {
             display: flex;
             border-radius: 0px 0px 150px 150px;
             justify-content: center;
-            
-           
+
             background-size: cover;
           }
         }

@@ -41,26 +41,46 @@ const slider = [
 const Carousel = () => {
   return (
     <div className="carousel">
-      <div>
+      <div className="w-[60%]">
         <div className="carousel-content p-4">
-          <div className="flex quicksand-500 flex-col gap-1">
-            <h1 className="text-7xl alstoria font-bold">Our Clients</h1>
-            <p>Over the years, we've had the pleasure of working </p>
-            <p>with some amazing people and organizations,</p>
-            <p>
+          <div className="quicksand-500 gap-1">
+            <h1 className="text-6xl alstoria font-normal ml-6">Our Clients</h1>
+            {/* <p className="text-xl">
+              Over the years, we've had the pleasure of working{" "}
+            </p>
+            <p className="text-xl">
+              with some amazing people and organizations,
+            </p>
+            <p className="text-xl">
               who have inspired us with their passion, dedication, and
               innovative ideas
             </p>
-            <p>Our clients come from a range of sectors, including</p>
-            <p>
+            <p className="text-xl">
+              Our clients come from a range of sectors, including
+            </p>
+            <p className="text-xl">
               agriculture, renewable energy, health, and education, and we're
             </p>
-            <p>proud to have played a part in their success</p>
-            <p>
+            <p className="text-xl">
+              proud to have played a part in their success
+            </p>
+            <p className="text-xl">
               We're committed to continuing to support entrepreneurs in East
             </p>
-            <p>Africa and helping them to achieve their goals.</p>
-            <button className="bg-white uppercase rounded-md shadow-md shadow-gray-300 mt-4 w-[40%] px-2 py-4 uppercase">
+            <p className="text-xl">
+              Africa and helping them to achieve their goals.
+            </p> */}
+            <p className="ml-6">
+              Over the years, we've had the pleasure of working with some with
+              some amazing people and organizations, who have inspired us with
+              their passion, dedication, and innovative ideas. Our clients come
+              from a range of sectors, including agriculture, renewable energy,
+              health, and education, and we're proud to have played a part in
+              their success. We're committed to continuing to support
+              entrepreneurs in East Africa and helping them to achieve their
+              goals.
+            </p>
+            <button className="bg-white rounded-md shadow-md quicksand-700 shadow-[#00000040] mt-4 w-[40%] px-2 py-4 uppercase ml-6">
               Learn More
             </button>
           </div>

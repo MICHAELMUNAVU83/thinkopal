@@ -11,29 +11,65 @@ import clientpic3 from "../images/clientpic3.png";
 import clientpic5 from "../images/clientpic5.png";
 import afrikapupic from "../images/afrikapupic.jpeg";
 import afrikapubg from "../images/afrikapubg.png";
+import blueeconomyicon from "../images/icons/blueeconomyicon.png";
+import cleanenergyicon from "../images/icons/cleanenergyicon.png";
+import educationicon from "../images/icons/educationicon.png";
+import sustainanblefashionicon from "../images/icons/sustainablefashionicon.png";
+import sustainabletourismicon from "../images/icons/sustainabletourismicon.png";
+import technologyicon from "../images/icons/technologyicon.png";
+import wastemanagementicon from "../images/icons/wastemanagementicon.png";
+import healthcareicon from "../images/icons/healthcareicon.png";
 
 import "../splide.min.css";
 
 const ClientsHero = () => {
-  const [perPage, setPerPage] = useState(3);
-
-  //UPDATE PER PAGE ON RESIZE
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setPerPage(1);
-      } else {
-        setPerPage(3);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+  const sectors = [
+    {
+      id: 1,
+      name: "HealthCare",
+      icon: healthcareicon,
+    },
+    {
+      id: 2,
+      name: "Education",
+      icon: educationicon,
+    },
+    {
+      id: 3,
+      name: "Technology",
+      icon: technologyicon,
+    },
+    {
+      id: 4,
+      name: "Clean Energy & Environment",
+      icon: cleanenergyicon,
+    },
+    {
+      id: 5,
+      name: "Financial Inclusion",
+      icon: blueeconomyicon,
+    },
+    {
+      id: 6,
+      name: "Sustainable Tourism",
+      icon: sustainabletourismicon,
+    },
+    {
+      id: 7,
+      name: "Sustainable Fashion",
+      icon: sustainanblefashionicon,
+    },
+    {
+      id: 8,
+      name: "Waste Management",
+      icon: wastemanagementicon,
+    },
+    {
+      id: 9,
+      name: "Blue Economy",
+      icon: blueeconomyicon,
+    },
+  ];
   const clients = [
     {
       id: 1,
@@ -85,10 +121,10 @@ const ClientsHero = () => {
       </div>
       <div className="flex flex-col  w-[80%] mx-auto gap-4 ">
         <Splide
-          className="px-16"
+          className="px-16 hidden md:block"
           options={{
             type: "loop",
-            perPage: perPage,
+            perPage: 3,
             perMove: 1,
             pagination: false,
 
@@ -104,6 +140,38 @@ const ClientsHero = () => {
             <SplideSlide>
               <div className="flex justify-center items-center p-4  bg-white h-[150px]  ">
                 <img src={clientlogo.logo} alt="" className=" " />
+              </div>
+            </SplideSlide>
+          ))}
+        </Splide>
+        <Splide
+          className="px-16 flex w-[100%]  md:hidden"
+          options={{
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            pagination: false,
+
+            margin: "0.5rem",
+            gap: "0.5rem",
+
+            arrows: true,
+            autoplay: true,
+            interval: 2000,
+          }}
+        >
+          {sectors.map((sector) => (
+            <SplideSlide>
+              <div
+                className="flex gap-2 p-4 justify-center  items-center   bg-white h-[90px]  "
+                style={{
+                  borderRadius: "10px",
+                }}
+              >
+                <img src={sector.icon} alt="" className=" " />
+                <p className="text-xl quicksand-500 text-center">
+                  {sector.name}
+                </p>
               </div>
             </SplideSlide>
           ))}

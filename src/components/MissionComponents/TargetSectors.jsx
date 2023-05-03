@@ -2,43 +2,60 @@ import React from "react";
 import targetpic from "../images/targetsectorspic.png";
 import "../splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import blueeconomyicon from "../images/icons/blueeconomyicon.png";
+import cleanenergyicon from "../images/icons/cleanenergyicon.png";
+import educationicon from "../images/icons/educationicon.png";
+import sustainanblefashionicon from "../images/icons/sustainablefashionicon.png";
+import sustainabletourismicon from "../images/icons/sustainabletourismicon.png";
+import technologyicon from "../images/icons/technologyicon.png";
+import wastemanagementicon from "../images/icons/wastemanagementicon.png";
+import healthcareicon from "../images/icons/healthcareicon.png";
 const TargetSectors = () => {
   const sectors = [
     {
       id: 1,
       name: "HealthCare",
+      icon: healthcareicon,
     },
     {
       id: 2,
       name: "Education",
+      icon: educationicon,
     },
     {
       id: 3,
       name: "Technology",
+      icon: technologyicon,
     },
     {
       id: 4,
       name: "Clean Energy & Environment",
+      icon: cleanenergyicon,
     },
     {
       id: 5,
       name: "Financial Inclusion",
+      icon: blueeconomyicon,
     },
     {
       id: 6,
       name: "Sustainable Tourism",
+      icon: sustainabletourismicon,
     },
     {
       id: 7,
       name: "Sustainable Fashion",
+      icon: sustainanblefashionicon,
     },
     {
       id: 8,
       name: "Waste Management",
+      icon: wastemanagementicon,
     },
     {
       id: 9,
       name: "Blue Economy",
+      icon: blueeconomyicon,
     },
   ];
   return (
@@ -63,12 +80,15 @@ const TargetSectors = () => {
           {sectors.map((sector) => (
             <SplideSlide>
               <div
-                className="flex justify-center items-center   bg-white h-[90px]  "
+                className="flex gap-2 p-4 justify-center  items-center   bg-white h-[90px]  "
                 style={{
                   borderRadius: "10px",
                 }}
               >
-                <p className="text-xl quicksand-500 text-center">{sector.name}</p>
+                <img src={sector.icon} alt="" className=" " />
+                <p className="text-xl quicksand-500 text-center">
+                  {sector.name}
+                </p>
               </div>
             </SplideSlide>
           ))}

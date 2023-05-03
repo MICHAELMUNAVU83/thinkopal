@@ -7,24 +7,6 @@ import "../splide.min.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const Coaching = () => {
-  const [perPage, setPerPage] = useState(3);
-
-  //UPDATE PER PAGE ON RESIZE
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setPerPage(1);
-      } else {
-        setPerPage(3);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [ window.innerWidth]);
   return (
     <div className="bg-[#FFD230] py-8 ">
       <div className="  flex flex-col-reverse md:flex-row justify-between md:w-[80%] p-8 md:p-0 mx-auto">
@@ -66,12 +48,14 @@ const Coaching = () => {
         </div>
       </div>
 
-      <div className=" w-[85%] mx-auto mt-8">
+      {/* mobile start */}
+
+      <div className="md:hidden  w-[85%] mx-auto mt-8">
         <Splide
           className="px-16"
           options={{
             type: "loop",
-            perPage: perPage,
+            perPage: 1,
             perMove: 1,
             pagination: false,
 
@@ -118,6 +102,64 @@ const Coaching = () => {
           </SplideSlide>
         </Splide>
       </div>
+
+      {/* mobile end */}
+
+      {/* desktop start */}
+
+      <div className="hidden md:block w-[85%] mx-auto mt-8">
+        <Splide
+          className="px-16"
+          options={{
+            type: "loop",
+            perPage: 3,
+            perMove: 1,
+            pagination: false,
+
+            margin: "0.5rem",
+            gap: "1rem",
+
+            arrows: true,
+            autoplay: true,
+            interval: 5000,
+          }}
+        >
+          <SplideSlide>
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]  ">
+              <img
+                src={coaching1}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
+              <p className="font-bold text-xs md:text-xl w-[70%]">
+                Business Planning and Sustainability Strategy Development
+              </p>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]   ">
+              <img
+                src={coaching2}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
+              <p className="font-bold text-xs md:text-xl  ">
+                Marketing, Business Development
+              </p>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 md:w-[50%] mx-auto  bg-white md:h-[130px] h-[80px]   ">
+              <img
+                src={coaching3}
+                alt=""
+                className="h-[50px] md:w-[100] w-[100px]"
+              />
+            </div>
+          </SplideSlide>
+        </Splide>
+      </div>
+      {/* desktop end */}
     </div>
   );
 };

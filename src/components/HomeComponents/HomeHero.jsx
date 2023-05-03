@@ -8,21 +8,21 @@ import cdmssmall from "../images/cdmssmall.png";
 import homemobi from "../images/Vector.png";
 
 const HomeHero = () => {
-  const [background, setBackground] = useState(background1);
+  const [background, setBackground] = useState(homemobi);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setBackground(homemobi);
-      } else {
+      if (window.innerWidth >= 768) {
         setBackground(background1);
       }
     };
 
     window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", handleResize);
     };
   }, []);
 

@@ -1,20 +1,86 @@
 import React from "react";
 import targetpic from "../images/targetsectorspic.png";
+import "../splide.min.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 const TargetSectors = () => {
+  const sectors = [
+    {
+      id: 1,
+      name: "HealthCare",
+    },
+    {
+      id: 2,
+      name: "Education",
+    },
+    {
+      id: 3,
+      name: "Technology",
+    },
+    {
+      id: 4,
+      name: "Clean Energy & Environment",
+    },
+    {
+      id: 5,
+      name: "Financial Inclusion",
+    },
+    {
+      id: 6,
+      name: "Sustainable Tourism",
+    },
+    {
+      id: 7,
+      name: "Sustainable Fashion",
+    },
+    {
+      id: 8,
+      name: "Waste Management",
+    },
+    {
+      id: 9,
+      name: "Blue Economy",
+    },
+  ];
   return (
     <div className="py-2 bg-[#FFD230] ">
       <div className=" flex flex-col-reverse mt-10 md:flex-row justify-around mx-auto w-[80%]">
-        <div className="  text-2xl gap-1  text-start flex justify-center flex-col">
+        <Splide
+          className="px-16 flex w-[100%]  md:hidden"
+          options={{
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            pagination: false,
+
+            margin: "0.5rem",
+            gap: "0.5rem",
+
+            arrows: true,
+            autoplay: true,
+            interval: 2000,
+          }}
+        >
+          {sectors.map((sector) => (
+            <SplideSlide>
+              <div
+                className="flex justify-center items-center   bg-white h-[90px]  "
+                style={{
+                  borderRadius: "10px",
+                }}
+              >
+                <p className="text-xl quicksand-500 text-center">{sector.name}</p>
+              </div>
+            </SplideSlide>
+          ))}
+        </Splide>
+
+        <div className="hidden md:flex  text-2xl gap-1  text-start  justify-center flex-col">
           <ul className="list-disc quicksand-500">
-            <li className="my-1">HealthCare</li>
-            <li className="my-1">Education</li>
-            <li className="my-1">Technology</li>
-            <li className="my-1">Clean Energy & Environment</li>
-            <li className="my-1">Financial Inclusion </li>
-            <li className="my-1">Sustainable Tourism</li>
-            <li className="my-1">Sustainable Fashion </li>
-            <li className="my-1">Waste Management</li>
-            <li className="my-1">Blue Economy</li>
+            {sectors.map((sector) => (
+              <li key={sector.id} className="my-1">
+                {sector.name}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="relative hidden md:block">

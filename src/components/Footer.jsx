@@ -13,20 +13,25 @@ const Footer = () => {
   return (
     <div className=" flex  flex-col gap-4">
       <div className="flex md:p-24  md:flex-row flex-col gap-4 justify-between items-center ">
-        <div className=" mt-4 text-5xl md:text-7xl alstoria font-bold">
+        <div className=" mt-4 text-4xl md:text-7xl alstoria font-bold">
           Our Partners
         </div>
+
         <div>
-          <img src={lightup} alt="lightup" className="h-[97px]" />
+          <img src={lightup} alt="lightup" className="md:h-[97px] h-[40px]" />
         </div>
       </div>
       <p
+        className="w-[90%] mx-auto"
         style={{
           borderBottom: "3px solid #FFD230",
         }}
       />
+      <div className="flex md:hidden  flex-col justify-center items-center ">
+        <img src={logo} alt="lightup" className="h-[97px]" />
+      </div>
 
-      <div className=" my-8 gap-4 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">
+      <div className=" md:my-8 gap-4 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">
         <a
           href="https://www.instagram.com/thinkopal_solutions/?igshid=YmMyMTA2M2Y%3D"
           target="_blank"
@@ -68,8 +73,8 @@ const Footer = () => {
           <BsMedium className="text-3xl md:text-5xl" />
         </a>
       </div>
-      <div className="flex md:px-24 flex-col md:flex-row md:py-8   py-24 gap-8 md:gap-0 justify-between items-center bg-[#FFD230] ">
-        <div className="text-xl text-center flex flex-col gap-4">
+      <div className="flex md:px-24  flex-row md:py-8   md:py-12 gap-8 md:gap-0 md:justify-between justify-around items-center bg-white md:bg-[#FFD230] ">
+        <div className="md:text-xl text-xs justify-center text-center flex flex-col gap-4">
           <a
             className="flex gap-2 quicksand-400 justify-center"
             rel="noopener noreferrer"
@@ -78,24 +83,29 @@ const Footer = () => {
             <IoCall className="text-2xl" />
             <p>+254798 543030</p>
           </a>
-          <p className="border-b-2 border-black w-[100%]" />
-          <p className="quicksand-700">Privacy Policy</p>
+          <p className="border-b-2 md:block hidden border-black w-[100%]" />
+          <p className="quicksand-700 md:block hidden">Privacy Policy</p>
         </div>
-        <div>
+        <div className="md:block hidden">
           <img src={logo} alt="lightup" className="h-[97px]" />
         </div>
         <div className="text-xl text-center flex flex-col gap-4">
-          <div className="flex gap-2 justify-center">
-            <HiLocationMarker size={60} />
+          <div className="flex items-center md:text-xl text-xs gap-2 justify-center">
+            <HiLocationMarker className="md:text-7xl text-5xl " />
             <div className="flex text-start flex-col quicksand-400 justify-between">
               <p>WestPark Towers,</p>
               <p>Westlands. </p>
               <p>Nairobi , Kenya</p>
             </div>
           </div>
-          <p className="border-b-2 border-black w-[100%]" />
-          <p className="quicksand-700">Cookie Policy</p>
+          <p className="border-b-2 md:block hidden border-black w-[100%]" />
+          <p className="quicksand-700 md:block hidden">Cookie Policy</p>
         </div>
+      </div>
+
+      <div className="bg-[#FFD230] md:hidden quicksand-500 flex justify-around items-center p-2 text-sm">
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
       </div>
     </div>
   );

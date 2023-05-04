@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLocation } from "react";
 import background1 from "../images/background1.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
@@ -7,6 +7,7 @@ import homemobi from "../images/Vector.png";
 import { Link } from "react-router-dom";
 const BlogHero = () => {
   const [background, setBackground] = useState(background1);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,7 +23,7 @@ const BlogHero = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [location]);
   return (
     <div
       style={{

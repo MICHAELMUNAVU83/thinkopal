@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLocation } from "react";
 import background2 from "../images/background2.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
@@ -7,6 +7,7 @@ import unt from "../images/unt.png";
 import homemobi from "../images/Vector.png";
 const PurposeHero = () => {
   const [background, setBackground] = useState(homemobi);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,12 +20,13 @@ const PurposeHero = () => {
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("load", handleResize);
+    //componentDidMount()
 
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("load", handleResize);
     };
-  }, []);
+  }, [location]);
   return (
     <>
       <div

@@ -29,7 +29,7 @@ const BlogHero = () => {
       style={{
         backgroundImage: `url(${background})`,
       }}
-      className="h-[90vh] bg-cover flex justify-between "
+      className="h-[100vh] bg-cover flex justify-between "
     >
       <Link className=" flex justify-center items-center pl-4 " to="/products">
         <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />

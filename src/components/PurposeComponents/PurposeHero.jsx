@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import unt from "../images/unt.png";
 import homemobi from "../images/Vector.png";
+import bgit from "../images/bgit.jpg";
+import bgitsemi from "../images/bgitsemi.png";
 const PurposeHero = () => {
   const [background, setBackground] = useState(homemobi);
   const location = useLocation();
@@ -32,40 +34,37 @@ const PurposeHero = () => {
     <>
       <div
         style={{
-          backgroundImage: `url(${background})`,
+          backgroundImage: `url(${bgit})`,
           backgroundColor: "#FFD230",
         }}
-        className="h-[100vh] bg-cover flex justify-between "
+        className="h-[100vh] bg-cover bg-[70%]  md:bg-center "
       >
-        <Link className=" flex justify-center items-center pl-4 " to="/">
-          <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
-        </Link>
-        <div className="w-10/12 hidden md:flex flex-col   justify-end items-end ">
-          <div className="relative">
-            <div className="absolute top-1/2 left-20 w-[28%] ">
+        <div className="flex justify-between h-[100vh]">
+          <Link className=" flex justify-center items-center pl-4 " to="/">
+            <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
+          </Link>
+          <div className="w-10/12 hidden md:flex flex-col   justify-end items-end ">
+            <div className="bg-white h-[500px] w-[500px] rounded-full flex  justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
               <p className="text-6xl font-bold alstoria">Our Purpose</p>
-              To contribute towards the growth of sustainable & Impactful
-              Enterprises to Reduce Inequalities, & contribute towards the
-              growth of sustainable communities and cities in East Africa.
+              <div className="quicksand-500 text-xl text-center">
+                To contribute towards the growth of sustainable & Impactful
+                Enterprises to Reduce Inequalities, & contribute towards the
+                growth of sustainable communities and cities in East Africa.
+              </div>
             </div>
-            <img
-              src={unt}
-              alt="unt"
-              className="hidden md:h-[80vh] md:block  "
-            />
           </div>
+          <div className="bg-white h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
+            <p className="text-center text-5xl md:text-xl tracking-wide p-4 pt-6 alstoria">
+              Our purpose
+            </p>
+          </div>
+          <Link
+            className=" flex justify-center items-center pr-4 "
+            to="/products"
+          >
+            <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
+          </Link>
         </div>
-        <div className="bg-white h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
-          <p className="text-center text-5xl md:text-xl tracking-wide p-4 pt-6 alstoria">
-            Our purpose
-          </p>
-        </div>
-        <Link
-          className=" flex justify-center items-center pr-4 "
-          to="/products"
-        >
-          <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
-        </Link>
       </div>
       <div className="md:hidden text-xl flex justify-center py-12 items-center bg-[#FFD230]  quicksand-500">
         <p className="text-center w-[80%] mx-auto">

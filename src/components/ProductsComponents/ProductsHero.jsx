@@ -9,7 +9,7 @@ const ProductsHero = () => {
       style={{
         backgroundImage: `url(${background4})`,
       }}
-      className="h-[90vh] bg-cover flex justify-between p-4"
+      className="h-[100vh] bg-cover flex justify-between p-4"
     >
       <Link className="w-1/10 flex justify-center items-center " to="/mission">
         <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />

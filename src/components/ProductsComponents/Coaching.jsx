@@ -8,7 +8,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const Coaching = () => {
   return (
-    <div className="bg-[#FFD230] py-8 ">
+    <div className="bg-[#FFD230] py-4 ">
       <div className="  flex flex-col-reverse md:flex-row justify-between md:w-[80%] p-8 md:p-0 mx-auto">
         <div className="flex flex-col  text-xl gap-1 justify-center md:w-[40%] text-start">
           <p className="quicksand-500 md:text-start text-center">

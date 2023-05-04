@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <img src={lightup} alt="lightup" className="md:h-[97px] h-[40px]" />
+          <img src={lightup} alt="lightup" className="md:h-[97px] h-[50px]" />
         </div>
       </div>
       <p
@@ -28,7 +28,7 @@ const Footer = () => {
         }}
       />
       <div className="flex md:hidden  flex-col justify-center items-center ">
-        <img src={logo} alt="lightup" className="h-[97px]" />
+        <img src={logo} alt="lightup" className="md:h-[97px] h-[80px]" />
       </div>
 
       <div className=" md:my-8 gap-4 flex justify-around md:w-[80%] w-[70%] mx-auto flex-wrap items-center ">

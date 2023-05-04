@@ -67,7 +67,7 @@ const TargetSectors = () => {
   ];
   return (
     <div className="py-2 bg-[#FFD230] ">
-      <div className=" flex flex-col-reverse mt-10 md:flex-row justify-around mx-auto w-[80%]">
+      <div className=" flex flex-col-reverse mt-10 md:flex-row justify-around mx-auto w-[99%]">
         <Splide
           className="px-16 flex w-[100%]  md:hidden"
           options={{
@@ -93,9 +93,7 @@ const TargetSectors = () => {
                 }}
               >
                 <img src={sector.icon} alt="" className=" " />
-                <p className="text-xl quicksand-500 text-center">
-                  {sector.name}
-                </p>
+                <p className=" quicksand-500 text-center">{sector.name}</p>
               </div>
             </SplideSlide>
           ))}

@@ -129,7 +129,7 @@ const Coaching = () => {
               <img
                 src={coaching1}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[96px] w-[96px]"
               />
               <p className="font-bold text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
@@ -141,7 +141,7 @@ const Coaching = () => {
               <img
                 src={coaching2}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[96px] w-[96px]"
               />
               <p className="font-bold text-xs md:text-xl  ">
                 Marketing, Business Development
@@ -153,7 +153,7 @@ const Coaching = () => {
               <img
                 src={coaching3}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[96px] w-[96px]"
               />
             </div>
           </SplideSlide>

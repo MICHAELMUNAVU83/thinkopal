@@ -8,19 +8,19 @@ const GrayInquiry = () => {
           <input
             type="text"
             placeholder="Name"
-            className="md:w-[299px]  w-[80%] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25  placeholder-white rounded-md"
+            className="md:w-[299px]  w-[315px] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25  placeholder-white rounded-md"
           />
           <input
             type="text"
             placeholder="Email"
-            className="md:w-[299px]  w-[80%] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2  placeholder-white  rounded-md"
+            className="md:w-[299px]  w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2  placeholder-white  rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
             placeholder="Subject"
-            className="md:w-[628px] w-[80%] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   placeholder-white rounded-md"
+            className="md:w-[633px] w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   placeholder-white rounded-md"
           />
         </div>
         <div className="flex flex-col">
@@ -30,17 +30,17 @@ const GrayInquiry = () => {
             cols="30"
             rows="10"
             placeholder="Message"
-            className="md:w-[628px] w-[80%] mx-auto  bg-[#000000]/25 h-[200px] p-2  placeholder-white  rounded-md"
+            className="md:w-[633px] w-[315px] mx-auto  bg-[#000000]/25 h-[200px] p-2  placeholder-white  rounded-md"
           ></textarea>
         </div>
-        <div className="flex w-[80%] mx-auto">
+        <div className="flex w-[315px] mx-auto md:w-[633px] items-center  ">
           <input
             type="checkbox"
             name=""
             id=""
             className="mr-2 bg-red-500 h-6 w-6  "
           />
-          <p className="md:text-xl text-sm">
+          <p className="md:text-[15px] leading-[15px] font-bold w-[584px] text-sm">
             I would love to receive information on newsletters and more offers
           </p>
         </div>

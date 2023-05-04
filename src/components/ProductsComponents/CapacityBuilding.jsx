@@ -117,7 +117,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity1}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[96px] w-[96px]"
               />
               <p className="font-bold text-xs md:text-xl  ">
                 Digital Marketing & Communication
@@ -129,7 +129,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity2}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[96px] w-[96px]"
               />
               <p className="font-bold ">Impact Measurement & Reporting</p>
             </div>
@@ -139,7 +139,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity3}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[96px] w-[96px]"
               />
             </div>
           </SplideSlide>

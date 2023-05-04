@@ -1,10 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, EffectCoverflow, Autoplay } from "swiper";
 
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
-import "./Carousel.css";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 import afrikapupic from "./images/afrikapupic.jpeg";
 import cdmspic from "./images/cdmspic.jpeg";
@@ -12,7 +12,8 @@ import ict4pic from "./images/ict4pic.jpeg";
 import cdmslogo from "./images/cdmslogo.png";
 import ict4logo from "./images/ict4logo.png";
 import afrikapulogo from "./images/afrikapulogo.png";
-
+import { EffectCards ,Pagination, Autoplay } from "swiper";
+import { Link } from "react-router-dom";
 const slider = [
   {
     title: "Chronic Drugs Medical Scheme(CDMS}",
@@ -40,37 +41,15 @@ const slider = [
 
 const Carousel = () => {
   return (
-    <div className="carousel">
-      <div className="w-[60%]">
-        <div className="carousel-content p-4">
-          <div className="quicksand-500 gap-1">
-            <h1 className="text-6xl alstoria font-normal ml-6">Our Clients</h1>
-            {/* <p className="text-xl">
-              Over the years, we've had the pleasure of working{" "}
-            </p>
-            <p className="text-xl">
-              with some amazing people and organizations,
-            </p>
-            <p className="text-xl">
-              who have inspired us with their passion, dedication, and
-              innovative ideas
-            </p>
-            <p className="text-xl">
-              Our clients come from a range of sectors, including
-            </p>
-            <p className="text-xl">
-              agriculture, renewable energy, health, and education, and we're
-            </p>
-            <p className="text-xl">
-              proud to have played a part in their success
-            </p>
-            <p className="text-xl">
-              We're committed to continuing to support entrepreneurs in East
-            </p>
-            <p className="text-xl">
-              Africa and helping them to achieve their goals.
-            </p> */}
-            <p className="ml-6">
+    <div className="flex  md:flex-row flex-col-reverse justify-between md:p-12 items-center my-8">
+      <div className="md:w-[40%] mx-auto">
+        <div className=" p-4">
+          <div className="quicksand-500 flex flex-col justify-center md:justify-start gap-1">
+            <h1 className="text-6xl alstoria font-normal md:text-start text-center ">
+              Our Clients
+            </h1>
+
+            <p className="md:w-[442px] w-[315px] text-center text-xl md:text-start">
               Over the years, we've had the pleasure of working with some with
               some amazing people and organizations, who have inspired us with
               their passion, dedication, and innovative ideas. Our clients come
@@ -80,71 +59,49 @@ const Carousel = () => {
               entrepreneurs in East Africa and helping them to achieve their
               goals.
             </p>
-            <button className="bg-white rounded-md shadow-md quicksand-700 shadow-[#00000040] mt-4 w-[40%] px-2 py-4 uppercase ml-6">
+            <Link
+              to="/clients"
+              className="bg-white rounded-md shadow-md quicksand-700 shadow-[#00000040] mt-4 md:w-[225px] h-[57px] flex justify-center items-center hover:scale-105 transition ease-in-out duration-500 uppercase "
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </div>
 
       <Swiper
-        className="myswiper"
-        modules={[Pagination, EffectCoverflow, Autoplay]}
-        effect={"coverflow"}
+        effect={"cards"}
         grabCursor={true}
-        centeredSlides={true}
-        fadeEffect={{ crossFade: true }}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-
-            translate: [0, 0, -400],
-
-            rotate: [0, 0, -90],
-          },
-          next: {
-            translate: [0, 0, 400],
-
-            rotate: [0, 0, 90],
-          },
-        }}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 250,
-          modifier: 4,
-          slideShadows: true,
-        }}
+       
+        pagination={true}
         loop={true}
-        pagination={{ clickable: true }}
-        draggable={true}
         autoplay={{
           delay: 5000,
-
           disableOnInteraction: false,
         }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 1,
-          },
-          1024: {
-            slidesPerView: 2,
-          },
-          1560: {
-            slidesPerView: 3,
-          },
-        }}
+
+        modules={[EffectCards, Pagination, Autoplay]}
+        className="md:w-[50%] py-8 w-[90%] mx-auto"
       >
         {slider.map((data) => (
           <SwiperSlide
             style={{ backgroundImage: `url(${data.url})` }}
-            className="myswiper-slider"
+            className="w-[50%] h-[600px] flex justify-center items-end bg-cover bg-center bg-no-repeat rounded-2xl"
           >
-            <div>
-              <img src={data.logo} alt="logo" className=" mx-auto" />
+            <div
+              className="h-[600px] w-[100%] flex flex-col justify-end items-center gap-8  rounded-2xl "
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 210, 48, 0.8) 86.27%)",
+              }}
+            >
+              <div>
+                <img
+                  src={data.logo}
+                  alt="logo"
+                  className=" md:h-[100px] h-[50px] my-8"
+                />
+              </div>
             </div>
           </SwiperSlide>
         ))}

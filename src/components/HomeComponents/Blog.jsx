@@ -2,14 +2,14 @@ import React from "react";
 import blogbg from "../images/blog-bg.png";
 import blogimage from "../images/newww.png";
 import blog from "../images/blog.svg";
-
+import { Link } from "react-router-dom";
 const Blog = () => {
   return (
     <div
       style={{
         backgroundImage: `url(${window.innerWidth > 768 ? blogbg : ""})`,
       }}
-      className="md:h-[680px] bg-cover bg-center gap-12 flex justify-center "
+      className="md:h-[680px] py-10 md:py-0 bg-cover bg-center gap-12 flex justify-center "
     >
       <div className=" md:flex justify-between">
         <div className="w-[100%]">
@@ -34,11 +34,14 @@ const Blog = () => {
               in Kenya
             </span>
           </p>
-          <div className="md:flex md:gap-12 md:justify-between ">
-            <p className="md:bg-white text-xl md:text-lg quicksand-700 hover:scale-105 transition-all duration-300 underline md:no-underline rounded-[5px]  text-black lowercase md:uppercase text-center py-4 px-2 justify-start  md:shadow-[#00000040] w-[374px] h-[57px] md:shadow-2xl">
-              ABOUT THE IMPACT SERIES
-            </p>
-            <button className="bg-white ml-20 md:ml-0 quicksand-700 hover:scale-105 transition-all duration-300 w-[225px] h-[57px] rounded-[5px] text-black uppercase text-center py-4 px-2 justify-start  shadow-gray-400 shadow-2xl">
+          <div className="md:flex  md:gap-12 md:justify-between ">
+            <Link
+              to="/blog"
+              className="md:bg-white flex justify-center items-center  text-[20px]  quicksand-700 hover:scale-105 transition-all duration-300  underline md:no-underline rounded-[5px] cursor-pointer  text-black  md:uppercase  py-4 px-2   md:shadow-[#00000040] w-[374px] h-[57px] md:shadow-2xl"
+            >
+              About The Impact Series
+            </Link>
+            <button className="bg-white font-bold   quicksand-700 hover:scale-105 transition-all duration-300 w-[225px] mx-auto h-[57px] rounded-[5px] text-black uppercase flex justify-center items-center  shadow-gray-400 shadow-2xl">
               View In blog
             </button>
           </div>

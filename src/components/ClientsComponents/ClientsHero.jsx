@@ -183,6 +183,8 @@ const ClientsHero = () => {
             perPage: 1,
             perMove: 1,
             margin: "0.5rem",
+            pauseOnFocus: true,
+            pauseOnHover: true,
             gap: "0.5rem",
             height: "700px",
             pagination: false,

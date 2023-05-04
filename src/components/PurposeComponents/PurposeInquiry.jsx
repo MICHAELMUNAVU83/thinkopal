@@ -6,19 +6,22 @@ const PurposeInquiry = () => {
       <div className="flex flex-col gap-4">
         <h1 className="text-4xl md:text-7xl alstoria ">Get An Inquiry</h1>
 
-        <p className="font-normal  text-xl">Learn more about our services</p>
-        <p className="font-normal  text-md">We'd love to help!</p>
-        <div className="flex quicksand-400 flex-col gap-4 w-[90%] mx-auto ">
-          <div className="flex flex-col md:flex-row gap-[30px]">
+        <p className="quicksand-500 text-xl font-medium">
+          Learn more about our services.
+        </p>
+        <p className="quicksand-500 text-xl font-medium"> We’d love to help!</p>
+
+        <div className="flex quicksand-400 flex-col gap-4 w-[90%]  ">
+          <div className="flex flex-col md:flex-row gap-[30px] w-[100%]">
             <input
               type="text"
               placeholder="Name"
-              className="md:w-[299px] bg-[#FFD230] md:bg-white w-[100%] mx-auto  h-[42px] p-2  rounded-md"
+              className="md:w-[333px] bg-[#FFD230] md:bg-white w-[100%] mx-auto  h-[42px] p-2  rounded-md"
             />
             <input
               type="text"
               placeholder="Email"
-              className="md:w-[299px] bg-[#FFD230] md:bg-white  w-[100%] mx-auto  h-[42px] p-2  rounded-md"
+              className="md:w-[333px] bg-[#FFD230] md:bg-white  w-[100%] mx-auto  h-[42px] p-2  rounded-md"
             />
           </div>
           <div className="flex flex-col ">
@@ -38,7 +41,7 @@ const PurposeInquiry = () => {
               className="md:w-[628px] bg-[#FFD230] md:bg-white w-[100%] mx-auto  h-[200px] p-2  rounded-md"
             ></textarea>
           </div>
-          <div className="flex md:p-8 justify-betwee">
+          <div className="flex justify-between">
             <input
               type="checkbox"
               name=""

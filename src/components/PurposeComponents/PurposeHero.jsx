@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useLocation } from "react";
+import React, { useState, useEffect } from "react";
 import background2 from "../images/background2.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import unt from "../images/unt.png";
 import homemobi from "../images/Vector.png";
 const PurposeHero = () => {

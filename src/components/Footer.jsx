@@ -57,7 +57,7 @@ const Footer = () => {
           <BsLinkedin className="text-2xl md:text-5xl" />
         </a>
         <a
-          href="mailto:mailto:info@thinkopal.com"
+          href="mailto:info@thinkopal.com"
           target="_blank"
           rel="noreferrer"
           className="hover:scale-105 transition-all duration-300"

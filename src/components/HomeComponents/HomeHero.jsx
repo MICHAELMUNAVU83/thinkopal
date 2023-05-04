@@ -9,7 +9,7 @@ import homemobi from "../images/Vector.png";
 
 const HomeHero = () => {
   const [background, setBackground] = useState(homemobi);
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {

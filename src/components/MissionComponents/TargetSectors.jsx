@@ -7,6 +7,7 @@ import cleanenergyicon from "../images/icons/cleanenergyicon.png";
 import educationicon from "../images/icons/educationicon.png";
 import sustainanblefashionicon from "../images/icons/sustainablefashionicon.png";
 import sustainabletourismicon from "../images/icons/sustainabletourismicon.png";
+import sustainabeagricultureicon from "../images/icons/sustainableagricultureicon.png";
 import technologyicon from "../images/icons/technologyicon.png";
 import wastemanagementicon from "../images/icons/wastemanagementicon.png";
 import healthcareicon from "../images/icons/healthcareicon.png";
@@ -22,6 +23,7 @@ const TargetSectors = () => {
       name: "Education",
       icon: educationicon,
     },
+
     {
       id: 3,
       name: "Technology",
@@ -56,6 +58,11 @@ const TargetSectors = () => {
       id: 9,
       name: "Blue Economy",
       icon: blueeconomyicon,
+    },
+    {
+      id: 10,
+      name: "Sustainable Agriculture",
+      icon: sustainabeagricultureicon,
     },
   ];
   return (

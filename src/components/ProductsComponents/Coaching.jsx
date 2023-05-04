@@ -28,7 +28,7 @@ const Coaching = () => {
           />
           <div className="absolute top-1/2 left-[9%] md:top-2/3 md:left-[25%] alstoria text-center  text-5xl font-bold flex flex-col ">
             <p>Coaching And</p>
-            <p className="text-5xl">Membership</p>
+            <p className="text-5xl">Mentorship</p>
           </div>
         </div>
 

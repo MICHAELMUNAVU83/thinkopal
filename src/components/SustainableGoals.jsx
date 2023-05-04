@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import sdg1 from "./images/sdg1.png";
 import sdg2 from "./images/sdg2.png";
 import sdg3 from "./images/sdg3.png";
+import sdg4 from "./images/sdg4.png";
 import sdgpic1 from "./images/sdgpic1.jpg";
 import sdgpic2 from "./images/sdgpic2.jpg";
 import sdgpic3 from "./images/sdgpic3.jpg";
@@ -18,7 +19,7 @@ const SustainableGoals = () => {
           attainable of the following SDG goals
         </p>
       </div>
-      <div className="">
+      <div>
         <div className="flex md:[&:hover>div]:w-16 [&:hover>div]:w-8   [&>div:hover]:w-[20rem] md:[&>div:hover]:w-[40rem]">
           <div
             className="group relative 
@@ -62,6 +63,21 @@ const SustainableGoals = () => {
             <div className=" absolute inset-0 absolute inset-0  group-hover:bg-none bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">
               <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
                 <img src={sdg3} alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            className="group   relative 
+            md:w-16 w-8 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500"
+          >
+            <img
+              className="h-[600px] object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
+              src={sdgpic1}
+              alt=""
+            />
+            <div className=" absolute inset-0 absolute inset-0  group-hover:bg-none bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">
+              <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
+                <img src={sdg4} alt="" />
               </div>
             </div>
           </div>

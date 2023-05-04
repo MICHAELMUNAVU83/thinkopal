@@ -7,7 +7,7 @@ import unt from "../images/unt.png";
 import homemobi from "../images/Vector.png";
 const MissionHero = () => {
   const [background, setBackground] = useState(homemobi);
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {

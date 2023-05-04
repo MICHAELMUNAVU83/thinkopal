@@ -7,7 +7,7 @@ import homemobi from "../images/Vector.png";
 import { Link } from "react-router-dom";
 const BlogHero = () => {
   const [background, setBackground] = useState(background1);
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {

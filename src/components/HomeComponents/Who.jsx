@@ -13,7 +13,7 @@ const Who = () => {
             positive impact on Society and the environment while still
             generating Sustainable Profits.
           </p>
-          <button className="bg-white w-[60%] hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase">
+          <button className="bg-white w-[225px] hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase">
             Our Purpose
           </button>
         </div>

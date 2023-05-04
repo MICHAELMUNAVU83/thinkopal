@@ -12,7 +12,7 @@ import ict4pic from "./images/ict4pic.jpeg";
 import cdmslogo from "./images/cdmslogo.png";
 import ict4logo from "./images/ict4logo.png";
 import afrikapulogo from "./images/afrikapulogo.png";
-import { EffectCards ,Pagination, Autoplay } from "swiper";
+import { EffectCards, Pagination, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
 const slider = [
   {
@@ -72,16 +72,14 @@ const Carousel = () => {
       <Swiper
         effect={"cards"}
         grabCursor={true}
-       
         pagination={true}
         loop={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
-
         modules={[EffectCards, Pagination, Autoplay]}
-        className="md:w-[50%] py-8 w-[90%] mx-auto"
+        className="md:w-[50%] py-8 w-[80%] mx-auto"
       >
         {slider.map((data) => (
           <SwiperSlide

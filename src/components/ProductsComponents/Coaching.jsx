@@ -72,7 +72,7 @@ const Coaching = () => {
               <img
                 src={coaching1}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[50px] md:w-[90] w-[90px]"
               />
               <p className="font-bold text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
@@ -84,7 +84,7 @@ const Coaching = () => {
               <img
                 src={coaching2}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[50px] md:w-[90] w-[90px]"
               />
               <p className="font-bold text-xs md:text-xl  ">
                 Marketing, Business Development
@@ -96,7 +96,7 @@ const Coaching = () => {
               <img
                 src={coaching3}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[50px] md:w-[90] w-[90px]"
               />
             </div>
           </SplideSlide>
@@ -126,11 +126,7 @@ const Coaching = () => {
         >
           <SplideSlide>
             <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]  ">
-              <img
-                src={coaching1}
-                alt=""
-                className="h-[96px] w-[96px]"
-              />
+              <img src={coaching1} alt="" className="h-[96px] w-[96px]" />
               <p className="font-bold text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
               </p>
@@ -138,11 +134,7 @@ const Coaching = () => {
           </SplideSlide>
           <SplideSlide>
             <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]   ">
-              <img
-                src={coaching2}
-                alt=""
-                className="h-[96px] w-[96px]"
-              />
+              <img src={coaching2} alt="" className="h-[96px] w-[96px]" />
               <p className="font-bold text-xs md:text-xl  ">
                 Marketing, Business Development
               </p>
@@ -150,11 +142,7 @@ const Coaching = () => {
           </SplideSlide>
           <SplideSlide>
             <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 md:w-[50%] mx-auto  bg-white md:h-[130px] h-[80px]   ">
-              <img
-                src={coaching3}
-                alt=""
-                className="h-[96px] w-[96px]"
-              />
+              <img src={coaching3} alt="" className="h-[96px] w-[96px]" />
             </div>
           </SplideSlide>
         </Splide>

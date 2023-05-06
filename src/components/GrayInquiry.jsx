@@ -40,7 +40,7 @@ const GrayInquiry = () => {
             id=""
             className="mr-2 bg-red-500 h-6 w-6  "
           />
-          <p className="md:text-[15px] leading-[15px] font-bold w-[584px] text-sm">
+          <p className="md:text-[15px] leading-[15px]  w-[584px] text-sm">
             I would love to receive information on newsletters and more offers
           </p>
         </div>

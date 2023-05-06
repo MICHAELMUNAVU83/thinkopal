@@ -43,32 +43,13 @@ const MissionHero = () => {
         <Link className=" flex justify-center items-center pl-4 " to="/purpose">
           <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
         </Link>
-        <div className="w-10/12 hidden md:flex flex-col   justify-end items-end ">
-          <div className="relative">
-            <div className="absolute text-xl top-1/2 left-20 w-[28%] ">
-              <p className="text-6xl font-bold alstoria">Our Mission</p>
-              <p className="quicksand-500">
-                To contribute towards the growth of sustainable & Impactful
-              </p>
-              <p className="quicksand-500">
-                Enterprises to Reduce Inequalities, & contribute towards the
-              </p>
-              <p className="quicksand-500">
-                growth of sustainable communities and cities in East Africa.
-              </p>
-            </div>
-          </div>
-        </div>
+       
         <div className="bg-white h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
           <p className="text-center text-5xl md:text-xl tracking-wide p-4 pt-6 alstoria">
             Our Mission
           </p>
         </div>
-        {/* <p className=" flex items-end pt-28">
-        To contribute towards the growth of sustainable & Impactful Enterprises
-        to Reduce Inequalities, & contribute towards the growth of sustainable
-        communities and cities in East Africa.
-      </p> */}
+
         <Link
           className=" flex justify-center items-center pr-4 "
           to="/products"

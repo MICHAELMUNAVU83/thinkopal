@@ -119,7 +119,7 @@ const CapacityBuilding = () => {
                 alt=""
                 className="h-[96px] w-[96px]"
               />
-              <p className="font-bold text-xs md:text-xl  ">
+              <p className="text-xs md:text-xl  ">
                 Digital Marketing & Communication
               </p>
             </div>
@@ -131,7 +131,7 @@ const CapacityBuilding = () => {
                 alt=""
                 className="h-[96px] w-[96px]"
               />
-              <p className="font-bold ">Impact Measurement & Reporting</p>
+              <p className="text-xs md:text-xl">Impact Measurement & Reporting</p>
             </div>
           </SplideSlide>
           <SplideSlide>

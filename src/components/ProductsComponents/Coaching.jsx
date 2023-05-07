@@ -74,7 +74,7 @@ const Coaching = () => {
                 alt=""
                 className="h-[50px] md:w-[90] w-[90px]"
               />
-              <p className="font-bold text-xs md:text-xl w-[70%]">
+              <p className="text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
               </p>
             </div>
@@ -86,7 +86,7 @@ const Coaching = () => {
                 alt=""
                 className="h-[50px] md:w-[90] w-[90px]"
               />
-              <p className="font-bold text-xs md:text-xl  ">
+              <p className=" text-xs md:text-xl  ">
                 Marketing, Business Development
               </p>
             </div>
@@ -127,7 +127,7 @@ const Coaching = () => {
           <SplideSlide>
             <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]  ">
               <img src={coaching1} alt="" className="h-[96px] w-[96px]" />
-              <p className="font-bold text-xs md:text-xl w-[70%]">
+              <p className=" text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
               </p>
             </div>
@@ -135,7 +135,7 @@ const Coaching = () => {
           <SplideSlide>
             <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]   ">
               <img src={coaching2} alt="" className="h-[96px] w-[96px]" />
-              <p className="font-bold text-xs md:text-xl  ">
+              <p className=" text-xs md:text-xl  ">
                 Marketing, Business Development
               </p>
             </div>

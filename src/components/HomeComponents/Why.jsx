@@ -5,7 +5,7 @@ const Why = () => {
   return (
     <div className="bg-[#FFD230]  md:py-8">
       <div className="flex flex-col-reverse md:flex-row justify-between ">
-        <div className="flex flex-col  w-[90%] mx-auto bg-cover md:w-[40%] quicksand-500 text-xl md:gap-4 justify-center text-center md:text-start bg-[#FFD230]">
+        <div className="flex flex-col  w-[90%] mx-auto bg-cover md:w-[40%] quicksand-500 text-[20px] leading-[25.5px] md:gap-4 justify-center text-center md:text-start bg-[#FFD230]">
           <p className="my-8  p-4">
             To contribute towards the growth of sustainable & Impactful
             Enterprises to Reduce Inequalities, & contribute towards the growth

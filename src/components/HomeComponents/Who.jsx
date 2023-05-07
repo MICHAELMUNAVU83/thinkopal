@@ -6,14 +6,14 @@ const Who = () => {
   return (
     <div className="bg-[#FFD230]  md:py-8">
       <div className="flex flex-col-reverse md:flex-row justify-between ">
-        <div className="flex flex-col  w-[90%] mx-auto bg-cover md:w-[40%] quicksand-500 text-xl md:gap-4 justify-center text-center md:text-start bg-[#FFD230]">
+        <div className="flex flex-col  w-[90%] mx-auto bg-cover md:w-[504px] quicksand-500 text-[20px] leading-[25.5px] md:gap-4 justify-center text-center md:text-start bg-[#FFD230]">
           <p className="my-8  p-4">
             We are a Entrepreneurship Support Organization that supports Social
             Enterprises & Impactful Start ups in East Africa that seek to make a
             positive impact on Society and the environment while still
             generating Sustainable Profits.
           </p>
-          <button className="bg-white w-[225px] hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase">
+          <button className="bg-white h-[57px] w-[225px] cursor-pointer hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center  uppercase">
             Our Purpose
           </button>
         </div>

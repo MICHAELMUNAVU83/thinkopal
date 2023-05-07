@@ -55,7 +55,7 @@ const BlogHero = () => {
       </div>
       <div className="bg-white h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
         <p className="text-center text-5xl md:text-xl tracking-wide p-4 pt-6 alstoria">
-          Our purpose
+          Impact Series
         </p>
       </div>
       <Link className=" flex justify-center items-center pr-4 " to="/clients">

@@ -69,7 +69,7 @@ const Resources = () => {
             perMove: 1,
             pagination: false,
 
-            gap: "0.5rem",
+            gap: "0.2rem",
 
             arrows: true,
             autoplay: true,

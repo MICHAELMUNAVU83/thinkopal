@@ -7,7 +7,7 @@ const What = () => {
     <div className="bg-[#FFD230]  md:py-8">
       <div className="flex flex-col-reverse md:flex-row justify-between ">
         <div className="flex flex-col  w-[90%] mx-auto bg-cover md:w-[40%] quicksand-500 text-xl md:gap-4 justify-center text-center md:text-start bg-[#FFD230]">
-          <div className="my-8  p-4 flex flex-col gap-4" >
+          <div className="my-8  p-4 flex flex-col text-[20px] leading-[25.5px] gap-4" >
             <p >Coaching and Mentorship</p>
             <p>Capacity Building</p>
             <p>Mbinu Enterprise Program</p>

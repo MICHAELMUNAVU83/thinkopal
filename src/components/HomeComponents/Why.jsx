@@ -14,7 +14,7 @@ const Why = () => {
           </p>
           <Link
             to="\mission"
-            className="bg-white w-[225px] hover:scale-105 transition-all duration-300 quicksand-700 rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase"
+            className="bg-white w-[225px] hover:scale-105 transition-all duration-300 quicksand-700 rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0  flex items-center justify-center px-2 py-4 uppercase"
           >
             Our Mission
           </Link>

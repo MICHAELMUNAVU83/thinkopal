@@ -14,7 +14,7 @@ const Who = () => {
             positive impact on Society and the environment while still
             generating Sustainable Profits.
           </p>
-          <Link to="/purpose" className="bg-white h-[57px] w-[225px] cursor-pointer hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center  uppercase">
+          <Link to="/purpose" className="bg-white h-[57px] w-[225px] cursor-pointer hover:scale-105 transition-all duration-300 quicksand-700 text-xl rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0  flex items-center justify-center  uppercase">
             Our Purpose
           </Link >
         </div>

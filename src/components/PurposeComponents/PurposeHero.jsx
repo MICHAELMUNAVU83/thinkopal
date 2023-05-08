@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
-import background2 from "../images/background2.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
-import homemobi from "../images/Vector.png";
-import bgit from "../images/bgit.jpg";
-import bgitsemi from "../images/bgitsemi.png";
+import purposebackground from "../images/backgrounds/purposebackground.jpg";
 
 const PurposeHero = () => {
   return (
     <>
       <div
         style={{
-          backgroundImage: `url(${bgit})`,
+          backgroundImage: `url(${purposebackground})`,
           backgroundColor: "#FFD230",
         }}
-        className="h-[100vh] bg-cover bg-[70%]  md:bg-center p-4"
+        className="h-[100vh] bg-cover bg-[70%]  md:bg-center "
       >
-        <div className="flex justify-between h-[100vh]">
+        <div className="flex bg-white/30 justify-between h-[100vh] p-4">
           <Link className=" flex justify-center items-center  " to="/">
             <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
           </Link>
@@ -31,15 +28,12 @@ const PurposeHero = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
+          <div className="bg-white/70 h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
             <p className="text-center text-5xl md:text-xl tracking-wide p-4 pt-6 alstoria">
               Our purpose
             </p>
           </div>
-          <Link
-            className=" flex justify-center items-center "
-            to="/products"
-          >
+          <Link className=" flex justify-center items-center " to="/products">
             <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
           </Link>
         </div>

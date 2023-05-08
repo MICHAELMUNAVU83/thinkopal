@@ -1,48 +1,25 @@
 import React, { useState, useEffect, useLocation } from "react";
-import background1 from "../images/background1.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
-import unt from "../images/unt.png";
 import { Link } from "react-router-dom";
 import cdmssmall from "../images/cdmssmall.png";
-import homemobi from "../images/Vector.png";
-import bghosi from "../images/bghosi.jpg";
-import bghosisemi from "../images/bghosisemi.png";
+import homebackground from "../images/backgrounds/homebackground.jpg";
 
 const HomeHero = () => {
-  const [background, setBackground] = useState(homemobi);
-  // const location = useLocation();
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setBackground(background1);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("load", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("load", handleResize);
-    };
-  }, [location]);
-
   return (
     <div
       style={{
-        backgroundImage: `url(${bghosi})`,
+        backgroundImage: `url(${homebackground})`,
         backgroundColor: "#FFD230",
       }}
-      className="h-[100vh] bg-cover md:bg-center bg-no-repeat bg-[40%]  "
+      className="h-[100vh] bg-cover md:bg-center bg-no-repeat bg-[40%]   "
     >
-      <div className="flex justify-between h-[100vh] ">
-        <Link className="flex justify-center items-center pl-4 " to="/products">
+      <div className="flex justify-between bg-white/30 h-[100vh] p-4 ">
+        <Link className="flex justify-center items-center  " to="/contact">
           <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
         </Link>
         <div className="w-10/12 hidden md:flex flex-col justify-end items-end ">
-          <div className="bg-white h-[500px] w-[500px] rounded-full flex  justify-center items-center absolute flex-col  bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
+          <div className="bg-white h-[500px] w-[500px] rounded-full flex  justify-center items-center absolute flex-col  bottom-7 left-1/2 transform -translate-x-1/2 mb-4 ">
             <div className=" quicksand-700   top-1/2 left-24 text-3xl">
               <p>We helped a health</p>
               <p>start-up deliver</p>
@@ -60,7 +37,7 @@ const HomeHero = () => {
           </p>
           <img src={cdmssmall} alt="cdmssmall" className="h-[77px]" />
         </div>
-        <Link className="flex justify-center items-center pr-4 " to="/purpose">
+        <Link className="flex justify-center items-center  " to="/purpose">
           <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
         </Link>
       </div>

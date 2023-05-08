@@ -203,15 +203,15 @@ const ClientsHero = () => {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="bg-white/50 h-[650px] w-[100%] flex md:flex-row flex-col justify-center items-center  gap-8  rounded-2xl flex flex-col justify-center items-center">
+                <div className="bg-white/50 md:p-8 p-0 h-[650px] w-[100%] flex md:flex-row md:justify-around   gap-8  rounded-2xl flex-col justify-center items-center">
                   <img
                     src={client.image}
                     alt=""
-                    className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full"
+                    className="w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full"
                   />
 
                   <div className="flex flex-col gap-4">
-                    <p className="md:text-2xl  quicksand-500 mx-auto w-[90%]">
+                    <p className="md:text-2xl text-sm  quicksand-500 mx-auto w-[90%] md:w-[50%]">
                       {client.text}
                     </p>
                   </div>

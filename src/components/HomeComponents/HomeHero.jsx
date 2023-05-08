@@ -19,7 +19,7 @@ const HomeHero = () => {
           <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
         </Link>
         <div className="w-10/12 hidden md:flex flex-col justify-end items-end ">
-          <div className="bg-white h-[500px] w-[500px] rounded-full flex  justify-center items-center absolute flex-col  bottom-7 left-1/2 transform -translate-x-1/2 mb-4 ">
+          <div className="bg-white h-[400px] w-[400px] rounded-full flex  justify-center items-center absolute flex-col  bottom-7 left-1/2 transform -translate-x-1/2 mb-4 ">
             <div className=" quicksand-700   top-1/2 left-24 text-3xl">
               <p>We helped a health</p>
               <p>start-up deliver</p>

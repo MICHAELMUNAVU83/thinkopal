@@ -19,9 +19,9 @@ const PurposeHero = () => {
             <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
           </Link>
           <div className="w-10/12 hidden md:flex flex-col   justify-end items-end ">
-            <div className="bg-white h-[500px] w-[500px] rounded-full flex  justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
-              <p className="text-6xl font-bold alstoria">Our Purpose</p>
-              <div className="quicksand-500 text-xl p-8 text-center">
+            <div className="bg-white h-[400px] w-[400px] rounded-full flex  justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
+              <p className="text-5xl font-bold alstoria">Our Purpose</p>
+              <div className="quicksand-500  p-8 text-center">
                 To contribute towards the growth of sustainable & Impactful
                 Enterprises to Reduce Inequalities, & contribute towards the
                 growth of sustainable communities and cities in East Africa.

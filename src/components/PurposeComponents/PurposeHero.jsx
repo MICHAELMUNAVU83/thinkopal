@@ -3,33 +3,11 @@ import background2 from "../images/background2.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import unt from "../images/unt.png";
 import homemobi from "../images/Vector.png";
 import bgit from "../images/bgit.jpg";
 import bgitsemi from "../images/bgitsemi.png";
+
 const PurposeHero = () => {
-  const [background, setBackground] = useState(homemobi);
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setBackground(homemobi);
-      } else {
-        setBackground(background2);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("load", handleResize);
-    //componentDidMount()
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("load", handleResize);
-    };
-  }, [location]);
   return (
     <>
       <div
@@ -37,16 +15,16 @@ const PurposeHero = () => {
           backgroundImage: `url(${bgit})`,
           backgroundColor: "#FFD230",
         }}
-        className="h-[100vh] bg-cover bg-[70%]  md:bg-center "
+        className="h-[100vh] bg-cover bg-[70%]  md:bg-center p-4"
       >
         <div className="flex justify-between h-[100vh]">
-          <Link className=" flex justify-center items-center pl-4 " to="/">
+          <Link className=" flex justify-center items-center  " to="/">
             <MdArrowBackIosNew className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
           </Link>
           <div className="w-10/12 hidden md:flex flex-col   justify-end items-end ">
             <div className="bg-white h-[500px] w-[500px] rounded-full flex  justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
               <p className="text-6xl font-bold alstoria">Our Purpose</p>
-              <div className="quicksand-500 text-xl text-center">
+              <div className="quicksand-500 text-xl p-8 text-center">
                 To contribute towards the growth of sustainable & Impactful
                 Enterprises to Reduce Inequalities, & contribute towards the
                 growth of sustainable communities and cities in East Africa.
@@ -59,7 +37,7 @@ const PurposeHero = () => {
             </p>
           </div>
           <Link
-            className=" flex justify-center items-center pr-4 "
+            className=" flex justify-center items-center "
             to="/products"
           >
             <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />

@@ -1,6 +1,7 @@
 import React from "react";
 import whypic from "../images/whypic.png";
 import whatwedo from "../images/whatwedo.svg";
+import { Link } from "react-router-dom";
 const Why = () => {
   return (
     <div className="bg-[#FFD230]  md:py-8">
@@ -11,9 +12,12 @@ const Why = () => {
             Enterprises to Reduce Inequalities, & contribute towards the growth
             of sustainable communities and cities in East Africa.
           </p>
-          <button className="bg-white w-[225px] hover:scale-105 transition-all duration-300 quicksand-700 rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase">
+          <Link
+            to="\mission"
+            className="bg-white w-[225px] hover:scale-105 transition-all duration-300 quicksand-700 rounded-md shadow-md shadow-[#00000040] mx-16 md:mx-2 my-5 md:my-0 justify-center px-2 py-4 uppercase"
+          >
             Our Mission
-          </button>
+          </Link>
         </div>
         <div className="relative curved-bg  mx-auto">
           <img

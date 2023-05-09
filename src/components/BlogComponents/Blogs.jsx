@@ -74,7 +74,7 @@ const Blogs = () => {
               </a>
             </div>
             <div className="md:w-[50%] flex flex-col items-center justify-center text-center">
-              <img src={blog.image} alt="youth" className="h-[539px]" />
+              <img src={blog.image} alt="youth" className="h-[480px]" />
               <p className="md:text-[48px] leading-[45.6px]  font-bold alstoria md:w-[80%] mt-4">
                 {blog.title}
               </p>

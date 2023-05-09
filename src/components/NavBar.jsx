@@ -51,7 +51,7 @@ const NavBar = () => {
             className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
             to="/products"
           >
-            Our Products
+            Our Services
           </Link>
           <Link
             to="/blog"
@@ -73,69 +73,61 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="md:hidden ">
-          {!nav && (
-            <AiOutlineMenu
-              size={25}
-              onClick={handleNav}
-              
-            />
-          )}
+          {!nav && <AiOutlineMenu size={25} onClick={handleNav} />}
         </div>
       </div>
 
-     
-        <div
-          className={
-            nav
-              ? "fixed w-[100%] flex  flex-col justify-center pb-8  top-0 md-[45%] bg-white/80 transition  ease-in-out duration-500"
-              : "fixed left-[-100%] h-[20%] -top-[100%] p-10 ease-in-out transition  duration-500"
-          }
-          onClick={handleNav}
-        >
-          <div className="py-2 mx-8 quicksand-500 flex justify-between items-center">
-            <img src={logo} alt="logo" className=" h-[40px] md:h-[80px]" />
-            <AiOutlineClose size={25} onClick={handleNav} />
-          </div>
+      <div
+        className={
+          nav
+            ? "fixed w-[100%] flex  flex-col justify-center pb-8  top-0 md-[45%] bg-white/80 transition  ease-in-out duration-500"
+            : "fixed left-[-100%] h-[20%] -top-[100%] p-10 ease-in-out transition  duration-500"
+        }
+        onClick={handleNav}
+      >
+        <div className="py-2 mx-8 quicksand-500 flex justify-between items-center">
+          <img src={logo} alt="logo" className=" h-[40px] md:h-[80px]" />
+          <AiOutlineClose size={25} onClick={handleNav} />
+        </div>
 
-          <div className="flex flex-col gap-4  justify-center items-center uppercase text-xl   text-black">
-            <Link
-              className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-white  cursor-pointer"
-              to="/purpose"
-            >
-              Our Purpose
-            </Link>
-            <Link
-              className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-              to="/mission"
-            >
-              Our mission
-            </Link>
-            <Link
-              className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-              to="/products"
-            >
-              Our Products
-            </Link>
-            <Link
-              to="/blog"
-              className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-            >
-              Our Blog
-            </Link>
-            <Link
-              to="/clients"
-              className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-            >
-              Our Clients
-            </Link>
-            <Link
-              className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-              to="/contact"
-            >
-              Contact US
-            </Link>
-          </div>
-        
+        <div className="flex flex-col gap-4  justify-center items-center uppercase text-xl   text-black">
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-white  cursor-pointer"
+            to="/purpose"
+          >
+            Our Purpose
+          </Link>
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+            to="/mission"
+          >
+            Our Mission
+          </Link>
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+            to="/products"
+          >
+            Our Services
+          </Link>
+          <Link
+            to="/blog"
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+          >
+            Our Blog
+          </Link>
+          <Link
+            to="/clients"
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+          >
+            Our Clients
+          </Link>
+          <Link
+            className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
+            to="/contact"
+          >
+            Contact US
+          </Link>
+        </div>
       </div>
     </div>
   );

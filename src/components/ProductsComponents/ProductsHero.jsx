@@ -18,7 +18,7 @@ const ProductsHero = () => {
         </Link>
         <div className="w-10/12 hidden md:flex flex-col   justify-end items-end ">
           <div className="bg-white h-[400px] w-[400px] rounded-full flex  justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
-            <p className="text-5xl font-bold alstoria">Our Products</p>
+            <p className="text-5xl font-bold alstoria">Our Services</p>
             <div className="quicksand-500 p-8  text-center">
               At Think Opal, we're dedicated to providing innovative solutions
               to help social enterprises and impactful startups in East Africa
@@ -30,7 +30,7 @@ const ProductsHero = () => {
         </div>
         <div className="bg-white/70 h-[277px] w-[277px] rounded-full flex md:hidden justify-center items-center flex-col absolute bottom-7 left-1/2 transform -translate-x-1/2 mb-4">
           <p className="text-center text-5xl md:text-xl tracking-wide p-4 pt-6 alstoria">
-            Our Products
+            Our Services
           </p>
         </div>
         <Link className=" flex justify-center items-center " to="/blog">

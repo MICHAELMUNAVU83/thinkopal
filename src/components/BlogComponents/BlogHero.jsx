@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useLocation } from "react";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
-import impactseriesbg from "../images/impactseriesbg.jpeg";
+import impactseriesbg from "../images/backgrounds/impactseriesbg.jpeg";
 import { Link } from "react-router-dom";
 const BlogHero = () => {
   return (

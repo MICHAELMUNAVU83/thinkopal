@@ -1,6 +1,8 @@
 import React from "react";
-import youth from "../images/youth.png";
 import curvedblog from "../images/curvedblog.png";
+import blogimage1 from "../images/blogs/blogimage1.png";
+import blogimage2 from "../images/blogs/blogimage2.png";
+import blogimage3 from "../images/blogs/blogimage3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "../splide.min.css";
 
@@ -8,42 +10,39 @@ const Blogs = () => {
   const blogs = [
     {
       id: 1,
-      title:
-        "Youth Led Organization in Mombasa Paves the way for Educational empowerment",
-      image: youth,
+      title: "Data Driven Livestock Management",
+      image: blogimage1,
       curved_image: curvedblog,
       paragraph1:
-        "Path Youth Organization, a Kenyan non-profit, empowers impoverished students to succeed in their academic pursuits.",
+        "With a passion for agriculture and a keen eye for innovation, Wanjohi Bernard has harnessed the power of technology to help farmers overcome the challenges they face in their daily lives. ",
       paragraph2:
-        "Through community outreach, volunteer programs, and partnerships with other organizations and schools, Path Youth provides mentorship, resources, and support to young people, helping them overcome obstacles and achieve their academic goals. Find out more about its impact in Mombasa.",
+        "His company Imfuyo, offers a range of services that are designed to improve productivity and increase profitability for farmers, while also promoting sustainable practices that are good for the environment.",
       button: "View In Blog",
-      link: "https://medium.com/@thinkopal",
+      link: "https://medium.com/@thinkopal/data-driven-livestock-management-how-an-agri-fintech-company-is-revolutionizing-livestock-farming-a3bfab30f8b9",
     },
     {
       id: 2,
       curved_image: curvedblog,
-      title:
-        "Youth Led Organization in Mombasa Paves the way for Educational empowerment",
-      image: youth,
+      title: "Breaking the Cycle",
+      image: blogimage2,
       paragraph1:
-        "Path Youth Organization, a Kenyan non-profit, empowers impoverished students to succeed in their academic pursuits.",
+        "Through her tireless efforts, Jackline Saleiyan has helped countless girls in Kajiado overcome some of the most pressing challenges of their young lives. ",
       paragraph2:
-        "Through community outreach, volunteer programs, and partnerships with other organizations and schools, Path Youth provides mentorship, resources, and support to young people, helping them overcome obstacles and achieve their academic goals. Find out more about its impact in Mombasa.",
+        "From providing access to education and counseling services, to distributing sanitary pads to those who need them, her work has had a profound impact on the lives of many.",
       button: "View In Blog",
-      link: "https://medium.com/@thinkopal",
+      link: "https://medium.com/@thinkopal/providing-a-safe-space-for-young-girls-the-incredible-impact-of-a-womans-organization-on-early-1604fd503020",
     },
     {
       id: 3,
       curved_image: curvedblog,
-      title:
-        "Youth Led Organization in Mombasa Paves the way for Educational empowerment",
-      image: youth,
+      title: "Empowering Young Women",
+      image: blogimage3,
       paragraph1:
-        "Path Youth Organization, a Kenyan non-profit, empowers impoverished students to succeed in their academic pursuits.",
+        "Knight Muteti is the founder and Executive Director of Daughters of Kenya (DoK). The mission of DoK is to create sustainable models that rescue,",
       paragraph2:
-        "Through community outreach, volunteer programs, and partnerships with other organizations and schools, Path Youth provides mentorship, resources, and support to young people, helping them overcome obstacles and achieve their academic goals. Find out more about its impact in Mombasa.",
+        "educate and empower vulnerable girls and young mothers in Kenya. They believe that empowerment of women and girls make them catalysts of change.",
       button: "View In Blog",
-      link: "https://medium.com/@thinkopal",
+      link: "https://medium.com/@thinkopal/empowering-young-women-how-one-ladys-social-enterprise-is-making-a-difference-974e4c8ff904",
     },
   ];
   return (
@@ -74,7 +73,11 @@ const Blogs = () => {
               </a>
             </div>
             <div className="md:w-[50%] flex flex-col items-center justify-center text-center">
-              <img src={blog.image} alt="youth" className="h-[480px]" />
+              <img
+                src={blog.image}
+                alt="youth"
+                className="h-[400px] bg-center w-[400px] rounded-full"
+              />
               <p className="md:text-[48px] leading-[45.6px]  font-bold alstoria md:w-[80%] mt-4">
                 {blog.title}
               </p>

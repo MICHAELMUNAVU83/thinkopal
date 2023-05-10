@@ -32,7 +32,7 @@ const NavBar = () => {
     >
       <div className=" flex bg-transparent py-2 mx-8 justify-between items-center">
         <Link to="/" className="cursor-pointer">
-          <img src={logo} alt="logo" className=" h-[40px] md:h-[80px]" />
+          <img src={logo} alt="logo" className=" h-[40px] md:h-[60px]" />
         </Link>
         <div className="hidden md:flex gap-16 justify-center uppercase   ">
           <Link

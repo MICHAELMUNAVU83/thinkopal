@@ -211,7 +211,7 @@ const ClientsHero = () => {
                   />
 
                   <div className="flex flex-col gap-4">
-                    <p className="md:text-2xl text-sm  quicksand-500 mx-auto w-[90%] md:w-[50%]">
+                    <p className="md:text-2xl text-sm  quicksand-500 mx-auto w-[90%] md:w-[80%]">
                       {client.text}
                     </p>
                   </div>

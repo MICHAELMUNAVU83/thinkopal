@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import capacitypic from "../images/coaching.png";
+import capacitypic from "../images/capacitybuilding.png";
 import capacity1 from "../images/capacity1.png";
 import capacity2 from "../images/capacity2.png";
 import capacity3 from "../images/capacity3.png";

@@ -1,5 +1,5 @@
 import React from "react";
-import mbinupic from "../images/coaching.png";
+import mbinupic from "../images/mbinuenterprise.png";
 const Mbinu = () => {
   return (
     <div className="bg-[#FFD230] py-8 ">

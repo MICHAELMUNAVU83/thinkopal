@@ -3,6 +3,9 @@ import curvedblog from "../images/curvedblog.png";
 import blogimage1 from "../images/blogs/blogimage1.png";
 import blogimage2 from "../images/blogs/blogimage2.png";
 import blogimage3 from "../images/blogs/blogimage3.png";
+import curvedblogimage1 from "../images/blogs/curvedblogimage1.png";
+import curvedblogimage2 from "../images/blogs/curvedblogimage2.png";
+import curvedblogimage3 from "../images/blogs/curvedblogimage3.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "../splide.min.css";
 
@@ -12,7 +15,7 @@ const Blogs = () => {
       id: 1,
       title: "Data Driven Livestock Management",
       image: blogimage1,
-      curved_image: curvedblog,
+      curved_image: curvedblogimage1,
       paragraph1:
         "With a passion for agriculture and a keen eye for innovation, Wanjohi Bernard has harnessed the power of technology to help farmers overcome the challenges they face in their daily lives. ",
       paragraph2:
@@ -22,7 +25,7 @@ const Blogs = () => {
     },
     {
       id: 2,
-      curved_image: curvedblog,
+      curved_image: curvedblogimage2,
       title: "Breaking the Cycle",
       image: blogimage2,
       paragraph1:
@@ -34,7 +37,7 @@ const Blogs = () => {
     },
     {
       id: 3,
-      curved_image: curvedblog,
+      curved_image: curvedblogimage3,
       title: "Empowering Young Women",
       image: blogimage3,
       paragraph1:
@@ -112,7 +115,7 @@ const Blogs = () => {
               style={{
                 backgroundImage: `url(${blog.curved_image})`,
               }}
-              className="bg-cover bg-center h-[900px] flex flex-col justify-center items-center"
+              className="bg-cover bg-center h-[900px] mt-4 flex flex-col justify-center items-center"
             >
               <div className="flex flex-col items-center justify-center">
                 <p className="alstoria w-[70%] pt-16 text-4xl text-center mx-auto">

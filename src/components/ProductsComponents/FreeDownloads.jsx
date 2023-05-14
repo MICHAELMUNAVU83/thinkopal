@@ -14,7 +14,7 @@ const FreeDownloads = () => {
         <img
           src={freedownloadpic}
           alt="freedownloadpic"
-          className="md:h-[80vh]"
+          className="md:h-[80vh]  object-cover"
         />
         <div className="flex flex-col    justify-around md:items-end mt-5 mb-5">
           <p className="text-2xl bg-[#FFD230] flex justify-center items-center hover:scale-105 transition ease-in-out duration-500  md:text-start text-center quicksand-700 h-[42px] md:w-[253px] font-semibold text-white  rounded-lg cursor-pointer">

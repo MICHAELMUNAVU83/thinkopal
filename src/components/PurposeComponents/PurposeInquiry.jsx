@@ -63,7 +63,7 @@ const PurposeInquiry = () => {
         <img
           src={purposeinquirypic}
           alt="whatpic"
-          className="h-[500px] w-[500px] hidden md:block"
+          className="h-[500px]  object-cover w-[500px] hidden md:block"
         />
       </div>
     </div>

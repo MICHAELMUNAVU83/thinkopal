@@ -97,7 +97,7 @@ const Carousel = () => {
                 <img
                   src={data.logo}
                   alt="logo"
-                  className=" md:h-[100px] h-[50px] my-8"
+                  className=" md:h-[100px] object-cover h-[50px] my-8"
                 />
               </div>
             </div>

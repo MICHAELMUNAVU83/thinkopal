@@ -92,7 +92,7 @@ const TargetSectors = () => {
                   borderRadius: "10px",
                 }}
               >
-                <img src={sector.icon} alt="" className=" " />
+                <img src={sector.icon} alt="" className=" object-cover " />
                 <p className=" quicksand-500 text-center">{sector.name}</p>
               </div>
             </SplideSlide>

@@ -44,7 +44,7 @@ const Resources = () => {
         <div>
           {resources.map((resource) => (
             <div className="w-[80%] mx-auto my-8 flex justify-between">
-              <img src={resource.image} alt="freeresourcepic" />
+              <img src={resource.image} alt="freeresourcepic" className=" object-cover" />
               <div className="text-end flex flex-col gap-4">
                 <h1 className="text-4xl font-bold">{resource.name1}</h1>
                 <h1 className="text-4xl font-bold">{resource.name2}</h1>
@@ -81,7 +81,7 @@ const Resources = () => {
               <img
                 src={resource.curvedimg}
                 alt="freeresourcepic"
-                className="w-[100%] "
+                className="w-[100%]  object-cover"
               />
               <div className="flex flex-col gap-4 justify-center items-center">
                 <p

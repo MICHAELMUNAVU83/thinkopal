@@ -26,7 +26,7 @@ const CapacityBuilding = () => {
           <img
             src={capacitypic}
             alt="whatpic"
-            className="md:h-[500px] md:w-[500px]"
+            className="md:h-[500px]  object-cover md:w-[500px]"
           />
           <div className="absolute top-1/2 left-[15%] md:top-2/3 md:left-[30%] text-center alstoria  text-6xl font-bold flex flex-col ">
             <p>Capacity</p>
@@ -63,7 +63,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity1}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[50px]  object-cover md:w-[100] w-[100px]"
               />
               <p className="font-bold text-xs md:text-xl  ">
                 Digital Marketing & Communication
@@ -75,7 +75,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity2}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[50px]  object-cover md:w-[100] w-[100px]"
               />
               <p className="font-bold ">Impact Measurement & Reporting</p>
             </div>
@@ -85,7 +85,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity3}
                 alt=""
-                className="h-[50px] md:w-[100] w-[100px]"
+                className="h-[50px]  object-cover md:w-[100] w-[100px]"
               />
             </div>
           </SplideSlide>
@@ -117,7 +117,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity1}
                 alt=""
-                className="h-[96px] w-[96px]"
+                className="h-[96px]  object-cover w-[96px]"
               />
               <p className="text-xs md:text-xl  ">
                 Digital Marketing & Communication
@@ -129,7 +129,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity2}
                 alt=""
-                className="h-[96px] w-[96px]"
+                className="h-[96px]  object-cover w-[96px]"
               />
               <p className="text-xs md:text-xl">Impact Measurement & Reporting</p>
             </div>
@@ -139,7 +139,7 @@ const CapacityBuilding = () => {
               <img
                 src={capacity3}
                 alt=""
-                className="h-[96px] w-[96px]"
+                className="h-[96px]  object-cover w-[96px]"
               />
             </div>
           </SplideSlide>

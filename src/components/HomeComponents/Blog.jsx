@@ -16,10 +16,10 @@ const Blog = () => {
           <img
             src={blogimage}
             alt="blogimage"
-            className="hidden md:block w-[600px] h-[700px]"
+            className="hidden  object-cover md:block w-[600px] h-[700px]"
           />
         </div>
-        <img src={blog} alt="blog" className="md:hidden" />
+        <img src={blog} alt="blog" className="  object-cover md:hidden" />
         <div className="md:mr-8 flex flex-col gap-4 md:gap-8 justify-center items-center md:items-end">
           <h1 className="alstoria font-normal text-4xl md:text-6xl">
             Impact Series
@@ -41,9 +41,14 @@ const Blog = () => {
             >
               About The Impact Series
             </Link>
-            <button className="bg-white font-bold   quicksand-700 hover:scale-105 transition-all duration-300 w-[225px] mx-auto h-[57px] rounded-[5px] text-black uppercase flex justify-center items-center  shadow-gray-400 shadow-2xl">
+            <a
+              className="bg-white font-bold   quicksand-700 hover:scale-105 transition-all duration-300 w-[225px] mx-auto h-[57px] rounded-[5px] text-black uppercase flex justify-center items-center  shadow-gray-400 shadow-2xl"
+              href="https://medium.com/@thinkopal/data-driven-livestock-management-how-an-agri-fintech-company-is-revolutionizing-livestock-farming-a3bfab30f8b9"
+              target="_blank"
+              rel="noreferrer"
+            >
               View In blog
-            </button>
+            </a>
           </div>
         </div>
       </div>

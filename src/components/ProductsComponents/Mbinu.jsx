@@ -18,7 +18,7 @@ const Mbinu = () => {
           <img
             src={mbinupic}
             alt="whatpic"
-            className="md:h-[500px] md:w-[500px]"
+            className="md:h-[500px] md:w-[500px]  object-cover"
           />
           <div className="absolute top-[18%] left-[11%] md:top-[50%] md:left-[25%] alstoria text-center  text-6xl font-bold flex flex-col ">
             <p>Mbinu</p>

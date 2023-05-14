@@ -22,9 +22,9 @@ const Who = () => {
           <img
             src={whopic}
             alt="whatpic"
-            className="md:h-[500px] md:w-[500px] h-[300px]"
+            className="md:h-[500px]  object-cover md:w-[500px] h-[300px]"
           />
-          <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[27%] alstoria text-center md:text-6xl text-5xl font-semibold flex flex-col">
+          <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[32%] alstoria text-center md:text-6xl text-5xl font-semibold flex flex-col">
             <p className="">Who</p>
             <p>We Are</p>
           </div>

@@ -32,7 +32,7 @@ const SustainableGoals = () => {
             />
             <div className=" absolute inset-0  group-hover:bg-none  bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center visible">
               <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
-                <img src={sdg1} alt="" />
+                <img src={sdg1} alt="" className=" object-cover" />
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ const SustainableGoals = () => {
             />
             <div className="absolute inset-0 bg-none bg-gradient-to-tr  from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center">
               <div className="absolute inset-x-5 bottom-6 left-[40%]">
-                <img src={sdg2} alt="" />
+                <img src={sdg2} alt="" className=" object-cover" />
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const SustainableGoals = () => {
             />
             <div className=" absolute inset-0 absolute inset-0  group-hover:bg-none bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">
               <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
-                <img src={sdg3} alt="" />
+                <img src={sdg3} alt="" className=" object-cover" />
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ const SustainableGoals = () => {
             />
             <div className=" absolute inset-0 absolute inset-0  group-hover:bg-none bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center  visible">
               <div className="absolute group-hover:left-[40%] inset-x-5 bottom-6 transition-all duration-500">
-                <img src={sdg4} alt="" />
+                <img src={sdg4} alt="" className=" object-cover" />
               </div>
             </div>
           </div>

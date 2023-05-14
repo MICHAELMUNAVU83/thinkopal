@@ -79,7 +79,7 @@ const Blogs = () => {
               <img
                 src={blog.image}
                 alt="youth"
-                className="h-[400px] bg-center w-[400px] rounded-full"
+                className="h-[400px]  object-cover bg-center w-[400px] rounded-full"
               />
               <p className="md:text-[48px] leading-[45.6px]  font-bold alstoria md:w-[80%] mt-4">
                 {blog.title}

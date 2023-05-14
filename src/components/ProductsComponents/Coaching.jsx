@@ -24,7 +24,7 @@ const Coaching = () => {
           <img
             src={coachingpic}
             alt="whatpic"
-            className="md:h-[500px] md:w-[500px]"
+            className="md:h-[500px]  object-cover md:w-[500px]"
           />
           <div className="absolute top-1/2 left-[9%] md:top-2/3 md:left-[25%] alstoria text-center  text-5xl font-bold flex flex-col ">
             <p>Coaching And</p>
@@ -72,7 +72,7 @@ const Coaching = () => {
               <img
                 src={coaching1}
                 alt=""
-                className="h-[50px] md:w-[90] w-[90px]"
+                className="h-[50px]  object-cover md:w-[90] w-[90px]"
               />
               <p className="text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
@@ -96,7 +96,7 @@ const Coaching = () => {
               <img
                 src={coaching3}
                 alt=""
-                className="h-[50px] md:w-[90] w-[90px]"
+                className="h-[50px]  object-cover md:w-[90] w-[90px]"
               />
             </div>
           </SplideSlide>
@@ -126,7 +126,7 @@ const Coaching = () => {
         >
           <SplideSlide>
             <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]  ">
-              <img src={coaching1} alt="" className="h-[96px] w-[96px]" />
+              <img src={coaching1} alt="" className="h-[96px]  object-cover w-[96px]" />
               <p className=" text-xs md:text-xl w-[70%]">
                 Business Planning and Sustainability Strategy Development
               </p>
@@ -134,7 +134,7 @@ const Coaching = () => {
           </SplideSlide>
           <SplideSlide>
             <div className="flex quicksand-700 justify-around items-center rounded-lg p-4  bg-white md:h-[130px] h-[80px]   ">
-              <img src={coaching2} alt="" className="h-[96px] w-[96px]" />
+              <img src={coaching2} alt="" className="h-[96px]  object-cover w-[96px]" />
               <p className=" text-xs md:text-xl  ">
                 Marketing, Business Development
               </p>
@@ -142,7 +142,7 @@ const Coaching = () => {
           </SplideSlide>
           <SplideSlide>
             <div className="flex quicksand-700 justify-center items-center rounded-lg p-4 md:w-[50%] mx-auto  bg-white md:h-[130px] h-[80px]   ">
-              <img src={coaching3} alt="" className="h-[96px] w-[96px]" />
+              <img src={coaching3} alt="" className="h-[96px]  object-cover w-[96px]" />
             </div>
           </SplideSlide>
         </Splide>

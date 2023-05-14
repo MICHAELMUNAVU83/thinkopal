@@ -139,7 +139,7 @@ const ClientsHero = () => {
           {clientlogos.map((clientlogo) => (
             <SplideSlide>
               <div className="flex justify-center items-center p-4  bg-white h-[150px]  ">
-                <img src={clientlogo.logo} alt="" className=" " />
+                <img src={clientlogo.logo} alt="" className="  object-cover" />
               </div>
             </SplideSlide>
           ))}
@@ -168,7 +168,7 @@ const ClientsHero = () => {
                   borderRadius: "10px",
                 }}
               >
-                <img src={sector.icon} alt="" className=" " />
+                <img src={sector.icon} alt="" className=" object-cover " />
                 <p className="text-xl quicksand-500 text-center">
                   {sector.name}
                 </p>
@@ -207,7 +207,7 @@ const ClientsHero = () => {
                   <img
                     src={client.image}
                     alt=""
-                    className="w-[250px] h-[250px] md:w-[500px] md:h-[500px] rounded-full"
+                    className="w-[250px]  object-cover h-[250px] md:w-[500px] md:h-[500px] rounded-full"
                   />
 
                   <div className="flex flex-col gap-4">

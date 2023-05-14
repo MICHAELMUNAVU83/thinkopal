@@ -21,7 +21,7 @@ const Who = () => {
         <div className="relative curved-bg  mx-auto">
           <img
             src={whopic}
-            alt="whatpic"
+            alt="thinkopal who client"
             className="md:h-[500px]  object-cover md:w-[500px] h-[300px]"
           />
           <div className="absolute top-[53%] md:top-2/3 left-[30%] md:left-[32%] alstoria text-center md:text-6xl text-5xl font-semibold flex flex-col">

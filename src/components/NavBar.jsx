@@ -32,7 +32,7 @@ const NavBar = () => {
     >
       <div className=" flex bg-transparent py-2 mx-8 justify-between items-center">
         <Link to="/" className="cursor-pointer">
-          <img src={logo} alt="logo" className=" h-[40px]  object-cover md:h-[60px]" />
+          <img src={logo} alt="thinkopal logo" className=" h-[40px]  object-cover md:h-[60px]" />
         </Link>
         <div className="hidden md:flex gap-16 justify-center uppercase   ">
           <Link
@@ -86,7 +86,7 @@ const NavBar = () => {
         onClick={handleNav}
       >
         <div className="py-2 mx-8 quicksand-500 flex justify-between items-center">
-          <img src={logo} alt="logo" className=" h-[40px]  object-cover md:h-[80px]" />
+          <img src={logo} alt="thinkopal logo" className=" h-[40px]  object-cover md:h-[80px]" />
           <AiOutlineClose size={25} onClick={handleNav} />
         </div>
 

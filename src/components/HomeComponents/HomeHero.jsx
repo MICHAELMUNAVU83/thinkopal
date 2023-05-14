@@ -26,7 +26,7 @@ const HomeHero = () => {
               <p>quality affordable</p>
               <p>patient experiences</p>
               <p className="border-b-2 border-black w-[100%] my-2"></p>
-              <img src={cdmssmall} alt="cdmssmall" className="  object-cover h-[77px] " />
+              <img src={cdmssmall} alt="thinkopal client" className="  object-cover h-[77px] " />
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const HomeHero = () => {
             We helped a health start-up deliver affordable high quality
             affordable patient experiences
           </p>
-          <img src={cdmssmall} alt="cdmssmall" className="  object-cover h-[77px]" />
+          <img src={cdmssmall} alt="thinkopal client" className="  object-cover h-[77px]" />
         </div>
         <Link className="flex justify-center items-center  " to="/purpose">
           <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />

@@ -139,7 +139,7 @@ const ClientsHero = () => {
           {clientlogos.map((clientlogo) => (
             <SplideSlide>
               <div className="flex justify-center items-center p-4  bg-white h-[150px]  ">
-                <img src={clientlogo.logo} alt="" className="  object-cover" />
+                <img src={clientlogo.logo} alt="thinkopal clients" className="  object-cover" />
               </div>
             </SplideSlide>
           ))}
@@ -168,7 +168,7 @@ const ClientsHero = () => {
                   borderRadius: "10px",
                 }}
               >
-                <img src={sector.icon} alt="" className=" object-cover " />
+                <img src={sector.icon} alt="thinkopal client sectors" className=" object-cover " />
                 <p className="text-xl quicksand-500 text-center">
                   {sector.name}
                 </p>
@@ -206,7 +206,7 @@ const ClientsHero = () => {
                 <div className="bg-white/50 md:p-8 p-0 h-[650px] w-[100%] flex md:flex-row md:justify-around   gap-8  rounded-2xl flex-col justify-center items-center">
                   <img
                     src={client.image}
-                    alt=""
+                    alt="thinkopal client images"
                     className="w-[250px]  object-cover h-[250px] md:w-[500px] md:h-[500px] rounded-full"
                   />
 

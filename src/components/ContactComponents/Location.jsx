@@ -11,7 +11,7 @@ const Location = () => {
           you may have. Drop us a message and we'll get back to you as soon as
           possible.
         </p>
-        <img src={youth} alt="youth" className="w-[500px]  object-cover hidden md:block h-[500px]" />
+        <img src={youth} alt="thinkopal location" className="w-[500px]  object-cover hidden md:block h-[500px]" />
       </div>
     </div>
   );

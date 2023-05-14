@@ -78,7 +78,7 @@ const Blogs = () => {
             <div className="md:w-[50%] flex flex-col items-center justify-center text-center">
               <img
                 src={blog.image}
-                alt="youth"
+                alt="thinkopal blog image"
                 className="h-[400px]  object-cover bg-center w-[400px] rounded-full"
               />
               <p className="md:text-[48px] leading-[45.6px]  font-bold alstoria md:w-[80%] mt-4">

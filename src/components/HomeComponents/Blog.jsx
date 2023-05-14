@@ -15,11 +15,11 @@ const Blog = () => {
         <div className="w-[100%]">
           <img
             src={blogimage}
-            alt="blogimage"
+            alt="thinkopal blog image"
             className="hidden  object-cover md:block w-[600px] h-[700px]"
           />
         </div>
-        <img src={blog} alt="blog" className="  object-cover md:hidden" />
+        <img src={blog} alt="thinkopal blog" className="  object-cover md:hidden" />
         <div className="md:mr-8 flex flex-col gap-4 md:gap-8 justify-center items-center md:items-end">
           <h1 className="alstoria font-normal text-4xl md:text-6xl">
             Impact Series

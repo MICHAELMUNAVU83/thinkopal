@@ -96,7 +96,7 @@ const Carousel = () => {
               <div>
                 <img
                   src={data.logo}
-                  alt="logo"
+                  alt="thinkopal logo client"
                   className=" md:h-[100px] object-cover h-[50px] my-8"
                 />
               </div>

@@ -22,7 +22,7 @@ const Why = () => {
         <div className="relative curved-bg  mx-auto">
           <img
             src={whypic}
-            alt="whatpic"
+            alt="thinkopal why client"
             className="md:h-[500px]  object-cover md:w-[500px] h-[300px]"
           />
           <div className="absolute top-[53%] md:top-2/3 left-[28%] md:left-[27%] alstoria text-center md:text-6xl text-5xl font-bold flex flex-col">

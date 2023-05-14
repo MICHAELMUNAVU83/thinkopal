@@ -4,7 +4,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 import productsbg from "../images/productsbg.jpeg";
-const ProductsHero = () => {
+const ServicesHero = () => {
   return (
     <div
       style={{
@@ -41,4 +41,4 @@ const ProductsHero = () => {
   );
 };
 
-export default ProductsHero;
+export default ServicesHero;

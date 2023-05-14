@@ -49,7 +49,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-            to="/products"
+            to="/services"
           >
             Our Services
           </Link>
@@ -105,7 +105,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="transition-all duration-300 hover:scale-105 hover:border-b-2 hover:border-black  cursor-pointer"
-            to="/products"
+            to="/services"
           >
             Our Services
           </Link>

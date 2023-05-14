@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Purpose from "./pages/Purpose";
 import Mission from "./pages/Mission";
-import Products from "./pages/Products";
+import Services from "./pages/Services";
 import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import FreeResources from "./pages/FreeResources";
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/purpose" element={<Purpose />} />
           <Route path="/mission" element={<Mission />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/free-resources" element={<FreeResources />} />

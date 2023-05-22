@@ -55,8 +55,8 @@ const Inquiry = () => {
       </div>
       <div className="flex flex-col font-normal text-center md:text-end gap-4 justify-center ">
         <div className="flex justify-center md:block">
-          <h1 className="md:text-7xl text-4xl alstoria ">Get An</h1>
-          <h1 className="md:text-7xl text-4xl alstoria">Inquiry</h1>
+          <h1 className="md:text-7xl text-4xl alstoria ">Got An</h1>
+          <h1 className="md:text-7xl text-4xl alstoria">Inquiry <span className="quicksand-700">?</span></h1>
         </div>
 
         <p className="font-normal quicksand-700  text-xl md:text-3xl ">

@@ -4,12 +4,17 @@ const PurposeInquiry = () => {
   return (
     <div className=" bg-white md:bg-[#FFD230] md:flex md:justify-between justify-center md:pt-20 mx-auto    md:p-24">
       <div className="flex flex-col gap-4">
-        <h1 className="text-4xl md:text-5xl my-8 md:my-0 alstoria md:text-start text-center ">Get An Inquiry</h1>
+        <h1 className="text-4xl md:text-5xl my-8 md:my-0 alstoria md:text-start text-center ">
+          Got an inquiry <span className="quicksand-700">?</span>
+        </h1>
 
         <p className="quicksand-500 text-xl md:text-start  text-center  font-medium">
           Learn more about our services.
         </p>
-        <p className="quicksand-500 text-xl md:text-start  text-center font-medium"> We'd love to help!</p>
+        <p className="quicksand-500 text-xl md:text-start  text-center font-medium">
+          {" "}
+          We'd love to help!
+        </p>
 
         <div className="flex quicksand-400 flex-col gap-4  ">
           <div className="flex flex-col md:flex-row gap-[30px] ">

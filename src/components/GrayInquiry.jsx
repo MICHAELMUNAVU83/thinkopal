@@ -51,8 +51,8 @@ const GrayInquiry = () => {
         </div>
       </div>
       <div className="flex flex-col font-bold text-center md:text-end gap-4 justify-center ">
-        <h1 className="text-7xl alstoria ">Get An</h1>
-        <h1 className="text-7xl alstoria">Inquiry</h1>
+        <h1 className="text-7xl alstoria ">Got An</h1>
+        <h1 className="text-7xl alstoria">Inquiry <span className="quicksand-700">?</span></h1>
         <p className="font-normal quicksand-700  text-xl md:text-3xl ">Learn more about our services</p>
         <p className="font-normal quicksand-700 md:mb-0 mb-4   text-2xl">We'd love to help!</p>
       </div>

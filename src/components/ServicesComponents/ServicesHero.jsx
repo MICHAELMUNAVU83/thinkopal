@@ -22,7 +22,7 @@ const ServicesHero = () => {
             <div className="quicksand-500 p-8  text-center">
               At Think Opal, we're dedicated to providing innovative solutions
               to help social enterprises and impactful startups in East Africa
-              thrive. Our products are designed to support entrepreneurs who are
+              thrive. Our services are designed to support entrepreneurs who are
               committed to making a positive impact on society and the
               environment while generating sustainable profits.
             </div>

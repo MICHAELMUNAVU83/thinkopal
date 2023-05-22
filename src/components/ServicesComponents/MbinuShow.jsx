@@ -17,7 +17,7 @@ const MbinuShow = () => {
               src={sdgpic1}
               alt=""
             />
-            <div className=" absolute inset-0  group-hover:bg-none absolute inset-0 bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center visible"></div>
+            <div className=" absolute inset-0  group-hover:bg-none  bg-gradient-to-t from-[#FFD230]/90 via-[#FFD230]/40 to-white  visible flex items-center justify-center visible"></div>
           </div>
           <div
             className="group relative  

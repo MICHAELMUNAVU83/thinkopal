@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const GrayInquiry = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className=" bg-white quicksand-400  flex-col-reverse md:flex-row  flex justify-between py-12 md:p-24">
-      <div className="flex  quicksand-400 flex-col gap-4">
+      <form
+        onSubmit={sendEmail}
+        ref={ref}
+        className="flex  quicksand-400 flex-col gap-4"
+      >
         <div className="flex flex-col md:flex-row gap-[20px]">
           <input
             type="text"
@@ -45,16 +71,25 @@ const GrayInquiry = () => {
           </p>
         </div>
         <div className="flex md:justify-start justify-center">
-          <button className=" bg-[#FFD230] md:mr-24 hover:scale-105 duration-500 transition-all text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl">
+          <button
+            className=" bg-[#FFD230] md:mr-24 hover:scale-105 duration-500 transition-all text-black uppercase text-center py-4 px-8 justify-start  shadow-gray-300 rounded-md shadow-xl"
+            type="submit"
+          >
             Send Message
           </button>
         </div>
-      </div>
+      </form>
       <div className="flex flex-col font-bold text-center md:text-end gap-4 justify-center ">
         <h1 className="text-7xl alstoria ">Got An</h1>
-        <h1 className="text-7xl alstoria">Inquiry <span className="quicksand-700">?</span></h1>
-        <p className="font-normal quicksand-700  text-xl md:text-3xl ">Learn more about our services</p>
-        <p className="font-normal quicksand-700 md:mb-0 mb-4   text-2xl">We'd love to help!</p>
+        <h1 className="text-7xl alstoria">
+          Inquiry <span className="quicksand-700">?</span>
+        </h1>
+        <p className="font-normal quicksand-700  text-xl md:text-3xl ">
+          Learn more about our services
+        </p>
+        <p className="font-normal quicksand-700 md:mb-0 mb-4   text-2xl">
+          We'd love to help!
+        </p>
       </div>
     </div>
   );

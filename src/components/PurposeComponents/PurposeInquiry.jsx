@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import purposeinquirypic from "../images/purposeinquirypic.png";
 const PurposeInquiry = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className=" bg-white md:bg-[#FFD230] md:flex md:justify-between justify-center md:pt-20 mx-auto    md:p-24">
       <div className="flex flex-col gap-4">
@@ -16,7 +39,11 @@ const PurposeInquiry = () => {
           We'd love to help!
         </p>
 
-        <div className="flex quicksand-400 flex-col gap-4  ">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex quicksand-400 flex-col gap-4  "
+        >
           <div className="flex flex-col md:flex-row gap-[30px] ">
             <input
               type="text"
@@ -62,7 +89,7 @@ const PurposeInquiry = () => {
               Send Message
             </button>
           </div>
-        </div>
+        </form>
       </div>
       <div>
         <img

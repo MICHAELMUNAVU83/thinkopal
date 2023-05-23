@@ -9,10 +9,10 @@ const GrayInquiry = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_abzd5cf",
+        "template_ncd937d",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "cea2TAaV7fu3Aqtyp"
       )
       .then(
         (result) => {

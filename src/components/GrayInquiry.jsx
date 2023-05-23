@@ -27,26 +27,26 @@ const GrayInquiry = () => {
     <div className=" bg-white quicksand-400  flex-col-reverse md:flex-row  flex justify-between py-12 md:p-24">
       <form
         onSubmit={sendEmail}
-        ref={ref}
+        ref={form}
         className="flex  quicksand-400 flex-col gap-4"
       >
         <div className="flex flex-col md:flex-row gap-[20px]">
           <input
             type="text"
             placeholder="Name"
-            className="md:w-[299px]  w-[315px] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25  placeholder-white rounded-md"
+            className="md:w-[299px]  w-[315px] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25   rounded-md"
           />
           <input
             type="text"
             placeholder="Email"
-            className="md:w-[299px]  w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2  placeholder-white  rounded-md"
+            className="md:w-[299px]  w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
             placeholder="Subject"
-            className="md:w-[633px] w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   placeholder-white rounded-md"
+            className="md:w-[633px] w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2    rounded-md"
           />
         </div>
         <div className="flex flex-col">

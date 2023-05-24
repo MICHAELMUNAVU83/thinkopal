@@ -33,7 +33,7 @@ const PurposeHero = () => {
               Our purpose
             </p>
           </div>
-          <Link className=" flex justify-center items-center " to="/products">
+          <Link className=" flex justify-center items-center " to="/services">
             <MdArrowForwardIos className=" text-2xl bg-gray-300 h-8 w-8 p-2 rounded-full cursor-pointer" />
           </Link>
         </div>

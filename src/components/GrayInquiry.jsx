@@ -1,28 +1,66 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const GrayInquiry = () => {
   const form = useRef();
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_abzd5cf",
-        "template_ncd937d",
-        form.current,
-        "cea2TAaV7fu3Aqtyp"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (!name || !email || !subject || !message) {
+      toast.error("Email not sent ,Please fill in all fields", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      emailjs
+        .sendForm(
+          "service_abzd5cf",
+          "template_ncd937d",
+          form.current,
+          "cea2TAaV7fu3Aqtyp"
+        )
+        .then(
+          (result) => {
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+
+            setTimeout(() => {
+              toast.success("Email Sent , I will get back to you soon", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+              });
+            }, 1000);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
+
   return (
     <div className=" bg-white quicksand-400  flex-col-reverse md:flex-row  flex justify-between py-12 md:p-24">
       <form
@@ -34,29 +72,40 @@ const GrayInquiry = () => {
           <input
             type="text"
             placeholder="Name"
-            className="md:w-[299px]  w-[315px] mx-auto placeholder-white h-[42px] p-2 bg-[#000000]/25   rounded-md"
+            value={name}
+            name="client_name "
+            onChange={(e) => setName(e.target.value)}
+            className="md:w-[299px]  w-[315px] mx-auto placeholder-white h-[42px] focus:outline-none  p-2 bg-[#000000]/25   rounded-md"
           />
           <input
             type="text"
             placeholder="Email"
-            className="md:w-[299px]  w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2   rounded-md"
+            name="client_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="md:w-[299px]  w-[315px] mx-auto placeholder-white  focus:outline-none bg-[#000000]/25 h-[42px] p-2   rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
-            placeholder="Subject"
-            className="md:w-[633px] w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2    rounded-md"
+            name="client_subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            placeholder="Subject.."
+            className="md:w-[633px] w-[315px] mx-auto placeholder-white bg-[#000000]/25 h-[42px] p-2  focus:outline-none   rounded-md"
           />
         </div>
         <div className="flex flex-col">
           <textarea
-            name=""
             id=""
             cols="30"
+            value={message}
+            name="client_message"
+            onChange={(e) => setMessage(e.target.value)}
             rows="10"
             placeholder="Message"
-            className="md:w-[633px] w-[315px] mx-auto  bg-[#000000]/25 h-[200px] p-2  placeholder-white  rounded-md"
+            className="md:w-[633px] w-[315px] mx-auto  bg-[#000000]/25 h-[200px] p-2 focus:outline-none placeholder-white   rounded-md"
           ></textarea>
         </div>
         <div className="flex w-[315px] mx-auto md:w-[633px] items-center  ">
@@ -91,6 +140,7 @@ const GrayInquiry = () => {
           We'd love to help!
         </p>
       </div>
+      <ToastContainer />
     </div>
   );
 };

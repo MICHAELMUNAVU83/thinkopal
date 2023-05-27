@@ -1,28 +1,65 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const Inquiry = () => {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_abzd5cf",
-        "template_ncd937d",
-        form.current,
-        "cea2TAaV7fu3Aqtyp"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (!name || !email || !subject || !message) {
+      toast.error("Email not sent ,Please fill in all fields", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } else {
+      emailjs
+        .sendForm(
+          "service_abzd5cf",
+          "template_ncd937d",
+          form.current,
+          "cea2TAaV7fu3Aqtyp"
+        )
+        .then(
+          (result) => {
+            setName("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+
+            setTimeout(() => {
+              toast.success("Email Sent , I will get back to you soon", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+              });
+            }, 1000);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
+
   return (
     <div
       className="
@@ -38,19 +75,25 @@ const Inquiry = () => {
             type="text"
             placeholder="Name"
             name="client_name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="md:w-[299px]  w-[95%] mx-auto md:ml-0 md:mr-0 h-[42px] p-2  rounded-md"
           />
           <input
             type="email"
             placeholder="Email"
             name="client_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="md:w-[299px]  w-[95%] mx-auto md:ml-0 md:mr-0 h-[42px] p-2  rounded-md"
           />
         </div>
         <div className="flex flex-col ">
           <input
             type="text"
-            placeholder="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            placeholder="Subject.."
             name="client_subject"
             className="md:w-[628px] w-[95%] mx-auto md:ml-0 md:mr-0 h-[42px] p-2  rounded-md"
           />
@@ -59,6 +102,8 @@ const Inquiry = () => {
           <textarea
             id=""
             cols="30"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             rows="10"
             placeholder="Message"
             name="client_message"
@@ -100,6 +145,7 @@ const Inquiry = () => {
           We'd love to help!
         </p>
       </div>
+      <ToastContainer />
     </div>
   );
 };

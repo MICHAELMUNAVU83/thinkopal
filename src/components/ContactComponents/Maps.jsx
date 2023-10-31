@@ -28,15 +28,7 @@ const Maps = () => {
           <IoCall size={40} />
           <p>+254798 543030</p>
         </div>
-        <div className="flex gap-2 items-center jusify-around">
-          <ImLocation size={40} />
-          <div className="flex text-start flex-col justify-between">
-            <p>WestPark Towers,</p>
-            <p>Westlands. </p>
-            <p>Mpesa Lane,Jenga leo co-working space</p>
-            <p>Nairobi , Kenya</p>
-          </div>
-        </div>
+
         <div className="flex gap-2 items-center jusify-around">
           <SiGmail size={40} />
           <p>info@thinkopal.com</p>
@@ -88,8 +80,8 @@ const Maps = () => {
         }
         width="100%"
         initialViewState={{
-          latitude: -1.264065,
-          longitude: 36.807052,
+          latitude: -1.286389,
+          longitude: 36.817223,
           zoom: 12,
         }}
         mapboxAccessToken={
@@ -98,13 +90,13 @@ const Maps = () => {
         mapStyle="mapbox://styles/mapbox/streets-v11" // This is the style of the map
       >
         <Marker
-          latitude={-1.264065}
-          longitude={36.807052}
+          latitude={-1.286389}
+          longitude={36.817223}
           offsetLeft={-20}
           offsetTop={-10}
         >
           <p className="bg-red-600/90 font-bold px-2 py-1 text-white rounded-xl">
-            Think Opal Offices
+            Think Opal Solutions
           </p>
           <ImLocation className="text-5xl text-red-600" />
         </Marker>
